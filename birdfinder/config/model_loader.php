@@ -40,4 +40,5 @@ foreach($controller_files as $cf) {
 //instantiate the utility
 require_once(BF_UTIL_DIR . 'Utility.class.php');
 $Utility = new Utility();
+require_once(BF_UTIL_DIR . 'FormUtil.class.php');
 require_once(BF_UTIL_DIR . 'AjaxHandler.class.php');

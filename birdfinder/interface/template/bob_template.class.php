@@ -14,7 +14,7 @@ class BobTemplate {
 
         $this->html_dom->load_file($url);
 
-        $this->template = $this->html_dom->find('html', 0);
+        $this->template = $this->html_dom; //;->find('html', 0);
     }
 
     function setBaseHref($baseHref) {
