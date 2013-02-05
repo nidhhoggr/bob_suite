@@ -1,0 +1,313 @@
+<?php
+
+function avatarcrop_perm() {
+	return array('Avatar crop');
+}
+function avatarcrop_init() {
+	if((arg(1) == 'cropimage') || (arg(1) == 'getimage')){ 
+		$dimension=variable_get('user_picture_dimensions','100x100');
+		$widthXheight=split('x',$dimension);
+		$width = $widthXheight[0];
+		$height = $widthXheight[1];
+	
+		drupal_add_js('var cwidth = '. $width .';','inline');
+		drupal_add_js('var cheight = '.$height.';','inline');
+	
+		drupal_add_js(drupal_get_path('module','avatarcrop').'/avatarcrop.js');
+		drupal_add_js(drupal_get_path('module','avatarcrop').'/js/jquery.Jcrop.js');
+		drupal_add_css(drupal_get_path('module','avatarcrop').'/css/jquery.Jcrop.css');
+		drupal_add_css(drupal_get_path('module','avatarcrop').'/avatarcrop.css');
+	}
+		
+}
+
+function avatarcrop_menu() {
+	
+	$items = array();
+
+	$items['user/cropimage'] = array(
+		'title' => t('Crop Image'),
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('cropUserPic'),
+	        'access arguments' =>  avatarcrop_perm(),
+	        'type' => MENU_CALLBACK
+	  );
+	$items['user/getimage'] = array(
+		'title' => t('Upload Image'),
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('avatarcrop_form'),
+		'access arguments' =>  avatarcrop_perm(),
+		'type' => MENU_CALLBACK
+	  );  
+
+return $items;
+}
+  
+function avatarcrop_user($op, &$edit, &$users, $category = NULL){
+	switch ($op){
+		case 'view' :
+			$enablePicture=variable_get('user_pictures','0');
+			if($enablePicture) {
+				if($users->picture){
+					$pictureMsg = t('Change Avatar');
+				}
+				else {
+					$pictureMsg = t('Upload Picture');
+				}
+				$base=base_path();
+				global $user;
+				$owner=$user->uid;
+				if($owner==arg(1)) {
+				$_SESSION['change_pic_uid'] = arg(1);
+					$users->content['user_picture']['link_to_crop'] = array(
+				      	'#prefix' => '<div class="picture">',
+		  				'#suffix' => '</div>',
+					  	'#value' => '<a href="'.$base.'user/getimage" class="avatar-crop-picture">'. $pictureMsg .'</a>', 
+				      	'#weight' => -10,
+					
+				    );
+				}
+			}
+	}
+}
+
+/**
+ * STEP 1 : file upload form
+ *
+ * @return unknown
+ */
+function avatarcrop_form() {
+$form = array();
+  // If this #attribute is not present, upload will fail on submit
+  
+	$form['#attributes']['enctype'] = 'multipart/form-data';
+	
+	$form['avatar_crop_title']=array(
+		'#prefix' => '<div class="avatar-crop-title">',
+  		'#suffix' => '</div>',
+  		'#value' => t('Choose profile picture.'),
+    );
+  	$form['file_upload'] = array(
+    	'#title' => t('Upload file'),
+    	'#type'  => 'file',
+  	);
+  	$form['submit_upload'] = array(
+    	'#type'  =>  'submit',
+    	'#value'  =>  'Upload'
+  );
+  
+  $enablePicture=variable_get('user_pictures','0');
+	if($enablePicture) {
+		return $form;
+	}
+	else {
+		$form2['user_picture_disable']=array(
+			'#prefix' => '<div class="message error">',
+	  		'#suffix' => '</div>',
+		  	'#value' => t('Please enable user picture first to use Avatar crop.'),
+	    );
+	    return $form2;
+	}
+	
+  
+}
+function avatarcrop_form_submit($form, &$form_state) {
+  $validators = array(
+  	'file_validate_is_image' => array(),
+    'file_validate_image_resolution' => array('500x500'),
+    'file_validate_size' => array(500 * 1024),
+  
+  );
+	  $upload_dir=variable_get('user_picture_path','pictures');
+	  $filepath=file_directory_path();
+	  $dest = $filepath . '/' .$upload_dir;
+	  $file = file_save_upload('file_upload', $validators, $dest);
+	  global $user;
+	  $owner=$user->uid;
+	  $filetype;
+	  $filetype = $file->filemime;
+	  $extension='';
+  switch ($filetype) { 
+	  case 'image/jpeg':
+	      $extension='jpg';
+	  break;
+	  case 'image/png':
+	      $extension='png';
+	  break;
+	  case 'image/gif':
+	      $extension='gif';
+	  break;
+  }
+  $dest = variable_get('user_picture_path', 'pictures') .'/picture-'. $owner .'.'. $extension;
+  
+  if ($file != 0) {      
+  	//$dest_path = 'files/upload_directory';
+   $result = file_move($file, $dest, FILE_EXISTS_REPLACE);
+       if ($result == 1) {
+       	
+    	$_SESSION['filepath']=$file->filepath;
+    	$_SESSION['fid']=$file->fid;
+    	$_SESSION['filetype']=$file->filemime;
+    	
+    	drupal_goto('user/cropimage');
+    }
+    else {
+      //Failure
+    }
+  }
+  else {
+    form_set_error('', t("Failed to upload the file."));
+  }
+  
+}
+
+/**
+ * STEP 2 : crop the image form
+ *
+ * @return unknown
+ */
+function cropUserPic() {
+	
+	$form=array();
+	$filePath = $_SESSION['filepath'];
+	
+  	$enablePicture=variable_get('user_pictures','0');
+  	
+	if($enablePicture==0) {
+		$_SESSION['filepath']=null;
+	}
+	
+	$base=base_path();
+	if($filePath){
+		$form['avatar_crop_title']=array(
+			'#prefix' => '<div class="avatar-crop-title">',
+  			'#suffix' => '</div>',
+  			'#value' => t('Make a selection on the below image to define the crop area.'),
+    	);
+		$form['imageview']= array(
+			'#value' => '<img src="'. $base.$filePath .'"  id="cropbox" />',
+		);
+
+		$form['x1']=array(
+			'#type' => 'hidden',
+		);
+		$form['y1']=array(
+			'#type' => 'hidden',
+		);
+		$form['x2']=array(
+			'#type' => 'hidden',
+		);
+		$form['y2']=array(
+			'#type' => 'hidden',
+		);
+		$form['h']=array(
+			'#type' => 'hidden',
+		);
+		$form['w']=array(
+			'#type' => 'hidden',
+		);
+		$form['cropsubmit'] = array(
+			'#type' => 'submit',
+			'#value' => 'Continue',
+			//'#submit' => array('cropSubmit'),
+		);
+		
+	}	
+	return $form;
+	
+}
+
+/**
+ * STEP 3 : tweak the user picture with the crop image
+ */
+function cropUserPic_validate($form, &$form_state){
+	$w=$form_state['values']['w'];
+	$h=$form_state['values']['h'];
+		
+	if(!$h){
+		form_set_error('',t('Please crop the image to continue.'));
+	}
+	
+}
+
+function cropUserPic_submit($form, &$form_state)
+{
+	
+	$dimension=variable_get('user_picture_dimensions','100x100');
+	
+	$widthXheight=split('x',$dimension);
+	
+	$targ_w = $widthXheight[0];
+	$targ_h = $widthXheight[1];
+	$jpeg_quality = 90;
+
+	$x=$form_state['values']['x1'];
+	$y=$form_state['values']['y1'];
+	$w=$form_state['values']['w'];
+	$h=$form_state['values']['h'];
+	
+	
+	$src = $_SESSION['filepath'];
+	 $dot = strrpos($src, '.');
+        if (!($dot === false))        {
+          $newsrc = substr($src, 0, $dot) . rand() . substr($src, $dot);
+          if (rename($src, $newsrc))
+          {
+            $src = $newsrc;
+          }
+        }
+	$filetype=$_SESSION['filetype'];
+	
+	$dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
+	switch ($filetype) {
+		case 'image/jpeg':
+			$img_r = imagecreatefromjpeg($src);
+			imagecopyresampled($dst_r,$img_r,0,0,$x,$y,$targ_w,$targ_h,$w,$h);
+			imagejpeg($dst_r,$src,$jpeg_quality);
+			break;
+		case 'image/png':
+			$img_r = imagecreatefrompng($src);
+			imagecopyresampled($dst_r,$img_r,0,0,$x,$y,$targ_w,$targ_h,$w,$h);
+			imagepng($dst_r,$src);
+			break;
+		case 'image/gif':
+			$img_r = imagecreatefromgif($src);
+			imagecopyresampled($dst_r,$img_r,0,0,$x,$y,$targ_w,$targ_h,$w,$h);
+			imagegif($dst_r,$src);
+			break;			
+	}
+	
+	$uID = $_SESSION['change_pic_uid'];
+	db_query("update {users} set picture='%s' where uid=%d",$src,$uID);
+			///cleaning the sessions
+		$_SESSION['filepath']=NULL;
+	    	$_SESSION['fid']=NULL;
+	    	$_SESSION['filetype']=NULL;
+	    	$_SESSION['change_pic_u'] = NULL;
+	
+	drupal_goto('user/'.$uID.'/edit');
+	
+}
+
+/**
+ * 
+ * hide the picture fieldset
+ *
+ * @param  $form
+ * @param  $form_state
+ * @param  $form_id
+ */
+
+function avatarcrop_form_alter(&$form, &$form_state, $form_id) {
+
+if ($form_id == 'user_profile_form' && isset($form['picture'])) {
+	$_SESSION['change_pic_uid'] = arg(1);
+	$base=base_path();	
+	$description_upload = 	$form['picture']['picture_upload']['#description'];
+	$form['picture']['picture_upload'] = array(
+		'#value' => '<a href="'.$base.'user/getimage" class="avatar-crop-picture">'. t('Upload picture') .'</a>',
+	);
+	$form['picture']['#description'] = $description_upload;
+  }
+}	
+

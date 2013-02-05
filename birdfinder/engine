@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+
+require_once(dirname(__FILE__) . '/config/bootstrap.php');
+require_once(BF_LIB_DIR.'HTML-DOM-Parser/simple_html_dom.php');
+
+require_once(dirname(__FILE__) . '/scrapers/content/wikiScrapedContentScraper.php');
+//require_once(BF_LIB_DIR . '/wikiScraper/tests/test.php');
+
+//$ss = new SourceScanner(getopt('svt'));

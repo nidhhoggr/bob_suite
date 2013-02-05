@@ -1,0 +1,131 @@
+taxonomy_source:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TaxonomySource
+    module:               taxonomy_source
+    prefix_path:          /taxonomy_source
+    column:               id
+    with_wildcard_routes: true
+
+taxonomytype_source:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TaxonomytypeSource
+    module:               taxonomytype_source
+    prefix_path:          /taxonomytype_source
+    column:               id
+    with_wildcard_routes: true
+
+taxonomytype:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Taxonomytype
+    module:               taxonomytype
+    prefix_path:          /taxonomytype
+    column:               id
+    with_wildcard_routes: true
+
+taxonomy:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Taxonomy
+    module:               taxonomy
+    prefix_path:          /taxonomy
+    column:               id
+    with_wildcard_routes: true
+
+source:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Source
+    module:               source
+    prefix_path:          /source
+    column:               id
+    with_wildcard_routes: true
+
+bird_taxonomy:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                BirdTaxonomy
+    module:               bird_taxonomy
+    prefix_path:          /bird_taxonomy
+    column:               id
+    with_wildcard_routes: true
+
+bird_source:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                BirdSource
+    module:               bird_source
+    prefix_path:          /bird_source
+    column:               id
+    with_wildcard_routes: true
+
+bird:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Bird
+    module:               bird
+    prefix_path:          /bird
+    column:               id
+    with_wildcard_routes: true
+
+audit_logger:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AuditLogger
+    module:               audit_logger
+    prefix_path:          /audit_logger
+    column:               id
+    with_wildcard_routes: true
+
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+sf_guard_signin:
+  url: /login
+  param:
+    module: sfGuardAuth
+    action: signin
+
+sf_guard_signout:
+  url: /logout
+  param:
+    module: sfGuardAuth
+    action: signout
+
+sf_guard_forgot_password:
+  url: /guard/forgot_password
+  param:
+    module: sfGuardForgotPassword
+
+sf_guard_user:
+  url: /guard/user
+  param:
+    module: sfGuardUser
+
+sf_guard_group:
+  url: /guard/group
+  param:
+    module: sfGuardGroup
+
+sf_guard_permission:
+  url: /guard/permission
+  param:
+    module: sfGuardPermission
+

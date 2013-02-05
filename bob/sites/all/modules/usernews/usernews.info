@@ -1,0 +1,11 @@
+; $Id: usernews.info,v 1.1 2009/10/05 10:11:26 jerdiggity Exp $
+name = User News
+description = Implements per-user news article publishing.
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-11-08
+version = "6.x-1.2"
+core = "6.x"
+project = "usernews"
+datestamp = "1257671775"
+

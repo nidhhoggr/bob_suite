@@ -1,0 +1,56 @@
+        #left_content {
+            width: 65%;
+            float: left;
+            margin-left: 15px;
+        }
+
+        #bird_name_label {
+            padding: 10px;
+        }
+
+        #edit_bird a {
+            font-size: 12px;
+            font-style: italic;
+            color: red;
+        }
+
+        .greyBgWithCorners {
+
+            -moz-border-radius: 12px/*{cornerRadius}*/;
+            -webkit-border-radius: 12px/*{cornerRadius}*/;
+            -khtml-border-radius: 12px/*{cornerRadius}*/;
+            border-radius: 12px/*{cornerRadius}*/;
+            background-color: #EEE;
+        }
+
+        #about_bird {
+            padding: 10px;
+        }
+
+        #tag_section {
+            width: 27%;
+            float: right;
+            margin: 20px;
+        }
+
+        #tag_section_content {
+            padding: 10px;
+        }
+
+        .infobox {
+            float: right;
+            margin-left: 15px;
+            border: 1px solid #000;
+        }
+
+        #taxtype_label {
+           margin: 20px 0 10px 0;
+           display: block;
+           background-color: #2F3746;
+           font-weight: bold;
+           font-style: italic;
+           color: #FFF;
+           -webkit-border-top-right-radius: 12px/*{cornerRadius}*/;
+           -khtml-border-top-right-radius: 12px/*{cornerRadius}*/;
+           border-top-right-radius: 13px/*{cornerRadius}*/;
+        }

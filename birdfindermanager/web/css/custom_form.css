@@ -1,0 +1,64 @@
+
+.custom_form #column_wrapper {
+     width: 100%;
+ }
+
+.custom_form #column_left {
+     width: 45%;
+     float: left;
+ }
+
+.custom_form #column_right {
+     width: 45%;
+     float: right;
+ }
+
+ #cleaner {
+     clear: both;
+ }
+
+.custom_form .buttons {
+
+    margin 0px auto;
+    text-align: center;
+
+}
+
+.echo_form { background-color:#fff; border:1px solid #000;}
+.echo_form .input { width: 100%;  padding:0.4em; }
+.echo_form .input p { display:block; width:auto; float: left; margin:0; }
+.echo_form .input label {display:block; width:10em; float:left; text-align:left; padding:0 0.4em;}
+/*.echo_form .input select, .custom_form .input input {width:12em; }*/
+
+.echo_form .input #echocardiography_exam_date_month, 
+.echo_form .input #echocardiography_exam_date_year, 
+.echo_form .input #echocardiography_exam_date_day { width:4em; }
+
+.echo_form #echocardiography_quality, 
+.echo_form #echocardiography_syst_bp,
+.echo_form #echocardiography_weight_kilo { margin-right:3em;}
+
+.echo_form .inline_inputs { width: 100%;  padding:0.4em;line-height:1em; }
+.echo_form .inline_inputs p { display:inline-block; margin:0; text-align:right; white-space: nowrap; }
+.echo_form .inline_inputs label {display:inline-block; width:8em; float:left; text-align:right; padding:0 0.4em;}
+.echo_form .inline_inputs select, .echo_form .inline_inputs input {width:4em; }
+.echo_form .inline_inputs input[type="checkbox"] {width:1em; float:left;}
+
+.echo_form #main_title {width:48%; padding:0.5em; margin-right:0.5em; background-color:#000099; color:#fff;}
+.echo_form #main_title h4 {margin:0;}
+.echo_form #sub_title {padding:0.2em; background-color:#ffffcc; color:#000; text-align:center;}
+.echo_form #sub_title h5 {margin:0; font-size:14px;}
+
+.echo_form #ee_aortic_root, 
+.echo_form #ee_aortic_valve, 
+.echo_form #ee_mitral_valve, 
+.echo_form #ee_left_ventricle, 
+.echo_form #ee_right_ventricle { width:48.5%; margin:0 0.5em; border-right:1px solid #666; padding-top:2em;}
+
+.echo_form #ee_aortic_root input, 
+.echo_form #ee_aortic_valve input, 
+.echo_form #ee_mitral_valve input, 
+.echo_form #ee_left_ventricle input, 
+.echo_form #ee_right_ventricle input { width:3em;}
+
+.echo_form textarea { width:30em;}

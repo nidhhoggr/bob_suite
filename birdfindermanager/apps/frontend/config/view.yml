@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [ main.css, jquery-ui.css, /sfJQueryDateTimeFormWidgetPlugin/css/timePicker.css ]
+
+  javascripts:    [ date.js, jquery.js, jquery-ui.js, /sfJQueryDateTimeFormWidgetPlugin/js/jquery.timePicker.js ]
+
+  has_layout:     true
+  layout:         layout
+
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,100 @@
+<?php
+/*
+ * Created on May 19, 2011
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+function beautyofbirds_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+
+  switch ($op) {
+     case 'insert':
+		if($node->type=="video" || $node->type=="image" || $node->type=="audio"){
+
+		$address=$node->locations[0]['street'].' '.$node->locations[0]['additional'].','.$node->locations[0]['city'].','.$node->locations[0]['province'].','.$node->locations[0]['country'];
+	 	 $lad_long=google_api($address);
+	 	 $node->locations[0]['locpick']['user_latitude']=$lad_long['lat'];
+	 	$node->locations[0]['locpick']['user_longitude']=$lad_long['long'];
+}
+	break;
+
+	 case 'update':
+		if($node->type=="video" || $node->type=="image" || $node->type=="audio"){
+
+		$address=$node->locations[0]['street'].' '.$node->locations[0]['additional'].','.$node->locations[0]['city'].','.$node->locations[0]['province'].','.$node->locations[0]['country'];
+	 	 $lad_long=google_api($address);
+	 	 $node->locations[0]['locpick']['user_latitude']=$lad_long['lat'];
+	 	$node->locations[0]['locpick']['user_longitude']=$lad_long['long'];
+}
+	break;
+
+
+  }
+}
+
+
+function google_api($address){
+$key = "ABQIAAAAV1TX430bMFMJXsDRA3nqhhSgoTZz19Uu41qLstkWA2yX_RpcABSWpiy2mVlb8PEUUk5Gmc-gx1yvRg";
+$address = urlencode($address);
+$sturl = 'http://maps.google.com/maps/geo?q=' . $address . '&output=csv&key=' . $key;
+$ch = curl_init($sturl);
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+curl_setopt($ch,CURLOPT_TIMEOUT,10);
+$res = curl_exec($ch);
+$resinfo = curl_getinfo($ch);
+curl_close($ch);
+$res = explode(",",$res);
+$result['lat'] = $res[2];
+$result['long'] = $res[3];
+return $result;
+}
+
+function beautyofbirds_perm(){
+return array('acess site wide');
+}
+
+function beautyofbirds_menu(){
+	$item['bird/uploadimage']=array(
+	'page callback' => 'bird_uploadimage',
+    'access arguments' => array('acess site wide'),
+	);
+	$item['bird/uploadaudio']=array(
+	'page callback' => 'bird_uploadaudio',
+    'access arguments' => array('acess site wide'),
+	);
+	$item['bird/uploadvideo']=array(
+	'page callback' => 'bird_uploadvideo',
+    'access arguments' => array('acess site wide'),
+	);
+return $item;
+}
+function bird_uploadimage(){
+	global $user;
+	if($user->uid>0){
+	drupal_goto('node/add/image');
+	}else{
+	drupal_set_message('You just need to register and you can start sharing your videos, photographs and sound recordings with birders all around the world.');
+	$query = 'destination=node/add/image';
+	  drupal_goto('user/login',$query);
+	}
+}
+function bird_uploadaudio(){
+	global $user;
+	if($user->uid>0){
+	drupal_goto('node/add/audio');
+	}else{
+	drupal_set_message('You just need to register and you can start sharing your videos, photographs and sound recordings with birders all around the world.');
+	$query = 'destination=node/add/audio';
+	  drupal_goto('user/login',$query);
+	}
+}
+function bird_uploadvideo(){
+	global $user;
+	if($user->uid>0){
+	drupal_goto('node/add/video');
+	}else{
+	drupal_set_message('You just need to register and you can start sharing your videos, photographs and sound recordings with birders all around the world.');
+	$query = 'destination=node/add/video';
+	  drupal_goto('user/login',$query);
+	}
+}

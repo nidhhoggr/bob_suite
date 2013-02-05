@@ -1,0 +1,14 @@
+; $Id: avatarcrop.info,v 1.1.2.2 2009/02/09 14:11:32 navdeepraj Exp $
+name = Avatar Crop
+description = Avatar Crop enables cropping of profile pictures while they are chosen.
+package = Profile
+core = "6.x"
+
+
+
+; Information added by drupal.org packaging script on 2010-06-06
+version = "6.x-1.4"
+core = "6.x"
+project = "avatarcrop"
+datestamp = "1275841810"
+

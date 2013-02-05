@@ -1,0 +1,7 @@
+name = Beauty of Birds
+description = Beauty of Birds  funcitionality Changes
+package = Beauty of Birds
+version = VERSION
+core = 6.x
+version = "6.X"
+project = "Beauty of Birds"

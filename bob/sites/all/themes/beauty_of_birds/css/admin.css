@@ -1,0 +1,442 @@
+/* Admin Theme - The following styles control the appearance of the administration elements  */
+
+/* Messages and Warnings */
+
+.help {
+  margin-bottom: 10px;
+  padding: 10px 10px 0 10px;
+  font-size: 1.0em;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.more-help-link {
+  margin-bottom: 10px;
+  font-size: 1.0em;
+  text-align:right;
+}
+
+.messages {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.0em;
+  background: #fffdc0;
+  border: 1px solid #bbbbbb;
+}
+
+div.warning, tr.warning {
+  padding: 10px;
+  margin: 10px 0;
+  padding-left: 44px;
+  color: #333333;
+  background: #ffd200 url(../images/admin/warning.png) no-repeat scroll 10px 50%;
+  border: 1px solid #333333;
+}
+
+/* Definition Lists */
+
+dl {
+  margin: 10px 0 30px 0;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+dt {
+  display: block;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: #d7d7d7 url(../images/admin/dt-bg.png) repeat-x top;
+  border: 1px solid #bbbbbb;
+}
+
+dd {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  font-size: 0.85em;
+  background: #ffffff url(../images/admin/dd-bg.png) repeat-x top;
+  border: 1px solid #bbbbbb;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.profile dt {
+  font-size: 1.0em;
+}
+
+.profile dl, .profile dt , .profile dd {
+  margin: 0 0 0;
+}
+
+.profile h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#content-display-overview-form {
+  overflow: scroll;
+}
+
+dl.multiselect {
+  border: 0;
+  margin: 0 0;
+}
+
+dl.multiselect dt {
+  display: block;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: 0;
+  border: 0;
+}
+
+dl.multiselect dd {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  font-size: 0.85em;
+  background: 0;
+  border: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-width:0;
+}
+
+#node-admin-buttons {
+  padding-left: 20px;
+}
+
+.container-inline {
+  margin-bottom: 15px;
+}
+
+/* Admin Panel */
+
+.compact-link {
+  text-align: right;
+}
+
+.compact-link a {
+  padding: 5px;
+  font-size: 0.85em;
+  border: 1px solid #bbbbbb;
+  background: #ffffff url(../images/admin/dd-bg.png) repeat-x top;
+}
+
+.compact-link a:hover {
+  background: #ffffff;
+}
+
+div.admin-panel h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #666666;
+}
+
+div.admin-panel {
+  margin: 0;
+  padding: 0px 0px 0px;
+}
+
+div.admin .left, div.admin .right {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+div.admin-panel .body {
+  padding: 0 0px 0px 0px;
+}
+
+div.admin-panel .description {
+  padding: 0 0px 0px 0px;
+  font-size: 0.85em;
+  color: #666666;
+  text-align: right;
+}
+
+div.admin-panel ul {
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  background: #ffffff url(../images/admin/dd-bg.png) repeat-x top;
+  border: 1px solid #dddddd;
+}
+
+div.admin-panel .item-list ul {
+  text-align: left;
+}
+
+/* Tabs */
+
+ul.primary {
+  border-bottom: 0px solid #BBBBBB;
+  border-collapse:collapse;
+  height:auto;
+  line-height:normal;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  padding:0 0 10px 0;
+  margin: 0;
+  white-space:nowrap;
+}
+
+ul.primary li a {
+  background: #ffffff url(../images/admin/tab.png) repeat-x bottom;
+  color: #333333;
+  font-size: 1.1em;
+  border-style:solid solid solid;
+  border-width: 1px;
+  height: auto;
+  margin-right: 0em;
+  padding: 5px 10px;
+  text-decoration:none;
+  border-color:#dddddd #dddddd #dddddd;
+}
+
+ul.primary li a:hover {
+  background: #ffffff url(../images/admin/tab-hover.png) repeat-x bottom;
+  color: #ffffff;
+  border-color:#666666 #666666 #666666;
+}
+
+ul.primary li.active a {
+  color: #333333;
+  border-color:#999999 #999999 #999999;
+  border-style:solid;
+  border-width:1px;
+  background: #ffffff url(../images/admin/tab-active.png) repeat-x top;
+}
+
+ul.secondary {
+  border-bottom: 0px solid #BBBBBB;
+  border-collapse:collapse;
+  height:auto;
+  line-height:normal;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin: 10px 0px;
+  padding:0 0 10px 0;
+  white-space:nowrap;
+}
+
+ul.secondary li {
+  padding: 0 0;
+  border-right: 0px solid #CCCCCC;
+}
+
+ul.secondary li a {
+  background: #ffffff url(../images/admin/tab.png) repeat-x bottom;
+  color: #333333;
+  font-size: 0.85em;
+  border-style:solid solid solid;
+  border-width: 1px;
+  height: auto;
+  margin-right: 0em;
+  padding: 2px 10px;
+  text-decoration:none;
+  border-color:#dddddd #dddddd #dddddd;
+}
+
+ul.secondary li a:hover {
+  background: #ffffff url(../images/admin/tab-hover.png) repeat-x bottom;
+  color: #ffffff;
+  border-color:#666666 #666666 #666666;
+}
+
+ul.secondary li.active a {
+  color: #333333;
+  border-color:#999999 #999999 #999999;
+  border-style:solid;
+  border-width:1px;
+  background: #dddddd;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #999999;
+  border-top: 1px solid #000000;
+  border-collapse: collapse;
+  text-transform: capitalize;
+}
+
+thead th {
+  padding: 5px;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 1px solid #000000;
+  background: #333333 url(../images/admin/help-bg.png) repeat-x top;
+}
+
+thead th a {
+  color: #ffffff;
+}
+
+tr.odd, tr.even {
+  background: #d7d7d7 url(../images/admin/td-even-bg.png) repeat-x top;
+}
+
+tr.region-empty {
+  background: #c1c1c1 url(../images/admin/td-empty-bg.png) repeat-x top;
+}
+
+tr {
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #999999;
+}
+
+td.region {
+  color: #333333;
+  background: #ffffff url(../images/admin/dd-bg.png) repeat-x top;
+}
+
+td.description {
+  font-size: 0.85em;
+  background: #ffffff url(../images/admin/desc.png) repeat-x bottom;
+}
+
+td label {
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+#blocks tr.region-message {
+  color:#333333;
+}
+
+#blocks td.region {
+  font-weight:bold;
+  font-size: 1.2em;
+}
+
+
+/* Form Elements */
+
+form {
+
+}
+
+.node-form label {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  color: #666666;
+}
+
+.form-submit {
+  margin-top: 10px;
+  margin-bottom:10px;
+  padding: 5px;
+  font-size: 0.85em;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  background: #ffffff url(../images/admin/dd-bg.png) repeat-x top;
+  cursor:pointer;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.form-submit:hover {
+  background: #ffffff;
+}
+
+.form-text, .form-textarea {
+  padding: 3px;
+  border: 1px solid #bbbbbb;
+  font-family: inherit;
+  font-size: 1.0em;
+  background: #ffffff url(../images/admin/textarea.png) top repeat-x;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.node-form .form-text, .node-form .form-textarea, .node-form .resizable-textarea {
+  width: 95%;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.node-form fieldset .form-text, .node-form fieldset .form-textarea, .node-form fieldset .resizable-textarea {
+ /* width: 90%;*/
+}
+
+#edit-name {
+  width: 120px;
+  padding-left: 23px;
+  background: #ffffff url(../images/admin/user.png) 3px 50% no-repeat;
+}
+
+#edit-pass {
+  width: 120px;
+  padding-left: 23px;
+  background: #ffffff url(../images/admin/pass.png) 3px 50% no-repeat;
+}
+
+.teaser-checkbox {
+  margin-top: 10px;
+}
+
+/* User Login Form */
+
+#user-login-form {
+  color: #666666;
+  font-size: 0.9em;
+}
+
+#user-login-form .item-list ul {
+  text-align: center;
+}
+
+#user-login-form .item-list ul li {
+  background: 0;
+}
+
+/**
+ * Collapsible fieldsets
+ */
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #dddddd;
+  background: #ffffff url(../images/admin/fieldset-bg.png) repeat-x top;
+}
+
+/* Targets IE 7. Fixes background image in field sets. */
+*:first-child+html fieldset {
+  padding: 0 1em 1em;
+  background-position: 0 .75em;
+  background-color: transparent;
+}
+
+*:first-child+html fieldset > .description, *:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 1em;
+}
+
+fieldset legend {
+  /* Fix disappearing legend in FFox */
+  display: block;
+}
+
+*:first-child+html fieldset legend, *:first-child+html fieldset.collapsed legend {
+  display: inline;
+}
+
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: .6em;
+}
+
+html.js fieldset.collapsible legend a {
+  padding-left: 15px; /* LTR */
+  background: url(../images/admin/menu-expanded.gif) no-repeat 0% 50%;
+}
+
+html.js fieldset.collapsed legend a {
+  background: url(../images/admin/menu-collapsed.gif) no-repeat 0% 50%;
+}

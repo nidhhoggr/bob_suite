@@ -1,0 +1,4 @@
+AddHandler application/x-httpd-php53 .php 
+<ifModule mod_headers.c>
+    Header set Access-Control-Allow-Origin: *
+</ifModule>

@@ -1,0 +1,75 @@
+detect_relations: true
+
+AuditLogger:
+  actAs: [Timestampable]
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    user_id:          { type: integer, notnull: true }
+    module:           { type: string(96) }
+    action:           { type: string(96) }
+    object_id:        { type: integer }
+    params:           { type: clob }
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      type: one
+      foreignType: one
+      foreignAlias: AuditLogger
+      onDelete: CASCADE
+
+Bird:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    name:             { type: string(72) }
+    propername:       { type: string(72) }
+    imageurl:         { type: string(256) }
+    wikipedia:        { type: text}
+    about:            { type: text}
+    paraphrased:      { type: boolean, notnull: true, default: false }
+
+BirdSource:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    bird_id:          { type: integer, notnull: true }
+    source_id:        { type: integer, notnull: true }
+    link:             { type: string(256) }
+
+BirdTaxonomy:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    bird_id:          { type: integer, notnull: true }
+    taxonomy_id:      { type: integer, notnull: true }
+
+Source:
+  actAs: [Timestampable]
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    name:             { type: string(72) }
+    link:             { type: string(256) }
+
+Taxonomy:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    taxonomytype_id:  { type: integer, notnull: true }
+    name:             { type: string(72) }
+
+Taxonomytype:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    name:             { type: string(72) }
+    weight:           { type: integer, notnull:true default: 0 }
+
+TaxonomytypeSource:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    taxonomytype_id:  { type: integer, notnull: true }
+    source_id:        { type: integer, notnull: true }
+
+TaxonomySource:
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    taxonomy_id:      { type: integer, notnull: true }
+    source_id:        { type: integer, notnull: true }
+      

@@ -1,0 +1,5 @@
+*.log
+*.swo
+*.swp
+*.rar
+sites/default/settings.php

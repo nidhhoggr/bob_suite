@@ -1,0 +1,8613 @@
+Bird:
+  Bird_1:
+    name: 'American Avocet'
+    propername: 'Recurvirostra americana'
+  Bird_2:
+    name: 'Northern Beardless-Tyrannulet'
+    propername: 'Camptostoma imberbe'
+  Bird_5:
+    name: 'Rose-throated Becard'
+    propername: 'Pachyramphus aglaiae'
+  Bird_6:
+    name: 'Least Bittern'
+    propername: 'Ixobrychus exilis'
+  Bird_7:
+    name: 'Brewer''s Blackbird'
+    propername: 'Euphagus cyanocephalus'
+  Bird_8:
+    name: 'Western Bluebird'
+    propername: 'Sialia mexicana'
+  Bird_9:
+    name: 'Indigo Bunting'
+    propername: 'Passerina cyanea'
+  Bird_11:
+    name: Bushtit
+    propername: 'Psaltriparus minimus'
+  Bird_12:
+    name: 'Northern Cardinal'
+    propername: 'Cardinalis cardinalis'
+  Bird_15:
+    name: 'Yellow-breasted Chat'
+    propername: 'Icteria virens'
+  Bird_18:
+    name: 'Barn Swallow'
+    propername: 'Hirundo rustica'
+  Bird_19:
+    name: 'White-throated Swift'
+    propername: 'Aeronautes saxatalis'
+  Bird_20:
+    name: 'Cliff Swallow'
+    propername: 'Petrochelidon pyrrhonota'
+  Bird_21:
+    name: 'Rock Wren'
+    propername: 'Salpinctes obsoletus'
+  Bird_22:
+    name: 'Marsh Wren'
+    propername: 'Cistothorus palustris'
+  Bird_23:
+    name: 'House Wren'
+    propername: 'Troglodytes aedon'
+  Bird_25:
+    name: 'Mexican Chickadee'
+    propername: 'Poecile sclateri'
+  Bird_26:
+    name: 'Mountain Chickadee'
+    propername: 'Poecile gambelii'
+  Bird_27:
+    name: 'Neotropic Cormorant'
+    propername: 'Phalacrocorax brasilianus'
+  Bird_28:
+    name: 'Canyon Wren'
+    propername: 'Catherpes mexicanus'
+  Bird_29:
+    name: 'Brown-headed Cowbird'
+    propername: 'Molothrus ater'
+  Bird_30:
+    name: 'Brown Creeper'
+    propername: 'Certhia americana'
+  Bird_31:
+    name: 'Red Crossbill'
+    propername: 'Loxia curvirostra'
+  Bird_32:
+    name: 'American Crow'
+    propername: 'Corvus brachyrhynchos'
+  Bird_33:
+    name: 'Yellow-billed Cuckoo'
+    propername: 'Coccyzus americanus'
+  Bird_34:
+    name: 'Eurasian Collared-Dove'
+    propername: 'Streptopelia decaocto'
+  Bird_35:
+    name: 'Inca Dove'
+    propername: 'Columbina inca'
+  Bird_36:
+    name: 'Mourning Dove'
+    propername: 'Zenaida macroura'
+  Bird_37:
+    name: 'White-winged Dove'
+    propername: 'Zenaida asiatica'
+  Bird_38:
+    name: 'Long-billed Dowitcher'
+    propername: 'Limnodromus scolopaceus'
+  Bird_39:
+    name: 'Ruddy Duck'
+    propername: 'Oxyura jamaicensis'
+  Bird_40:
+    name: 'Cattle Egret'
+    propername: 'Bubulcus ibis'
+  Bird_41:
+    name: 'Great Egret'
+    propername: 'Ardea alba'
+  Bird_42:
+    name: 'Snowy Egret'
+    propername: 'Egretta thula'
+  Bird_43:
+    name: 'House Finch'
+    propername: 'Carpodacus mexicanus'
+  Bird_44:
+    name: 'Gilded Flicker'
+    propername: 'Colaptes chrysoides'
+  Bird_46:
+    name: 'Northern Flicker'
+    propername: 'Colaptes auratus'
+  Bird_47:
+    name: 'Ash-throated Flycatcher'
+    propername: 'Myiarchus cinerascens'
+  Bird_48:
+    name: 'Brown-crested Flycatcher'
+    propername: 'Myiarchus tyrannulus'
+  Bird_49:
+    name: 'Buff-breasted Flycatcher'
+    propername: 'Empidonax fulvifrons'
+  Bird_50:
+    name: 'Gray Catbird'
+    propername: 'Dumetella carolinensis'
+  Bird_51:
+    name: 'Cordilleran Flycatcher'
+    propername: 'Empidonax occidentalis'
+  Bird_52:
+    name: 'Dusky Flycatcher'
+    propername: 'Empidonax oberholseri'
+  Bird_53:
+    name: 'Gray Flycatcher'
+    propername: 'Empidonax wrightii'
+  Bird_54:
+    name: 'Olive-sided Flycatcher'
+    propername: 'Contopus cooperi'
+  Bird_55:
+    name: 'Sulphur-bellied Flycatcher'
+    propername: 'Myiodynastes luteiventris'
+  Bird_56:
+    name: 'Vermilion Flycatcher'
+    propername: 'Pyrocephalus rubinus'
+  Bird_57:
+    name: 'Lawrence''s Goldfinch'
+    propername: 'Spinus lawrencei'
+  Bird_58:
+    name: 'Lesser Goldfinch'
+    propername: 'Spinus psaltria'
+  Bird_59:
+    name: 'Canada Goose'
+    propername: 'Branta canadensis'
+  Bird_60:
+    name: 'Black-capped Gnatcatcher'
+    propername: 'Polioptila nigriceps'
+  Bird_61:
+    name: 'Black-tailed Gnatcatcher'
+    propername: 'Polioptila melanura'
+  Bird_62:
+    name: 'Black-throated Gray Warbler'
+    propername: 'Dendroica nigrescens'
+  Bird_63:
+    name: 'Black-chinned Sparrow'
+    propername: 'Spizella atrogularis'
+  Bird_64:
+    name: 'Blue-gray Gnatcatcher'
+    propername: 'Polioptila caerulea'
+  Bird_65:
+    name: 'Grace''s Warbler'
+    propername: 'Dendroica graciae'
+  Bird_66:
+    name: 'Great-tailed Grackle'
+    propername: 'Quiscalus mexicanus'
+  Bird_67:
+    name: 'Pied-billed Grebe'
+    propername: 'Podilymbus podiceps'
+  Bird_68:
+    name: 'Black-throated Sparrow'
+    propername: 'Amphispiza bilineata'
+  Bird_69:
+    name: 'Western Grebe'
+    propername: 'Aechmophorus  occidentalis'
+  Bird_70:
+    name: 'Lucy''s Warbler'
+    propername: 'Vermivora luciae'
+  Bird_71:
+    name: 'Black-headed Grosbeak'
+    propername: 'Pheucticus melanocephalus'
+  Bird_72:
+    name: 'Botteri''s Sparrow'
+    propername: 'Aimophila botterii'
+  Bird_73:
+    name: 'MacGillivray''s Warbler'
+    propername: 'Oporornis tolmiei'
+  Bird_74:
+    name: 'Blue Grosbeak'
+    propername: 'Passerina caerulea'
+  Bird_75:
+    name: 'Cactus Wren'
+    propername: 'Campylorhynchus brunneicapillus'
+  Bird_76:
+    name: 'Brewer''s Sparrow'
+    propername: 'Spizella breweri'
+  Bird_77:
+    name: 'Olive Warbler'
+    propername: 'Peucedramus taeniatus'
+  Bird_79:
+    name: 'Cassinâ€™s Sparrow'
+    propername: 'Aimophila cassinii'
+  Bird_80:
+    name: 'Common Ground-Dove'
+    propername: 'Columbina passerina'
+  Bird_81:
+    name: 'Chipping Sparrow'
+    propername: 'Spizella passerina'
+  Bird_82:
+    name: 'Bewick''s Wren'
+    propername: 'Thryomanes bewickii'
+  Bird_83:
+    name: 'Ruddy Ground-Dove'
+    propername: 'Columbina talpacoti'
+  Bird_84:
+    name: 'Five-striped Sparrow'
+    propername: 'Aimophila quinquestriata'
+  Bird_85:
+    name: 'Orange-crowned Warbler'
+    propername: 'Vermivora celata'
+  Bird_86:
+    name: 'Grasshopper Sparrow'
+    propername: 'Ammodramus savannarum'
+  Bird_87:
+    name: 'Red-faced Warbler'
+    propername: 'Cardellina rubrifrons'
+  Bird_88:
+    name: 'Cooper''s Hawk'
+    propername: 'Accipiter cooperi'
+  Bird_89:
+    name: 'Gray Hawk'
+    propername: 'Asturina nitida'
+  Bird_90:
+    name: 'Ring-billed Gull'
+    propername: 'Larus delawarensis'
+  Bird_91:
+    name: 'Harris''s Hawk'
+    propername: 'Parabuteo unicinctus'
+  Bird_92:
+    name: 'Virginia''s Warbler'
+    propername: 'Vermivora virginiae'
+  Bird_93:
+    name: 'Black-crowned Night-Heron'
+    propername: 'Nycticorax nycticorax'
+  Bird_94:
+    name: 'Great Blue Heron'
+    propername: 'Ardea herodias'
+  Bird_95:
+    name: 'Anna''s Hummingbird'
+    propername: 'Calypte anna'
+  Bird_96:
+    name: 'Broad-tailed Hummingbird'
+    propername: 'Selasphorus platycercus'
+  Bird_97:
+    name: 'Gray Jay'
+    propername: 'Perisoreus canadensis'
+  Bird_98:
+    name: 'Mexican Jay'
+    propername: 'Aphelocoma ultramarina'
+  Bird_99:
+    name: 'Pinyon Jay'
+    propername: 'Gymnorhinus cyanocephalus'
+  Bird_100:
+    name: 'Steller''s Jay'
+    propername: 'Cyanocitta stelleri'
+  Bird_101:
+    name: 'Western Scrub-Jay'
+    propername: 'Aphelocoma californica'
+  Bird_102:
+    name: 'Red-shouldered Hawk'
+    propername: 'Buteo lineatus'
+  Bird_103:
+    name: 'Red-tailed Hawk'
+    propername: 'Buteo jamaicensis'
+  Bird_104:
+    name: 'Yellow Warbler'
+    propername: 'Dendroica petechia'
+  Bird_105:
+    name: 'Swainsonâ€™s Hawk'
+    propername: 'Buteo swainsoni'
+  Bird_106:
+    name: 'Burrowing Owl'
+    propername: 'Athene cunicularia'
+  Bird_107:
+    name: 'Elf Owl'
+    propername: 'Micrathene whitneyi'
+  Bird_108:
+    name: 'Ferruginous Pygmy-Owl'
+    propername: 'Glaucidium brasilianus'
+  Bird_109:
+    name: 'Great Horned Owl'
+    propername: 'Bubo virginianus'
+  Bird_110:
+    name: 'Yellow-rumped Warbler'
+    propername: 'Dendroica coronata'
+  Bird_111:
+    name: 'Northern Pygmy-Owl'
+    propername: 'Glaucidium gnoma'
+  Bird_112:
+    name: 'Cedar Waxwing'
+    propername: 'Bombycilla cedrorum'
+  Bird_113:
+    name: 'Spotted Owl'
+    propername: 'Strix occidentalis'
+  Bird_114:
+    name: Whip-poor-will
+    propername: 'Caprimulgus vociferus'
+  Bird_115:
+    name: 'Western Screech-Owl'
+    propername: 'Megascops kennicottii'
+  Bird_116:
+    name: 'Whiskered Screech-Owl'
+    propername: 'Megascops trichopsis'
+  Bird_117:
+    name: 'Acorn Woodpecker'
+    propername: 'Melanerpes formicivorus'
+  Bird_118:
+    name: 'Arizona Woodpecker'
+    propername: 'Picoides arizonae'
+  Bird_119:
+    name: 'Abert''s Towhee'
+    propername: 'Pipilo aberti'
+  Bird_120:
+    name: 'Canyon Towhee'
+    propername: 'Pipilo fuscus'
+  Bird_121:
+    name: 'Gila Woodpecker'
+    propername: 'Melanerpes uropygialis'
+  Bird_122:
+    name: 'Hairy Woodpecker'
+    propername: 'Picoides villosus'
+  Bird_123:
+    name: 'Green-tailed Towhee'
+    propername: 'Pipilo chlorurus'
+  Bird_124:
+    name: 'Ladder-backed Woodpecker'
+    propername: 'Picoides scalaris'
+  Bird_125:
+    name: 'Spotted Towhee'
+    propername: 'Pipilo maculatus'
+  Bird_126:
+    name: 'Flame-colored Tanager'
+    propername: 'Piranga bidentata'
+  Bird_127:
+    name: 'Hepatic Tanager'
+    propername: 'Piranga flava'
+  Bird_128:
+    name: 'Summer Tanager'
+    propername: 'Piranga rubra'
+  Bird_129:
+    name: 'Western Tanager'
+    propername: 'Piranga ludoviciana'
+  Bird_130:
+    name: 'Flammulated Owl'
+    propername: 'Otus flammeolus'
+  Bird_131:
+    name: 'Western Wood-Pewee'
+    propername: 'Contopus sordidulus'
+  Bird_133:
+    name: 'Greater Yellowlegs'
+    propername: 'Tringa melanoleuca'
+  Bird_134:
+    name: 'Common Yellowthroat'
+    propername: 'Geothlypis trichas'
+  Bird_135:
+    name: 'House Sparrow'
+    propername: 'Passer domesticus'
+  Bird_136:
+    name: 'Bell''s Vireo'
+    propername: 'Vireo bellii'
+  Bird_137:
+    name: 'Cassin''s Vireo'
+    propername: 'Vireo cassinii'
+  Bird_138:
+    name: 'Lark Sparrow'
+    propername: 'Chondestes grammacus'
+  Bird_139:
+    name: 'Gray Vireo'
+    propername: 'Vireo vicinior'
+  Bird_140:
+    name: 'Hutton''s Vireo'
+    propername: 'Vireo huttoni'
+  Bird_141:
+    name: 'Plumbeous Vireo'
+    propername: 'Vireo plumbeus'
+  Bird_142:
+    name: 'Red-eyed Vireo'
+    propername: 'Vireo olivaceus'
+  Bird_143:
+    name: 'Warbling Vireo'
+    propername: 'Vireo gilvus'
+  Bird_144:
+    name: Verdin
+    propername: 'Auriparus flaviceps'
+  Bird_147:
+    name: 'Red-winged Blackbird'
+    propername: 'Agelaius phoeniceus'
+  Bird_148:
+    name: 'Yellow-headed Blackbird'
+    propername: 'Xanthocephalus xanthocephalus'
+  Bird_149:
+    name: 'Lark Bunting'
+    propername: 'Calamospiza melanocorys'
+  Bird_150:
+    name: 'Lazuli Bunting'
+    propername: 'Passerina amoena'
+  Bird_151:
+    name: 'Varied Bunting'
+    propername: 'Passerina versicolor'
+  Bird_152:
+    name: 'Elegant Trogon'
+    propername: 'Trogon elegans'
+  Bird_154:
+    name: 'Cinnamon Teal'
+    propername: 'Anas cryptoleucus'
+  Bird_155:
+    name: 'Bridled Titmouse'
+    propername: 'Baeolophus wollweberi'
+  Bird_156:
+    name: 'Juniper Titmouse'
+    propername: 'Baeolophus ridgwayi'
+  Bird_157:
+    name: 'Hermit Thrush'
+    propername: 'Catharus guttatus'
+  Bird_158:
+    name: 'Caspian Tern'
+    propername: 'Sterna caspia'
+  Bird_159:
+    name: 'Sage Thrasher'
+    propername: 'Oreoscoptes montanus'
+  Bird_160:
+    name: 'Northern Rough-winged Swallow'
+    propername: 'Stelgidopteryx serripennis'
+  Bird_161:
+    name: ' Le Conte''s Thrasher'
+    propername: 'Toxostoma lecontei'
+  Bird_162:
+    name: 'Violet-green Swallow'
+    propername: 'Tachycineta thalassina'
+  Bird_163:
+    name: ' Curve-billed Thrasher'
+    propername: 'Toxostoma curvirostre'
+  Bird_164:
+    name: ' Crissal Thrasher'
+    propername: 'Toxostoma crissale'
+  Bird_165:
+    name: 'Black-necked Stilt'
+    propername: 'Himantopus mexicanus'
+  Bird_166:
+    name: Sora
+    propername: 'Porzana carolina'
+  Bird_167:
+    name: 'Brown Thrasher'
+    propername: 'Toxostoma rufum'
+  Bird_168:
+    name: 'Bendire''s Thrasher'
+    propername: 'Toxostoma bendirei'
+  Bird_169:
+    name: 'Loggerhead Shrike'
+    propername: 'Lanius ludovicianus'
+  Bird_170:
+    name: 'Williamson''s Sapsucker'
+    propername: 'Sphyrapicus thyroideus'
+  Bird_171:
+    name: 'Red-naped Sapsucker'
+    propername: 'Sphyrapicus nuchalis'
+  Bird_172:
+    name: 'Western Sandpiper'
+    propername: 'Calidris mauri'
+  Bird_173:
+    name: 'American Robin'
+    propername: 'Turdus migratorius'
+  Bird_174:
+    name: 'Greater Roadrunner'
+    propername: 'Geococcyx californianus'
+  Bird_175:
+    name: ' Painted Redstart'
+    propername: 'Myioborus pictus'
+  Bird_176:
+    name: 'Common Raven'
+    propername: 'Corvus corax'
+  Bird_177:
+    name: 'Chihuahuan Raven'
+    propername: 'Corvus cryptoleucus'
+  Bird_178:
+    name: 'Virginia Rail'
+    propername: 'Rallus limicola'
+  Bird_179:
+    name: 'Dark-eyed Junco'
+    propername: 'Junco hyemalis'
+  Bird_180:
+    name: 'Yellow-eyed Junco'
+    propername: 'Junco phaeonotus'
+  Bird_181:
+    name: Killdeer
+    propername: 'Charadrius vociferus'
+  Bird_182:
+    name: 'Cassin''s Kingbird'
+    propername: 'Tyrannus vociferans'
+  Bird_183:
+    name: 'Thick-billed Kingbird'
+    propername: 'Tyrannus crassirostris'
+  Bird_184:
+    name: 'Clapper Rail'
+    propername: 'Rallus longirostris'
+  Bird_185:
+    name: 'Tropical Kingbird'
+    propername: 'Tyrannus melancholicus'
+  Bird_186:
+    name: 'Black Rail'
+    propername: 'Laterallus jamaicensis'
+  Bird_187:
+    name: 'Scaled Quail'
+    propername: 'Callipepla squamata'
+  Bird_188:
+    name: 'Western Kingbird'
+    propername: 'Tyrannus verticalis'
+  Bird_189:
+    name: 'Montezuma Quail'
+    propername: 'Cyrtonyx montezumae'
+  Bird_190:
+    name: 'Gambel''s Quail'
+    propername: 'Callipepla gambelii'
+  Bird_191:
+    name: 'Green Kingfisher'
+    propername: 'Chloroceryle americana'
+  Bird_192:
+    name: Pyrrhuloxia
+    propername: 'Cardinalis sinuatus'
+  Bird_193:
+    name: 'Golden-crowned Kinglet'
+    propername: 'Regulus satrapa'
+  Bird_194:
+    name: 'Common Poorwill'
+    propername: 'Phalaenoptilus nuttallii'
+  Bird_195:
+    name: 'Rock (Feral) Pigeon'
+    propername: 'Columba livia'
+  Bird_196:
+    name: 'Ruby-crowned Kinglet'
+    propername: 'Regulus calendula'
+  Bird_197:
+    name: 'Band-tailed Pigeon'
+    propername: 'Patagioenas fasciata'
+  Bird_198:
+    name: 'Say''s Phoebe'
+    propername: 'Sayornis saya'
+  Bird_199:
+    name: 'White-tailed Kite'
+    propername: 'Elanus leucurus'
+  Bird_200:
+    name: 'Black Phoebe'
+    propername: 'Sayornis nigricans'
+  Bird_201:
+    name: 'Horned Lark'
+    propername: 'Eremophila alpestris'
+  Bird_202:
+    name: Phainopepla
+    propername: 'Phainopepla nitens'
+  Bird_203:
+    name: 'Chestnut-collared Longspur'
+    propername: 'Calcarius ornatus'
+  Bird_204:
+    name: 'Eastern Meadowlark'
+    propername: 'Sturnella magna'
+  Bird_205:
+    name: 'Western Meadowlark'
+    propername: 'Sturnella neglecta'
+  Bird_206:
+    name: 'Lincoln''s Sparrow'
+    propername: 'Melospiza lincolnii'
+  Bird_207:
+    name: Mallard
+    propername: 'Anas platyrhynchos'
+  Bird_208:
+    name: 'Rufous-crowned Sparrow'
+    propername: 'Aimophila ruficeps'
+  Bird_209:
+    name: 'Rufous-winged Sparrow'
+    propername: 'Aimophila carpalis'
+  Bird_210:
+    name: 'Song Sparrow'
+    propername: 'Melospiza melodia'
+  Bird_211:
+    name: 'Vesper Sparrow'
+    propername: 'Pooecetes gramineus'
+  Bird_212:
+    name: 'Greater Pewee'
+    propername: 'Contopus pertinax'
+  Bird_213:
+    name: 'Scott''s Oriole'
+    propername: 'Icterus parisorum'
+  Bird_214:
+    name: 'Hooded Oriole'
+    propername: 'Icterus cucullatus'
+  Bird_215:
+    name: 'Bullock''s Oriole'
+    propername: 'Icterus bullockii'
+  Bird_216:
+    name: 'White-breasted Nuthatch'
+    propername: 'Sitta carolinensis'
+  Bird_217:
+    name: 'Red-breasted Nuthatch'
+    propername: 'Sitta canadensis'
+  Bird_218:
+    name: 'Pygmy Nuthatch'
+    propername: 'Sitta pygmaea'
+  Bird_219:
+    name: 'White-throated Sparrow'
+    propername: 'Zonotrichia albicollis'
+  Bird_220:
+    name: 'White-crowned Sparrow'
+    propername: 'Zonotrichia leucophrys'
+  Bird_221:
+    name: ' Clark''s Nutcracker'
+    propername: 'Nucifraga columbiana'
+  Bird_222:
+    name: 'Buff-collared Nightjar'
+    propername: 'Caprimulgus ridgwayi'
+  Bird_223:
+    name: 'Lesser Nighthawk'
+    propername: 'Chordeiles acutipennis'
+  Bird_224:
+    name: 'Common Nighthawk'
+    propername: 'Chordeiles minor'
+  Bird_225:
+    name: ' Common Moorhen'
+    propername: 'Gallinula chloropus'
+  Bird_226:
+    name: 'Northern Mockingbird'
+    propername: 'Mimus polyglottos'
+  Bird_227:
+    name: 'Dusky-capped Flycatcher'
+    propername: 'Myiarchus tuberculifer'
+  Bird_228:
+    name: 'Black-capped Vireo'
+    propername: 'Vireo atricapillus'
+  Bird_229:
+    name: 'Black-throated Blue Warbler'
+    propername: 'Dendroica caerulescens'
+  Bird_230:
+    name: 'Northern Saw-whet Owl'
+    propername: 'Aegolius acadicus'
+  Bird_231:
+    name: 'Painted Bunting'
+    propername: 'Passerina ciris'
+  Bird_232:
+    name: 'Rosy-faced Lovebird'
+    propername: 'Agapornis roseicollis'
+  Bird_233:
+    name: 'Rose-breasted Grosbeak'
+    propername: 'Pheucticus ludovicianus'
+  Bird_234:
+    name: 'Savannah Sparrow'
+    propername: 'Passerculus  sandwichensis'
+  Bird_235:
+    name: 'Scissor-tailed Flycatcher'
+    propername: 'Tyrannus forficatus'
+  Bird_236:
+    name: 'White-eyed Vireo'
+    propername: 'Vireo griseus'
+  Bird_237:
+    name: 'Willow Flycatcher'
+    propername: 'Empidonax traillii'
+  Bird_238:
+    name: 'Yellow-green Vireo'
+    propername: 'Vireo flavoviridis'
+  Bird_239:
+    name: 'Yellow-throated Vireo'
+    propername: 'Vireo flavifrons'
+  Bird_240:
+    name: 'American Dipper'
+    propername: 'Cinclus mexicanus'
+  Bird_241:
+    name: 'American Goldfinch'
+    propername: 'Spinus tristis'
+  Bird_242:
+    name: 'American Kestrel'
+    propername: 'Falco sparverius'
+  Bird_243:
+    name: 'American Pipit'
+    propername: 'Anthus rubescens'
+  Bird_244:
+    name: 'American Wigeon'
+    propername: 'Anas americana'
+  Bird_245:
+    name: 'Bald Eagle'
+    propername: 'Haliaeetus leucocoephalus'
+  Bird_246:
+    name: 'Barn Owl'
+    propername: 'Tyto alba'
+  Bird_247:
+    name: 'Belted Kingfisher'
+    propername: 'Ceryle alcyon'
+  Bird_248:
+    name: 'Black Vulture'
+    propername: 'Coragyps atratus'
+  Bird_249:
+    name: 'Black-bellied Whistling-Duck'
+    propername: 'Dendrocygna autumnalis'
+  Bird_250:
+    name: 'Black-chinned Hummingbird'
+    propername: 'Archilochus alexandri'
+  Bird_251:
+    name: 'Dusky Grouse'
+    propername: 'Dendragapus obscurus'
+  Bird_252:
+    name: 'Blue-throated Hummingbird'
+    propername: 'Lampornis clemenciae'
+  Bird_253:
+    name: 'Broad-billed Hummingbird'
+    propername: 'Cynanthus latirostris'
+  Bird_254:
+    name: 'Bronzed Cowbird'
+    propername: 'Molothrus aeneus'
+  Bird_255:
+    name: 'California Condor'
+    propername: 'Gymnogyps californianus'
+  Bird_256:
+    name: 'Cassin''s Finch'
+    propername: 'Carpodacus cassinii'
+  Bird_257:
+    name: 'Common Black Hawk'
+    propername: 'Buteogallus anthracinus'
+  Bird_258:
+    name: 'Common Goldeneye'
+    propername: 'Bucephala clangula'
+  Bird_259:
+    name: 'Common Merganser'
+    propername: 'Mergus merganser'
+  Bird_260:
+    name: 'Costa''s Hummingbird'
+    propername: 'Calypte costae'
+  Bird_261:
+    name: 'Crested Caracara'
+    propername: 'Caracara cheriway'
+  Bird_262:
+    name: 'Double-crested Cormorant'
+    propername: 'Phalacrocorax auritus'
+  Bird_263:
+    name: 'Eared Grebe'
+    propername: 'Podiceps nigricollis'
+  Bird_264:
+    name: 'Eastern Bluebird'
+    propername: 'Sialia sialis'
+  Bird_265:
+    name: 'European Starling'
+    propername: 'Sturnus vulgaris'
+  Bird_266:
+    name: 'Evening Grosbeak'
+    propername: 'Coccothraustes vespertinus'
+  Bird_267:
+    name: 'Ferruginous Hawk'
+    propername: 'Buteo regalis'
+  Bird_268:
+    name: Gadwall
+    propername: 'Anas strepera'
+  Bird_270:
+    name: 'Green Heron'
+    propername: 'Butorides virescens'
+  Bird_271:
+    name: 'Green-winged Teal'
+    propername: 'Anas crecca carolinensis'
+  Bird_272:
+    name: 'Long-billed Curlew'
+    propername: 'Numenius americanus'
+  Bird_273:
+    name: 'Magnificent Hummingbird'
+    propername: 'Eugenes fulgens'
+  Bird_274:
+    name: 'Mississippi Kite'
+    propername: 'Ictinia mississippiensis'
+  Bird_275:
+    name: 'Mountain Bluebird'
+    propername: 'Sialia currucoides'
+  Bird_276:
+    name: 'Northern Shoveler'
+    propername: 'Anas clypeata'
+  Bird_277:
+    name: 'Northern Pintail'
+    propername: 'Anas acuta'
+  Bird_278:
+    name: 'Northern Harrier'
+    propername: 'Circus cyaneus'
+  Bird_279:
+    name: Osprey
+    propername: 'Pandion haliaetus'
+  Bird_280:
+    name: 'Peregrine Falcon'
+    propername: 'Falco peregrinus'
+  Bird_281:
+    name: 'Pine Siskin'
+    propername: 'Spinus pinus'
+  Bird_282:
+    name: Redhead
+    propername: 'Aythya americana'
+  Bird_283:
+    name: 'Prairie Falcon'
+    propername: 'Falco mexicanus'
+  Bird_284:
+    name: 'Ring-necked Duck'
+    propername: 'Aythya collaris'
+  Bird_285:
+    name: 'Rufous Hummingbird'
+    propername: 'Selasphorus rufus'
+  Bird_286:
+    name: 'Sandhill Crane'
+    propername: 'Grus canadensis'
+  Bird_287:
+    name: 'Townsend''s Solitaire'
+    propername: 'Myadestes townsendi'
+  Bird_288:
+    name: 'Turkey Vulture'
+    propername: 'Cathartes aura'
+  Bird_289:
+    name: 'White-faced Ibis'
+    propername: 'Plegadis chihi'
+  Bird_290:
+    name: 'Wild Turkey'
+    propername: 'Meleagris gallopavo'
+  Bird_291:
+    name: 'Wilson''s Warbler'
+    propername: 'Wilsonia pusilla'
+  Bird_292:
+    name: 'Wilson''s Phalarope'
+    propername: 'Phalaropus tricolor'
+  Bird_293:
+    name: 'Zone-tailed Hawk'
+    propername: 'Buteo albonotatus'
+  Bird_294:
+    name: 'Golden Eagle'
+    propername: 'Aquila chrysaetos'
+  Bird_295:
+    name: 'Spotted Sandpiper'
+    propername: 'Actitis macularia'
+  Bird_296:
+    name: 'Least Sandpiper'
+    propername: 'Calidris minutilla'
+  Bird_297:
+    name: 'American Coot'
+    propername: 'Fulica americana'
+  Bird_298:
+    name: 'Wilson''s Snipe'
+    propername: 'Gallinago delicata'
+Taxonomytype:
+  Taxonomytype_1:
+    name: colors
+  Taxonomytype_2:
+    name: habitat
+  Taxonomytype_3:
+    name: shape
+  Taxonomytype_4:
+    name: sizes
+  Taxonomytype_5:
+    name: sound
+Source:
+  Source_1:
+    name: asu.edu
+    link: null
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+BirdSource:
+  BirdSource_1:
+    Bird: Bird_297
+    Source: Source_1
+    link: '/bird?id=297'
+  BirdSource_2:
+    Bird: Bird_32
+    Source: Source_1
+    link: '/bird?id=32'
+  BirdSource_3:
+    Bird: Bird_18
+    Source: Source_1
+    link: '/bird?id=18'
+  BirdSource_4:
+    Bird: Bird_248
+    Source: Source_1
+    link: '/bird?id=248'
+  BirdSource_5:
+    Bird: Bird_7
+    Source: Source_1
+    link: '/bird?id=7'
+  BirdSource_6:
+    Bird: Bird_254
+    Source: Source_1
+    link: '/bird?id=254'
+  BirdSource_7:
+    Bird: Bird_29
+    Source: Source_1
+    link: '/bird?id=29'
+  BirdSource_8:
+    Bird: Bird_177
+    Source: Source_1
+    link: '/bird?id=177'
+  BirdSource_9:
+    Bird: Bird_257
+    Source: Source_1
+    link: '/bird?id=257'
+  BirdSource_10:
+    Bird: Bird_176
+    Source: Source_1
+    link: '/bird?id=176'
+  BirdSource_11:
+    Bird: Bird_262
+    Source: Source_1
+    link: '/bird?id=262'
+  BirdSource_12:
+    Bird: Bird_265
+    Source: Source_1
+    link: '/bird?id=265'
+  BirdSource_13:
+    Bird: Bird_139
+    Source: Source_1
+    link: '/bird?id=139'
+  BirdSource_14:
+    Bird: Bird_66
+    Source: Source_1
+    link: '/bird?id=66'
+  BirdSource_15:
+    Bird: Bird_27
+    Source: Source_1
+    link: '/bird?id=27'
+  BirdSource_16:
+    Bird: Bird_202
+    Source: Source_1
+    link: '/bird?id=202'
+  BirdSource_17:
+    Bird: Bird_147
+    Source: Source_1
+    link: '/bird?id=147'
+  BirdSource_18:
+    Bird: Bird_288
+    Source: Source_1
+    link: '/bird?id=288'
+  BirdSource_19:
+    Bird: Bird_148
+    Source: Source_1
+    link: '/bird?id=148'
+  BirdSource_20:
+    Bird: Bird_293
+    Source: Source_1
+    link: '/bird?id=293'
+  BirdSource_21:
+    Bird: Bird_221
+    Source: Source_1
+    link: '/bird?id=221'
+  BirdSource_22:
+    Bird: Bird_117
+    Source: Source_1
+    link: '/bird?id=117'
+  BirdSource_23:
+    Bird: Bird_1
+    Source: Source_1
+    link: '/bird?id=1'
+  BirdSource_24:
+    Bird: Bird_200
+    Source: Source_1
+    link: '/bird?id=200'
+  BirdSource_25:
+    Bird: Bird_249
+    Source: Source_1
+    link: '/bird?id=249'
+  BirdSource_26:
+    Bird: Bird_93
+    Source: Source_1
+    link: '/bird?id=93'
+  BirdSource_27:
+    Bird: Bird_71
+    Source: Source_1
+    link: '/bird?id=71'
+  BirdSource_28:
+    Bird: Bird_165
+    Source: Source_1
+    link: '/bird?id=165'
+  BirdSource_29:
+    Bird: Bird_229
+    Source: Source_1
+    link: '/bird?id=229'
+  BirdSource_30:
+    Bird: Bird_62
+    Source: Source_1
+    link: '/bird?id=62'
+  BirdSource_31:
+    Bird: Bird_68
+    Source: Source_1
+    link: '/bird?id=68'
+  BirdSource_32:
+    Bird: Bird_255
+    Source: Source_1
+    link: '/bird?id=255'
+  BirdSource_33:
+    Bird: Bird_59
+    Source: Source_1
+    link: '/bird?id=59'
+  BirdSource_34:
+    Bird: Bird_258
+    Source: Source_1
+    link: '/bird?id=258'
+  BirdSource_35:
+    Bird: Bird_259
+    Source: Source_1
+    link: '/bird?id=259'
+  BirdSource_36:
+    Bird: Bird_261
+    Source: Source_1
+    link: '/bird?id=261'
+  BirdSource_37:
+    Bird: Bird_263
+    Source: Source_1
+    link: '/bird?id=263'
+  BirdSource_38:
+    Bird: Bird_84
+    Source: Source_1
+    link: '/bird?id=84'
+  BirdSource_39:
+    Bird: Bird_121
+    Source: Source_1
+    link: '/bird?id=121'
+  BirdSource_40:
+    Bird: Bird_122
+    Source: Source_1
+    link: '/bird?id=122'
+  BirdSource_41:
+    Bird: Bird_91
+    Source: Source_1
+    link: '/bird?id=91'
+  BirdSource_42:
+    Bird: Bird_124
+    Source: Source_1
+    link: '/bird?id=124'
+  BirdSource_43:
+    Bird: Bird_149
+    Source: Source_1
+    link: '/bird?id=149'
+  BirdSource_44:
+    Bird: Bird_169
+    Source: Source_1
+    link: '/bird?id=169'
+  BirdSource_45:
+    Bird: Bird_25
+    Source: Source_1
+    link: '/bird?id=25'
+  BirdSource_46:
+    Bird: Bird_189
+    Source: Source_1
+    link: '/bird?id=189'
+  BirdSource_47:
+    Bird: Bird_26
+    Source: Source_1
+    link: '/bird?id=26'
+  BirdSource_48:
+    Bird: Bird_276
+    Source: Source_1
+    link: '/bird?id=276'
+  BirdSource_49:
+    Bird: Bird_171
+    Source: Source_1
+    link: '/bird?id=171'
+  BirdSource_50:
+    Bird: Bird_284
+    Source: Source_1
+    link: '/bird?id=284'
+  BirdSource_51:
+    Bird: Bird_233
+    Source: Source_1
+    link: '/bird?id=233'
+  BirdSource_52:
+    Bird: Bird_125
+    Source: Source_1
+    link: '/bird?id=125'
+  BirdSource_53:
+    Bird: Bird_69
+    Source: Source_1
+    link: '/bird?id=69'
+  BirdSource_54:
+    Bird: Bird_199
+    Source: Source_1
+    link: '/bird?id=199'
+  BirdSource_55:
+    Bird: Bird_19
+    Source: Source_1
+    link: '/bird?id=19'
+  BirdSource_56:
+    Bird: Bird_170
+    Source: Source_1
+    link: '/bird?id=170'
+  BirdSource_57:
+    Bird: Bird_110
+    Source: Source_1
+    link: '/bird?id=110'
+  BirdSource_58:
+    Bird: Bird_247
+    Source: Source_1
+    link: '/bird?id=247'
+  BirdSource_59:
+    Bird: Bird_74
+    Source: Source_1
+    link: '/bird?id=74'
+  BirdSource_60:
+    Bird: Bird_253
+    Source: Source_1
+    link: '/bird?id=253'
+  BirdSource_61:
+    Bird: Bird_264
+    Source: Source_1
+    link: '/bird?id=264'
+  BirdSource_62:
+    Bird: Bird_9
+    Source: Source_1
+    link: '/bird?id=9'
+  BirdSource_63:
+    Bird: Bird_150
+    Source: Source_1
+    link: '/bird?id=150'
+  BirdSource_64:
+    Bird: Bird_98
+    Source: Source_1
+    link: '/bird?id=98'
+  BirdSource_65:
+    Bird: Bird_275
+    Source: Source_1
+    link: '/bird?id=275'
+  BirdSource_66:
+    Bird: Bird_99
+    Source: Source_1
+    link: '/bird?id=99'
+  BirdSource_67:
+    Bird: Bird_100
+    Source: Source_1
+    link: '/bird?id=100'
+  BirdSource_68:
+    Bird: Bird_151
+    Source: Source_1
+    link: '/bird?id=151'
+  BirdSource_69:
+    Bird: Bird_8
+    Source: Source_1
+    link: '/bird?id=8'
+  BirdSource_70:
+    Bird: Bird_101
+    Source: Source_1
+    link: '/bird?id=101'
+  BirdSource_71:
+    Bird: Bird_164
+    Source: Source_1
+    link: '/bird?id=164'
+  BirdSource_72:
+    Bird: Bird_163
+    Source: Source_1
+    link: '/bird?id=163'
+  BirdSource_73:
+    Bird: Bird_119
+    Source: Source_1
+    link: '/bird?id=119'
+  BirdSource_74:
+    Bird: Bird_242
+    Source: Source_1
+    link: '/bird?id=242'
+  BirdSource_75:
+    Bird: Bird_243
+    Source: Source_1
+    link: '/bird?id=243'
+  BirdSource_76:
+    Bird: Bird_244
+    Source: Source_1
+    link: '/bird?id=244'
+  BirdSource_77:
+    Bird: Bird_118
+    Source: Source_1
+    link: '/bird?id=118'
+  BirdSource_78:
+    Bird: Bird_47
+    Source: Source_1
+    link: '/bird?id=47'
+  BirdSource_79:
+    Bird: Bird_245
+    Source: Source_1
+    link: '/bird?id=245'
+  BirdSource_80:
+    Bird: Bird_168
+    Source: Source_1
+    link: '/bird?id=168'
+  BirdSource_81:
+    Bird: Bird_82
+    Source: Source_1
+    link: '/bird?id=82'
+  BirdSource_82:
+    Bird: Bird_72
+    Source: Source_1
+    link: '/bird?id=72'
+  BirdSource_83:
+    Bird: Bird_76
+    Source: Source_1
+    link: '/bird?id=76'
+  BirdSource_84:
+    Bird: Bird_30
+    Source: Source_1
+    link: '/bird?id=30'
+  BirdSource_85:
+    Bird: Bird_167
+    Source: Source_1
+    link: '/bird?id=167'
+  BirdSource_86:
+    Bird: Bird_48
+    Source: Source_1
+    link: '/bird?id=48'
+  BirdSource_87:
+    Bird: Bird_49
+    Source: Source_1
+    link: '/bird?id=49'
+  BirdSource_88:
+    Bird: Bird_222
+    Source: Source_1
+    link: '/bird?id=222'
+  BirdSource_89:
+    Bird: Bird_75
+    Source: Source_1
+    link: '/bird?id=75'
+  BirdSource_90:
+    Bird: Bird_120
+    Source: Source_1
+    link: '/bird?id=120'
+  BirdSource_91:
+    Bird: Bird_28
+    Source: Source_1
+    link: '/bird?id=28'
+  BirdSource_92:
+    Bird: Bird_256
+    Source: Source_1
+    link: '/bird?id=256'
+  BirdSource_93:
+    Bird: Bird_79
+    Source: Source_1
+    link: '/bird?id=79'
+  BirdSource_94:
+    Bird: Bird_112
+    Source: Source_1
+    link: '/bird?id=112'
+  BirdSource_95:
+    Bird: Bird_203
+    Source: Source_1
+    link: '/bird?id=203'
+  BirdSource_96:
+    Bird: Bird_81
+    Source: Source_1
+    link: '/bird?id=81'
+  BirdSource_97:
+    Bird: Bird_154
+    Source: Source_1
+    link: '/bird?id=154'
+  BirdSource_98:
+    Bird: Bird_184
+    Source: Source_1
+    link: '/bird?id=184'
+  BirdSource_99:
+    Bird: Bird_20
+    Source: Source_1
+    link: '/bird?id=20'
+  BirdSource_100:
+    Bird: Bird_80
+    Source: Source_1
+    link: '/bird?id=80'
+  BirdSource_101:
+    Bird: Bird_224
+    Source: Source_1
+    link: '/bird?id=224'
+  BirdSource_102:
+    Bird: Bird_194
+    Source: Source_1
+    link: '/bird?id=194'
+  BirdSource_103:
+    Bird: Bird_88
+    Source: Source_1
+    link: '/bird?id=88'
+  BirdSource_104:
+    Bird: Bird_227
+    Source: Source_1
+    link: '/bird?id=227'
+  BirdSource_105:
+    Bird: Bird_204
+    Source: Source_1
+    link: '/bird?id=204'
+  BirdSource_106:
+    Bird: Bird_152
+    Source: Source_1
+    link: '/bird?id=152'
+  BirdSource_107:
+    Bird: Bird_266
+    Source: Source_1
+    link: '/bird?id=266'
+  BirdSource_108:
+    Bird: Bird_267
+    Source: Source_1
+    link: '/bird?id=267'
+  BirdSource_109:
+    Bird: Bird_108
+    Source: Source_1
+    link: '/bird?id=108'
+  BirdSource_110:
+    Bird: Bird_268
+    Source: Source_1
+    link: '/bird?id=268'
+  BirdSource_111:
+    Bird: Bird_294
+    Source: Source_1
+    link: '/bird?id=294'
+  BirdSource_112:
+    Bird: Bird_86
+    Source: Source_1
+    link: '/bird?id=86'
+  BirdSource_113:
+    Bird: Bird_109
+    Source: Source_1
+    link: '/bird?id=109'
+  BirdSource_114:
+    Bird: Bird_174
+    Source: Source_1
+    link: '/bird?id=174'
+  BirdSource_115:
+    Bird: Bird_271
+    Source: Source_1
+    link: '/bird?id=271'
+  BirdSource_116:
+    Bird: Bird_157
+    Source: Source_1
+    link: '/bird?id=157'
+  BirdSource_117:
+    Bird: Bird_201
+    Source: Source_1
+    link: '/bird?id=201'
+  BirdSource_118:
+    Bird: Bird_43
+    Source: Source_1
+    link: '/bird?id=43'
+  BirdSource_119:
+    Bird: Bird_135
+    Source: Source_1
+    link: '/bird?id=135'
+  BirdSource_120:
+    Bird: Bird_23
+    Source: Source_1
+    link: '/bird?id=23'
+  BirdSource_121:
+    Bird: Bird_181
+    Source: Source_1
+    link: '/bird?id=181'
+  BirdSource_122:
+    Bird: Bird_138
+    Source: Source_1
+    link: '/bird?id=138'
+  BirdSource_123:
+    Bird: Bird_57
+    Source: Source_1
+    link: '/bird?id=57'
+  BirdSource_124:
+    Bird: Bird_6
+    Source: Source_1
+    link: '/bird?id=6'
+  BirdSource_125:
+    Bird: Bird_296
+    Source: Source_1
+    link: '/bird?id=296'
+  BirdSource_126:
+    Bird: Bird_58
+    Source: Source_1
+    link: '/bird?id=58'
+  BirdSource_127:
+    Bird: Bird_223
+    Source: Source_1
+    link: '/bird?id=223'
+  BirdSource_128:
+    Bird: Bird_206
+    Source: Source_1
+    link: '/bird?id=206'
+  BirdSource_129:
+    Bird: Bird_272
+    Source: Source_1
+    link: '/bird?id=272'
+  BirdSource_130:
+    Bird: Bird_207
+    Source: Source_1
+    link: '/bird?id=207'
+  BirdSource_131:
+    Bird: Bird_22
+    Source: Source_1
+    link: '/bird?id=22'
+  BirdSource_132:
+    Bird: Bird_12
+    Source: Source_1
+    link: '/bird?id=12'
+  BirdSource_133:
+    Bird: Bird_278
+    Source: Source_1
+    link: '/bird?id=278'
+  BirdSource_134:
+    Bird: Bird_277
+    Source: Source_1
+    link: '/bird?id=277'
+  BirdSource_135:
+    Bird: Bird_111
+    Source: Source_1
+    link: '/bird?id=111'
+  BirdSource_136:
+    Bird: Bird_160
+    Source: Source_1
+    link: '/bird?id=160'
+  BirdSource_137:
+    Bird: Bird_230
+    Source: Source_1
+    link: '/bird?id=230'
+  BirdSource_138:
+    Bird: Bird_77
+    Source: Source_1
+    link: '/bird?id=77'
+  BirdSource_139:
+    Bird: Bird_279
+    Source: Source_1
+    link: '/bird?id=279'
+  BirdSource_140:
+    Bird: Bird_67
+    Source: Source_1
+    link: '/bird?id=67'
+  BirdSource_141:
+    Bird: Bird_281
+    Source: Source_1
+    link: '/bird?id=281'
+  BirdSource_142:
+    Bird: Bird_283
+    Source: Source_1
+    link: '/bird?id=283'
+  BirdSource_143:
+    Bird: Bird_102
+    Source: Source_1
+    link: '/bird?id=102'
+  BirdSource_144:
+    Bird: Bird_103
+    Source: Source_1
+    link: '/bird?id=103'
+  BirdSource_145:
+    Bird: Bird_282
+    Source: Source_1
+    link: '/bird?id=282'
+  BirdSource_146:
+    Bird: Bird_21
+    Source: Source_1
+    link: '/bird?id=21'
+  BirdSource_147:
+    Bird: Bird_5
+    Source: Source_1
+    link: '/bird?id=5'
+  BirdSource_148:
+    Bird: Bird_39
+    Source: Source_1
+    link: '/bird?id=39'
+  BirdSource_149:
+    Bird: Bird_83
+    Source: Source_1
+    link: '/bird?id=83'
+  BirdSource_150:
+    Bird: Bird_285
+    Source: Source_1
+    link: '/bird?id=285'
+  BirdSource_151:
+    Bird: Bird_208
+    Source: Source_1
+    link: '/bird?id=208'
+  BirdSource_152:
+    Bird: Bird_209
+    Source: Source_1
+    link: '/bird?id=209'
+  BirdSource_153:
+    Bird: Bird_159
+    Source: Source_1
+    link: '/bird?id=159'
+  BirdSource_154:
+    Bird: Bird_234
+    Source: Source_1
+    link: '/bird?id=234'
+  BirdSource_155:
+    Bird: Bird_210
+    Source: Source_1
+    link: '/bird?id=210'
+  BirdSource_156:
+    Bird: Bird_166
+    Source: Source_1
+    link: '/bird?id=166'
+  BirdSource_157:
+    Bird: Bird_113
+    Source: Source_1
+    link: '/bird?id=113'
+  BirdSource_158:
+    Bird: Bird_295
+    Source: Source_1
+    link: '/bird?id=295'
+  BirdSource_159:
+    Bird: Bird_55
+    Source: Source_1
+    link: '/bird?id=55'
+  BirdSource_160:
+    Bird: Bird_105
+    Source: Source_1
+    link: '/bird?id=105'
+  BirdSource_161:
+    Bird: Bird_56
+    Source: Source_1
+    link: '/bird?id=56'
+  BirdSource_162:
+    Bird: Bird_211
+    Source: Source_1
+    link: '/bird?id=211'
+  BirdSource_163:
+    Bird: Bird_178
+    Source: Source_1
+    link: '/bird?id=178'
+  BirdSource_164:
+    Bird: Bird_205
+    Source: Source_1
+    link: '/bird?id=205'
+  BirdSource_165:
+    Bird: Bird_172
+    Source: Source_1
+    link: '/bird?id=172'
+  BirdSource_166:
+    Bird: Bird_114
+    Source: Source_1
+    link: '/bird?id=114'
+  BirdSource_167:
+    Bird: Bird_220
+    Source: Source_1
+    link: '/bird?id=220'
+  BirdSource_168:
+    Bird: Bird_289
+    Source: Source_1
+    link: '/bird?id=289'
+  BirdSource_169:
+    Bird: Bird_219
+    Source: Source_1
+    link: '/bird?id=219'
+  BirdSource_170:
+    Bird: Bird_290
+    Source: Source_1
+    link: '/bird?id=290'
+  BirdSource_171:
+    Bird: Bird_237
+    Source: Source_1
+    link: '/bird?id=237'
+  BirdSource_172:
+    Bird: Bird_298
+    Source: Source_1
+    link: '/bird?id=298'
+  BirdSource_173:
+    Bird: Bird_33
+    Source: Source_1
+    link: '/bird?id=33'
+  BirdSource_174:
+    Bird: Bird_180
+    Source: Source_1
+    link: '/bird?id=180'
+  BirdSource_175:
+    Bird: Bird_225
+    Source: Source_1
+    link: '/bird?id=225'
+  BirdSource_176:
+    Bird: Bird_161
+    Source: Source_1
+    link: '/bird?id=161'
+  BirdSource_177:
+    Bird: Bird_240
+    Source: Source_1
+    link: '/bird?id=240'
+  BirdSource_178:
+    Bird: Bird_173
+    Source: Source_1
+    link: '/bird?id=173'
+  BirdSource_179:
+    Bird: Bird_95
+    Source: Source_1
+    link: '/bird?id=95'
+  BirdSource_180:
+    Bird: Bird_197
+    Source: Source_1
+    link: '/bird?id=197'
+  BirdSource_181:
+    Bird: Bird_136
+    Source: Source_1
+    link: '/bird?id=136'
+  BirdSource_182:
+    Bird: Bird_186
+    Source: Source_1
+    link: '/bird?id=186'
+  BirdSource_183:
+    Bird: Bird_60
+    Source: Source_1
+    link: '/bird?id=60'
+  BirdSource_184:
+    Bird: Bird_63
+    Source: Source_1
+    link: '/bird?id=63'
+  BirdSource_185:
+    Bird: Bird_61
+    Source: Source_1
+    link: '/bird?id=61'
+  BirdSource_186:
+    Bird: Bird_64
+    Source: Source_1
+    link: '/bird?id=64'
+  BirdSource_187:
+    Bird: Bird_252
+    Source: Source_1
+    link: '/bird?id=252'
+  BirdSource_188:
+    Bird: Bird_155
+    Source: Source_1
+    link: '/bird?id=155'
+  BirdSource_189:
+    Bird: Bird_96
+    Source: Source_1
+    link: '/bird?id=96'
+  BirdSource_190:
+    Bird: Bird_106
+    Source: Source_1
+    link: '/bird?id=106'
+  BirdSource_191:
+    Bird: Bird_11
+    Source: Source_1
+    link: '/bird?id=11'
+  BirdSource_192:
+    Bird: Bird_182
+    Source: Source_1
+    link: '/bird?id=182'
+  BirdSource_193:
+    Bird: Bird_137
+    Source: Source_1
+    link: '/bird?id=137'
+  BirdSource_194:
+    Bird: Bird_51
+    Source: Source_1
+    link: '/bird?id=51'
+  BirdSource_195:
+    Bird: Bird_179
+    Source: Source_1
+    link: '/bird?id=179'
+  BirdSource_196:
+    Bird: Bird_52
+    Source: Source_1
+    link: '/bird?id=52'
+  BirdSource_197:
+    Bird: Bird_251
+    Source: Source_1
+    link: '/bird?id=251'
+  BirdSource_198:
+    Bird: Bird_107
+    Source: Source_1
+    link: '/bird?id=107'
+  BirdSource_199:
+    Bird: Bird_34
+    Source: Source_1
+    link: '/bird?id=34'
+  BirdSource_200:
+    Bird: Bird_130
+    Source: Source_1
+    link: '/bird?id=130'
+  BirdSource_201:
+    Bird: Bird_190
+    Source: Source_1
+    link: '/bird?id=190'
+  BirdSource_202:
+    Bird: Bird_50
+    Source: Source_1
+    link: '/bird?id=50'
+  BirdSource_203:
+    Bird: Bird_53
+    Source: Source_1
+    link: '/bird?id=53'
+  BirdSource_204:
+    Bird: Bird_89
+    Source: Source_1
+    link: '/bird?id=89'
+  BirdSource_205:
+    Bird: Bird_97
+    Source: Source_1
+    link: '/bird?id=97'
+  BirdSource_206:
+    Bird: Bird_94
+    Source: Source_1
+    link: '/bird?id=94'
+  BirdSource_207:
+    Bird: Bird_212
+    Source: Source_1
+    link: '/bird?id=212'
+  BirdSource_208:
+    Bird: Bird_133
+    Source: Source_1
+    link: '/bird?id=133'
+  BirdSource_209:
+    Bird: Bird_270
+    Source: Source_1
+    link: '/bird?id=270'
+  BirdSource_210:
+    Bird: Bird_35
+    Source: Source_1
+    link: '/bird?id=35'
+  BirdSource_211:
+    Bird: Bird_156
+    Source: Source_1
+    link: '/bird?id=156'
+  BirdSource_212:
+    Bird: Bird_38
+    Source: Source_1
+    link: '/bird?id=38'
+  BirdSource_213:
+    Bird: Bird_70
+    Source: Source_1
+    link: '/bird?id=70'
+  BirdSource_214:
+    Bird: Bird_274
+    Source: Source_1
+    link: '/bird?id=274'
+  BirdSource_215:
+    Bird: Bird_36
+    Source: Source_1
+    link: '/bird?id=36'
+  BirdSource_216:
+    Bird: Bird_2
+    Source: Source_1
+    link: '/bird?id=2'
+  BirdSource_217:
+    Bird: Bird_226
+    Source: Source_1
+    link: '/bird?id=226'
+  BirdSource_218:
+    Bird: Bird_280
+    Source: Source_1
+    link: '/bird?id=280'
+  BirdSource_219:
+    Bird: Bird_141
+    Source: Source_1
+    link: '/bird?id=141'
+  BirdSource_220:
+    Bird: Bird_218
+    Source: Source_1
+    link: '/bird?id=218'
+  BirdSource_221:
+    Bird: Bird_192
+    Source: Source_1
+    link: '/bird?id=192'
+  BirdSource_222:
+    Bird: Bird_217
+    Source: Source_1
+    link: '/bird?id=217'
+  BirdSource_223:
+    Bird: Bird_142
+    Source: Source_1
+    link: '/bird?id=142'
+  BirdSource_224:
+    Bird: Bird_195
+    Source: Source_1
+    link: '/bird?id=195'
+  BirdSource_225:
+    Bird: Bird_286
+    Source: Source_1
+    link: '/bird?id=286'
+  BirdSource_226:
+    Bird: Bird_198
+    Source: Source_1
+    link: '/bird?id=198'
+  BirdSource_227:
+    Bird: Bird_187
+    Source: Source_1
+    link: '/bird?id=187'
+  BirdSource_228:
+    Bird: Bird_235
+    Source: Source_1
+    link: '/bird?id=235'
+  BirdSource_229:
+    Bird: Bird_183
+    Source: Source_1
+    link: '/bird?id=183'
+  BirdSource_230:
+    Bird: Bird_287
+    Source: Source_1
+    link: '/bird?id=287'
+  BirdSource_231:
+    Bird: Bird_185
+    Source: Source_1
+    link: '/bird?id=185'
+  BirdSource_232:
+    Bird: Bird_144
+    Source: Source_1
+    link: '/bird?id=144'
+  BirdSource_233:
+    Bird: Bird_92
+    Source: Source_1
+    link: '/bird?id=92'
+  BirdSource_234:
+    Bird: Bird_143
+    Source: Source_1
+    link: '/bird?id=143'
+  BirdSource_235:
+    Bird: Bird_188
+    Source: Source_1
+    link: '/bird?id=188'
+  BirdSource_236:
+    Bird: Bird_115
+    Source: Source_1
+    link: '/bird?id=115'
+  BirdSource_237:
+    Bird: Bird_131
+    Source: Source_1
+    link: '/bird?id=131'
+  BirdSource_238:
+    Bird: Bird_116
+    Source: Source_1
+    link: '/bird?id=116'
+  BirdSource_239:
+    Bird: Bird_216
+    Source: Source_1
+    link: '/bird?id=216'
+  BirdSource_240:
+    Bird: Bird_236
+    Source: Source_1
+    link: '/bird?id=236'
+  BirdSource_241:
+    Bird: Bird_37
+    Source: Source_1
+    link: '/bird?id=37'
+  BirdSource_242:
+    Bird: Bird_292
+    Source: Source_1
+    link: '/bird?id=292'
+  BirdSource_243:
+    Bird: Bird_241
+    Source: Source_1
+    link: '/bird?id=241'
+  BirdSource_244:
+    Bird: Bird_228
+    Source: Source_1
+    link: '/bird?id=228'
+  BirdSource_245:
+    Bird: Bird_250
+    Source: Source_1
+    link: '/bird?id=250'
+  BirdSource_246:
+    Bird: Bird_260
+    Source: Source_1
+    link: '/bird?id=260'
+  BirdSource_247:
+    Bird: Bird_193
+    Source: Source_1
+    link: '/bird?id=193'
+  BirdSource_248:
+    Bird: Bird_191
+    Source: Source_1
+    link: '/bird?id=191'
+  BirdSource_249:
+    Bird: Bird_123
+    Source: Source_1
+    link: '/bird?id=123'
+  BirdSource_250:
+    Bird: Bird_140
+    Source: Source_1
+    link: '/bird?id=140'
+  BirdSource_251:
+    Bird: Bird_273
+    Source: Source_1
+    link: '/bird?id=273'
+  BirdSource_252:
+    Bird: Bird_54
+    Source: Source_1
+    link: '/bird?id=54'
+  BirdSource_253:
+    Bird: Bird_231
+    Source: Source_1
+    link: '/bird?id=231'
+  BirdSource_254:
+    Bird: Bird_232
+    Source: Source_1
+    link: '/bird?id=232'
+  BirdSource_255:
+    Bird: Bird_196
+    Source: Source_1
+    link: '/bird?id=196'
+  BirdSource_256:
+    Bird: Bird_238
+    Source: Source_1
+    link: '/bird?id=238'
+  BirdSource_257:
+    Bird: Bird_215
+    Source: Source_1
+    link: '/bird?id=215'
+  BirdSource_258:
+    Bird: Bird_126
+    Source: Source_1
+    link: '/bird?id=126'
+  BirdSource_259:
+    Bird: Bird_127
+    Source: Source_1
+    link: '/bird?id=127'
+  BirdSource_260:
+    Bird: Bird_214
+    Source: Source_1
+    link: '/bird?id=214'
+  BirdSource_261:
+    Bird: Bird_31
+    Source: Source_1
+    link: '/bird?id=31'
+  BirdSource_262:
+    Bird: Bird_128
+    Source: Source_1
+    link: '/bird?id=128'
+  BirdSource_263:
+    Bird: Bird_175
+    Source: Source_1
+    link: '/bird?id=175'
+  BirdSource_264:
+    Bird: Bird_44
+    Source: Source_1
+    link: '/bird?id=44'
+  BirdSource_265:
+    Bird: Bird_46
+    Source: Source_1
+    link: '/bird?id=46'
+  BirdSource_266:
+    Bird: Bird_87
+    Source: Source_1
+    link: '/bird?id=87'
+  BirdSource_267:
+    Bird: Bird_246
+    Source: Source_1
+    link: '/bird?id=246'
+  BirdSource_268:
+    Bird: Bird_158
+    Source: Source_1
+    link: '/bird?id=158'
+  BirdSource_269:
+    Bird: Bird_40
+    Source: Source_1
+    link: '/bird?id=40'
+  BirdSource_270:
+    Bird: Bird_41
+    Source: Source_1
+    link: '/bird?id=41'
+  BirdSource_271:
+    Bird: Bird_90
+    Source: Source_1
+    link: '/bird?id=90'
+  BirdSource_272:
+    Bird: Bird_42
+    Source: Source_1
+    link: '/bird?id=42'
+  BirdSource_273:
+    Bird: Bird_162
+    Source: Source_1
+    link: '/bird?id=162'
+  BirdSource_274:
+    Bird: Bird_134
+    Source: Source_1
+    link: '/bird?id=134'
+  BirdSource_275:
+    Bird: Bird_65
+    Source: Source_1
+    link: '/bird?id=65'
+  BirdSource_276:
+    Bird: Bird_73
+    Source: Source_1
+    link: '/bird?id=73'
+  BirdSource_277:
+    Bird: Bird_85
+    Source: Source_1
+    link: '/bird?id=85'
+  BirdSource_278:
+    Bird: Bird_213
+    Source: Source_1
+    link: '/bird?id=213'
+  BirdSource_279:
+    Bird: Bird_129
+    Source: Source_1
+    link: '/bird?id=129'
+  BirdSource_280:
+    Bird: Bird_291
+    Source: Source_1
+    link: '/bird?id=291'
+  BirdSource_281:
+    Bird: Bird_104
+    Source: Source_1
+    link: '/bird?id=104'
+  BirdSource_282:
+    Bird: Bird_15
+    Source: Source_1
+    link: '/bird?id=15'
+  BirdSource_283:
+    Bird: Bird_239
+    Source: Source_1
+    link: '/bird?id=239'
+Taxonomy:
+  Taxonomy_1:
+    Taxonomytype: Taxonomytype_1
+    name: black
+  Taxonomy_2:
+    Taxonomytype: Taxonomytype_1
+    name: blackandwhite
+  Taxonomy_3:
+    Taxonomytype: Taxonomytype_1
+    name: blue
+  Taxonomy_4:
+    Taxonomytype: Taxonomytype_1
+    name: brown
+  Taxonomy_5:
+    Taxonomytype: Taxonomytype_1
+    name: gray
+  Taxonomy_6:
+    Taxonomytype: Taxonomytype_1
+    name: greenorolive
+  Taxonomy_7:
+    Taxonomytype: Taxonomytype_1
+    name: redororange
+  Taxonomy_8:
+    Taxonomytype: Taxonomytype_1
+    name: various
+  Taxonomy_9:
+    Taxonomytype: Taxonomytype_1
+    name: white
+  Taxonomy_10:
+    Taxonomytype: Taxonomytype_1
+    name: yellow
+  Taxonomy_11:
+    Taxonomytype: Taxonomytype_2
+    name: aerial
+  Taxonomy_12:
+    Taxonomytype: Taxonomytype_2
+    name: agricultural
+  Taxonomy_13:
+    Taxonomytype: Taxonomytype_2
+    name: chaparral
+  Taxonomy_14:
+    Taxonomytype: Taxonomytype_2
+    name: cliffsorboulders
+  Taxonomy_15:
+    Taxonomytype: Taxonomytype_2
+    name: desert
+  Taxonomy_16:
+    Taxonomytype: Taxonomytype_2
+    name: firforest
+  Taxonomy_17:
+    Taxonomytype: Taxonomytype_2
+    name: grasslands
+  Taxonomy_18:
+    Taxonomytype: Taxonomytype_2
+    name: marshorswamp
+  Taxonomy_19:
+    Taxonomytype: Taxonomytype_2
+    name: mesquitebosque
+  Taxonomy_20:
+    Taxonomytype: Taxonomytype_2
+    name: mudflat
+  Taxonomy_21:
+    Taxonomytype: Taxonomytype_2
+    name: oakpinewoodland
+  Taxonomy_22:
+    Taxonomytype: Taxonomytype_2
+    name: openwater
+  Taxonomy_23:
+    Taxonomytype: Taxonomytype_2
+    name: ponderosapineforest
+  Taxonomy_24:
+    Taxonomytype: Taxonomytype_2
+    name: riparianorriverforest
+  Taxonomy_25:
+    Taxonomytype: Taxonomytype_2
+    name: savanna
+  Taxonomy_26:
+    Taxonomytype: Taxonomytype_2
+    name: shrubs
+  Taxonomy_27:
+    Taxonomytype: Taxonomytype_2
+    name: urbancity
+  Taxonomy_28:
+    Taxonomytype: Taxonomytype_3
+    name: chicken
+  Taxonomy_29:
+    Taxonomytype: Taxonomytype_3
+    name: duck
+  Taxonomy_30:
+    Taxonomytype: Taxonomytype_3
+    name: gull
+  Taxonomy_31:
+    Taxonomytype: Taxonomytype_3
+    name: hawk
+  Taxonomy_32:
+    Taxonomytype: Taxonomytype_3
+    name: hummingbird
+  Taxonomy_33:
+    Taxonomytype: Taxonomytype_3
+    name: longleggedwaders
+  Taxonomy_34:
+    Taxonomytype: Taxonomytype_3
+    name: owls
+  Taxonomy_35:
+    Taxonomytype: Taxonomytype_3
+    name: parrots
+  Taxonomy_36:
+    Taxonomytype: Taxonomytype_3
+    name: perching
+  Taxonomy_37:
+    Taxonomytype: Taxonomytype_3
+    name: pigeon
+  Taxonomy_38:
+    Taxonomytype: Taxonomytype_3
+    name: sandpiper
+  Taxonomy_39:
+    Taxonomytype: Taxonomytype_3
+    name: swallow
+  Taxonomy_40:
+    Taxonomytype: Taxonomytype_3
+    name: treeclinging
+  Taxonomy_41:
+    Taxonomytype: Taxonomytype_3
+    name: uplandground
+  Taxonomy_42:
+    Taxonomytype: Taxonomytype_3
+    name: uprightperchingwaterbird
+  Taxonomy_43:
+    Taxonomytype: Taxonomytype_4
+    name: large
+  Taxonomy_44:
+    Taxonomytype: Taxonomytype_4
+    name: medium
+  Taxonomy_45:
+    Taxonomytype: Taxonomytype_4
+    name: small
+  Taxonomy_46:
+    Taxonomytype: Taxonomytype_4
+    name: tiny
+  Taxonomy_47:
+    Taxonomytype: Taxonomytype_5
+    name: buzzing
+  Taxonomy_48:
+    Taxonomytype: Taxonomytype_5
+    name: chirping
+  Taxonomy_49:
+    Taxonomytype: Taxonomytype_5
+    name: croaking
+  Taxonomy_50:
+    Taxonomytype: Taxonomytype_5
+    name: electronic
+  Taxonomy_51:
+    Taxonomytype: Taxonomytype_5
+    name: grating
+  Taxonomy_52:
+    Taxonomytype: Taxonomytype_5
+    name: honking
+  Taxonomy_53:
+    Taxonomytype: Taxonomytype_5
+    name: hooting
+  Taxonomy_54:
+    Taxonomytype: Taxonomytype_5
+    name: quacking
+  Taxonomy_55:
+    Taxonomytype: Taxonomytype_5
+    name: rattling
+  Taxonomy_56:
+    Taxonomytype: Taxonomytype_5
+    name: screeching
+  Taxonomy_57:
+    Taxonomytype: Taxonomytype_5
+    name: trilling
+  Taxonomy_58:
+    Taxonomytype: Taxonomytype_5
+    name: twittering
+  Taxonomy_59:
+    Taxonomytype: Taxonomytype_5
+    name: warbling
+  Taxonomy_60:
+    Taxonomytype: Taxonomytype_5
+    name: whistling
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    Group: sfGuardGroup_1
+    Permission: sfGuardPermission_1
+    created_at: '2012-10-31 03:48:07'
+    updated_at: '2012-10-31 03:48:07'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2012-10-31 03:48:07'
+    updated_at: '2012-10-31 03:48:07'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    User: sfGuardUser_1
+    Group: sfGuardGroup_1
+    created_at: '2012-10-31 03:48:07'
+    updated_at: '2012-10-31 03:48:07'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2012-10-31 03:48:07'
+    updated_at: '2012-10-31 03:48:07'
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: John
+    middle_name: null
+    last_name: Doe
+    prefix: null
+    suffix: null
+    email_address: john.doe@gmail.com
+    username: admin
+    address_id: '0'
+    algorithm: sha1
+    salt: 99fce8db897bc754960db4f228255445
+    password: 78ca167cd73498a692ef980fec40ad7bac352b44
+    is_active: true
+    is_super_admin: true
+    last_login: '2012-10-31 03:53:09'
+    created_at: '2012-10-31 03:48:07'
+    updated_at: '2012-10-31 03:53:09'
+TaxonomytypeSource:
+  TaxonomytypeSource_1:
+    Taxonomytype: Taxonomytype_1
+    Source: Source_1
+  TaxonomytypeSource_2:
+    Taxonomytype: Taxonomytype_2
+    Source: Source_1
+  TaxonomytypeSource_3:
+    Taxonomytype: Taxonomytype_3
+    Source: Source_1
+  TaxonomytypeSource_4:
+    Taxonomytype: Taxonomytype_4
+    Source: Source_1
+  TaxonomytypeSource_5:
+    Taxonomytype: Taxonomytype_5
+    Source: Source_1
+BirdTaxonomy:
+  BirdTaxonomy_1:
+    Bird: Bird_297
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_2:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_3:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_4:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_5:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_6:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_7:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_8:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_9:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_10:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_11:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_12:
+    Bird: Bird_265
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_13:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_14:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_15:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_16:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_17:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_18:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_19:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_20:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_1
+  BirdTaxonomy_21:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_22:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_23:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_24:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_25:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_26:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_27:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_28:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_29:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_30:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_31:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_32:
+    Bird: Bird_255
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_33:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_34:
+    Bird: Bird_258
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_35:
+    Bird: Bird_259
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_36:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_37:
+    Bird: Bird_263
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_38:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_39:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_40:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_41:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_42:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_43:
+    Bird: Bird_149
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_44:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_45:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_46:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_47:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_48:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_49:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_50:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_51:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_52:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_53:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_54:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_55:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_56:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_57:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_2
+  BirdTaxonomy_58:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_59:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_60:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_61:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_62:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_63:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_64:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_65:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_66:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_67:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_68:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_69:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_70:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_3
+  BirdTaxonomy_71:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_72:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_73:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_74:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_75:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_76:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_77:
+    Bird: Bird_118
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_78:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_79:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_80:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_81:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_82:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_83:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_84:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_85:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_86:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_87:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_88:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_89:
+    Bird: Bird_48
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_90:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_91:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_92:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_93:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_94:
+    Bird: Bird_28
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_95:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_96:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_97:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_98:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_99:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_100:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_101:
+    Bird: Bird_184
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_102:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_103:
+    Bird: Bird_258
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_104:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_105:
+    Bird: Bird_259
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_106:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_107:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_108:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_109:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_110:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_111:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_112:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_113:
+    Bird: Bird_267
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_114:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_115:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_116:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_117:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_118:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_119:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_120:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_121:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_122:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_123:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_124:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_125:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_126:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_127:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_128:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_129:
+    Bird: Bird_149
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_130:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_131:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_132:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_133:
+    Bird: Bird_6
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_134:
+    Bird: Bird_296
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_135:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_136:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_137:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_138:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_139:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_140:
+    Bird: Bird_22
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_141:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_142:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_143:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_144:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_145:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_146:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_147:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_148:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_149:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_150:
+    Bird: Bird_279
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_151:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_152:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_153:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_154:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_155:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_156:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_157:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_158:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_159:
+    Bird: Bird_21
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_160:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_161:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_162:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_163:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_164:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_165:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_166:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_167:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_168:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_169:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_170:
+    Bird: Bird_166
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_171:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_172:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_173:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_174:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_175:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_176:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_177:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_178:
+    Bird: Bird_178
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_179:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_180:
+    Bird: Bird_172
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_181:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_182:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_183:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_184:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_185:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_186:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_187:
+    Bird: Bird_237
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_188:
+    Bird: Bird_298
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_189:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_190:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_191:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_4
+  BirdTaxonomy_192:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_193:
+    Bird: Bird_161
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_194:
+    Bird: Bird_240
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_195:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_196:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_197:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_198:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_199:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_200:
+    Bird: Bird_186
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_201:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_202:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_203:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_204:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_205:
+    Bird: Bird_252
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_206:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_207:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_208:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_209:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_210:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_211:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_212:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_213:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_214:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_215:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_216:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_217:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_218:
+    Bird: Bird_251
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_219:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_220:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_221:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_222:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_223:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_224:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_225:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_226:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_227:
+    Bird: Bird_97
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_228:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_229:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_230:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_231:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_232:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_233:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_234:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_235:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_236:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_237:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_238:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_239:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_240:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_241:
+    Bird: Bird_2
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_242:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_243:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_244:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_245:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_246:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_247:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_248:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_249:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_250:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_251:
+    Bird: Bird_142
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_252:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_253:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_254:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_255:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_256:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_257:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_258:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_259:
+    Bird: Bird_183
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_260:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_261:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_262:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_263:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_264:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_265:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_266:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_267:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_268:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_269:
+    Bird: Bird_116
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_270:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_271:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_272:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_273:
+    Bird: Bird_292
+    Taxonomy: Taxonomy_5
+  BirdTaxonomy_274:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_275:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_276:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_277:
+    Bird: Bird_260
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_278:
+    Bird: Bird_193
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_279:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_280:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_281:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_282:
+    Bird: Bird_273
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_283:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_284:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_285:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_286:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_287:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_288:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_6
+  BirdTaxonomy_289:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_290:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_291:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_292:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_293:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_294:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_295:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_296:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_297:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_298:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_299:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_7
+  BirdTaxonomy_300:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_301:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_302:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_303:
+    Bird: Bird_251
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_304:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_305:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_306:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_307:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_308:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_8
+  BirdTaxonomy_309:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_310:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_311:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_312:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_313:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_314:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_315:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_9
+  BirdTaxonomy_316:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_317:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_318:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_319:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_320:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_321:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_322:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_323:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_324:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_325:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_326:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_327:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_328:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_329:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_330:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_331:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_332:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_333:
+    Bird: Bird_104
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_334:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_335:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_10
+  BirdTaxonomy_336:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_337:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_338:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_339:
+    Bird: Bird_255
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_340:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_341:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_342:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_343:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_344:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_345:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_346:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_347:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_348:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_349:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_350:
+    Bird: Bird_279
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_351:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_352:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_353:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_354:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_355:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_356:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_357:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_358:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_359:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_360:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_11
+  BirdTaxonomy_361:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_362:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_363:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_364:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_365:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_366:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_367:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_368:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_369:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_370:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_371:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_372:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_373:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_374:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_375:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_376:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_377:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_378:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_379:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_380:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_381:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_382:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_383:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_384:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_385:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_386:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_387:
+    Bird: Bird_265
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_388:
+    Bird: Bird_267
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_389:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_390:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_391:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_392:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_393:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_394:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_395:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_396:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_397:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_398:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_399:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_400:
+    Bird: Bird_296
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_401:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_402:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_403:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_404:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_405:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_406:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_407:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_408:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_409:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_410:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_411:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_412:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_413:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_414:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_415:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_416:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_417:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_418:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_419:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_420:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_421:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_422:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_423:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_424:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_425:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_426:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_427:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_428:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_429:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_430:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_431:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_432:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_433:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_434:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_435:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_436:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_437:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_438:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_12
+  BirdTaxonomy_439:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_440:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_441:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_442:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_443:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_444:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_445:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_446:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_447:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_448:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_449:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_450:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_451:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_452:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_453:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_454:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_455:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_456:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_457:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_458:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_459:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_460:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_461:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_462:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_463:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_464:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_465:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_466:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_467:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_468:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_469:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_470:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_471:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_472:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_473:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_474:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_475:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_476:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_13
+  BirdTaxonomy_477:
+    Bird: Bird_240
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_478:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_479:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_480:
+    Bird: Bird_255
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_481:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_482:
+    Bird: Bird_28
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_483:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_484:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_485:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_486:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_487:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_488:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_489:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_490:
+    Bird: Bird_21
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_491:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_492:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_14
+  BirdTaxonomy_493:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_494:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_495:
+    Bird: Bird_161
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_496:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_497:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_498:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_499:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_500:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_501:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_502:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_503:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_504:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_505:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_506:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_507:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_508:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_509:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_510:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_511:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_512:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_513:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_514:
+    Bird: Bird_260
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_515:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_516:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_517:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_518:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_519:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_520:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_521:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_522:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_523:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_524:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_525:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_526:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_527:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_528:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_529:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_530:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_531:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_532:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_533:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_534:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_535:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_536:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_537:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_538:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_539:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_540:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_541:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_542:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_543:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_544:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_545:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_546:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_547:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_548:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_549:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_550:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_551:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_552:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_553:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_554:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_15
+  BirdTaxonomy_555:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_556:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_557:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_558:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_559:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_560:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_561:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_562:
+    Bird: Bird_252
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_563:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_564:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_565:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_566:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_567:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_568:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_569:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_570:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_571:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_572:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_573:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_574:
+    Bird: Bird_251
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_575:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_576:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_577:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_578:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_579:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_580:
+    Bird: Bird_193
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_581:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_582:
+    Bird: Bird_97
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_583:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_584:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_585:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_586:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_587:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_588:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_589:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_590:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_591:
+    Bird: Bird_273
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_592:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_593:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_594:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_595:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_596:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_597:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_598:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_599:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_600:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_601:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_602:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_603:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_604:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_605:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_606:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_607:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_608:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_609:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_610:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_611:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_612:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_613:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_614:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_615:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_616:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_617:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_618:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_619:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_620:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_621:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_622:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_623:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_624:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_625:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_626:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_16
+  BirdTaxonomy_627:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_628:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_629:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_630:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_631:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_632:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_633:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_634:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_635:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_636:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_637:
+    Bird: Bird_267
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_638:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_639:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_640:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_641:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_642:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_643:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_644:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_645:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_646:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_647:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_648:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_649:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_650:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_651:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_652:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_653:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_654:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_655:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_656:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_657:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_658:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_659:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_660:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_17
+  BirdTaxonomy_661:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_662:
+    Bird: Bird_297
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_663:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_664:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_665:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_666:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_667:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_668:
+    Bird: Bird_186
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_669:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_670:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_671:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_672:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_673:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_674:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_675:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_676:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_677:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_678:
+    Bird: Bird_184
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_679:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_680:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_681:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_682:
+    Bird: Bird_263
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_683:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_684:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_685:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_686:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_687:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_688:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_689:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_690:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_691:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_692:
+    Bird: Bird_6
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_693:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_694:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_695:
+    Bird: Bird_22
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_696:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_697:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_698:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_699:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_700:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_701:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_702:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_703:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_704:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_705:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_706:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_707:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_708:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_709:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_710:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_711:
+    Bird: Bird_166
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_712:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_713:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_714:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_715:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_716:
+    Bird: Bird_178
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_717:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_718:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_719:
+    Bird: Bird_237
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_720:
+    Bird: Bird_292
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_721:
+    Bird: Bird_298
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_722:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_18
+  BirdTaxonomy_723:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_724:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_725:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_726:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_727:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_728:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_729:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_730:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_731:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_732:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_733:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_734:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_735:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_736:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_737:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_738:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_739:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_740:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_741:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_742:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_743:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_744:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_745:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_746:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_747:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_748:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_749:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_750:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_751:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_752:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_753:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_754:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_755:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_756:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_757:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_758:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_759:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_760:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_761:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_762:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_763:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_764:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_765:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_766:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_767:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_768:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_769:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_770:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_771:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_772:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_773:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_774:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_775:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_776:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_777:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_778:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_779:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_780:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_781:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_782:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_19
+  BirdTaxonomy_783:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_784:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_785:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_786:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_787:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_788:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_789:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_790:
+    Bird: Bird_296
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_791:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_792:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_793:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_794:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_795:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_796:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_797:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_798:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_799:
+    Bird: Bird_172
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_800:
+    Bird: Bird_298
+    Taxonomy: Taxonomy_20
+  BirdTaxonomy_801:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_802:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_803:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_804:
+    Bird: Bird_118
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_805:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_806:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_807:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_808:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_809:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_810:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_811:
+    Bird: Bird_252
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_812:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_813:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_814:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_815:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_816:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_817:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_818:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_819:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_820:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_821:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_822:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_823:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_824:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_825:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_826:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_827:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_828:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_829:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_830:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_831:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_832:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_833:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_834:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_835:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_836:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_837:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_838:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_839:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_840:
+    Bird: Bird_273
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_841:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_842:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_843:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_844:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_845:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_846:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_847:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_848:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_849:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_850:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_851:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_852:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_853:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_854:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_855:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_856:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_857:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_858:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_859:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_860:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_861:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_862:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_863:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_864:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_865:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_866:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_867:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_868:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_869:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_870:
+    Bird: Bird_116
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_871:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_872:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_873:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_874:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_875:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_876:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_877:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_878:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_21
+  BirdTaxonomy_879:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_880:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_881:
+    Bird: Bird_297
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_882:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_883:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_884:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_885:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_886:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_887:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_888:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_889:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_890:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_891:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_892:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_893:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_894:
+    Bird: Bird_258
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_895:
+    Bird: Bird_259
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_896:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_897:
+    Bird: Bird_263
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_898:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_899:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_900:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_901:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_902:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_903:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_904:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_905:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_906:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_907:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_908:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_909:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_910:
+    Bird: Bird_279
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_911:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_912:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_913:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_914:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_915:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_916:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_917:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_918:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_919:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_920:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_921:
+    Bird: Bird_292
+    Taxonomy: Taxonomy_22
+  BirdTaxonomy_922:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_23
+  BirdTaxonomy_923:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_924:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_925:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_926:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_927:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_928:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_929:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_930:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_931:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_932:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_933:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_934:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_935:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_936:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_937:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_938:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_939:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_940:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_941:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_942:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_943:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_944:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_945:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_946:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_947:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_948:
+    Bird: Bird_48
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_949:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_950:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_951:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_952:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_953:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_954:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_955:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_956:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_957:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_958:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_959:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_960:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_961:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_962:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_963:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_964:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_965:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_966:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_967:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_968:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_969:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_970:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_971:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_972:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_973:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_974:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_975:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_976:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_977:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_978:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_979:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_980:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_981:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_982:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_983:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_984:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_985:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_986:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_987:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_988:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_989:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_990:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_991:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_992:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_993:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_994:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_995:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_996:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_997:
+    Bird: Bird_2
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_998:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_999:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1000:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1001:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1002:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1003:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1004:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1005:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1006:
+    Bird: Bird_142
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1007:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1008:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1009:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1010:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1011:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1012:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1013:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1014:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1015:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1016:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1017:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1018:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1019:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1020:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1021:
+    Bird: Bird_183
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1022:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1023:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1024:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1025:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1026:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1027:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1028:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1029:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1030:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1031:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1032:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1033:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1034:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1035:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1036:
+    Bird: Bird_237
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1037:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1038:
+    Bird: Bird_104
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1039:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1040:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1041:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1042:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1043:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_24
+  BirdTaxonomy_1044:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1045:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1046:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1047:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1048:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1049:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1050:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1051:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1052:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1053:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1054:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1055:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1056:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1057:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1058:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1059:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1060:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1061:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1062:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1063:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1064:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1065:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1066:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1067:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1068:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1069:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1070:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1071:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1072:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1073:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1074:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1075:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1076:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1077:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1078:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1079:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1080:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1081:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1082:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1083:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1084:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1085:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1086:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1087:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1088:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1089:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1090:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1091:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1092:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1093:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1094:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1095:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1096:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1097:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1098:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1099:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1100:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1101:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1102:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1103:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1104:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1105:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1106:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1107:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1108:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1109:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1110:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1111:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1112:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_25
+  BirdTaxonomy_1113:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1114:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1115:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1116:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1117:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1118:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1119:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1120:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1121:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1122:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1123:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1124:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1125:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1126:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1127:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1128:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1129:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1130:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1131:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1132:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1133:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1134:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1135:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1136:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1137:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1138:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1139:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1140:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1141:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1142:
+    Bird: Bird_260
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1143:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1144:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1145:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1146:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1147:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1148:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1149:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1150:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1151:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1152:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1153:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1154:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1155:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1156:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1157:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1158:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1159:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1160:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1161:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1162:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1163:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1164:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1165:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1166:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1167:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1168:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1169:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1170:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1171:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1172:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1173:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1174:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1175:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1176:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1177:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1178:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1179:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1180:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1181:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1182:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1183:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1184:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1185:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1186:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1187:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1188:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1189:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1190:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1191:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1192:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1193:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1194:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_26
+  BirdTaxonomy_1195:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1196:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1197:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1198:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1199:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1200:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1201:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1202:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1203:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1204:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1205:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1206:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1207:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1208:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1209:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1210:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1211:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1212:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1213:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1214:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1215:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1216:
+    Bird: Bird_265
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1217:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1218:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1219:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1220:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1221:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1222:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1223:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1224:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1225:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1226:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1227:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1228:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1229:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1230:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1231:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1232:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1233:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1234:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1235:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1236:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1237:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1238:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1239:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1240:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1241:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1242:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1243:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1244:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1245:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1246:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1247:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1248:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1249:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1250:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1251:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1252:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1253:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1254:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1255:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_27
+  BirdTaxonomy_1256:
+    Bird: Bird_186
+    Taxonomy: Taxonomy_28
+  BirdTaxonomy_1257:
+    Bird: Bird_184
+    Taxonomy: Taxonomy_28
+  BirdTaxonomy_1258:
+    Bird: Bird_166
+    Taxonomy: Taxonomy_28
+  BirdTaxonomy_1259:
+    Bird: Bird_178
+    Taxonomy: Taxonomy_28
+  BirdTaxonomy_1260:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1261:
+    Bird: Bird_297
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1262:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1263:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1264:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1265:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1266:
+    Bird: Bird_258
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1267:
+    Bird: Bird_259
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1268:
+    Bird: Bird_263
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1269:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1270:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1271:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1272:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1273:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1274:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1275:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1276:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1277:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1278:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_29
+  BirdTaxonomy_1279:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_30
+  BirdTaxonomy_1280:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_30
+  BirdTaxonomy_1281:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1282:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1283:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1284:
+    Bird: Bird_255
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1285:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1286:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1287:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1288:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1289:
+    Bird: Bird_267
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1290:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1291:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1292:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1293:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1294:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1295:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1296:
+    Bird: Bird_279
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1297:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1298:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1299:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1300:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1301:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1302:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1303:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1304:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_31
+  BirdTaxonomy_1305:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1306:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1307:
+    Bird: Bird_252
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1308:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1309:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1310:
+    Bird: Bird_260
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1311:
+    Bird: Bird_273
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1312:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_32
+  BirdTaxonomy_1313:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1314:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1315:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1316:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1317:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1318:
+    Bird: Bird_6
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1319:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1320:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1321:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1322:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_33
+  BirdTaxonomy_1323:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1324:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1325:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1326:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1327:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1328:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1329:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1330:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1331:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1332:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1333:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1334:
+    Bird: Bird_116
+    Taxonomy: Taxonomy_34
+  BirdTaxonomy_1335:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_35
+  BirdTaxonomy_1336:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1337:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1338:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1339:
+    Bird: Bird_161
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1340:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1341:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1342:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1343:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1344:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1345:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1346:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1347:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1348:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1349:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1350:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1351:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1352:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1353:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1354:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1355:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1356:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1357:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1358:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1359:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1360:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1361:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1362:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1363:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1364:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1365:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1366:
+    Bird: Bird_48
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1367:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1368:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1369:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1370:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1371:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1372:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1373:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1374:
+    Bird: Bird_28
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1375:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1376:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1377:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1378:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1379:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1380:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1381:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1382:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1383:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1384:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1385:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1386:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1387:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1388:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1389:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1390:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1391:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1392:
+    Bird: Bird_265
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1393:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1394:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1395:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1396:
+    Bird: Bird_193
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1397:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1398:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1399:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1400:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1401:
+    Bird: Bird_97
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1402:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1403:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1404:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1405:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1406:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1407:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1408:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1409:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1410:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1411:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1412:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1413:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1414:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1415:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1416:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1417:
+    Bird: Bird_149
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1418:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1419:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1420:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1421:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1422:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1423:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1424:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1425:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1426:
+    Bird: Bird_22
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1427:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1428:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1429:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1430:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1431:
+    Bird: Bird_2
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1432:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1433:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1434:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1435:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1436:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1437:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1438:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1439:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1440:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1441:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1442:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1443:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1444:
+    Bird: Bird_142
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1445:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1446:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1447:
+    Bird: Bird_21
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1448:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1449:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1450:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1451:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1452:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1453:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1454:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1455:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1456:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1457:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1458:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1459:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1460:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1461:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1462:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1463:
+    Bird: Bird_183
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1464:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1465:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1466:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1467:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1468:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1469:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1470:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1471:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1472:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1473:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1474:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1475:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1476:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1477:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1478:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1479:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1480:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1481:
+    Bird: Bird_237
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1482:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1483:
+    Bird: Bird_104
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1484:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1485:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1486:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1487:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1488:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1489:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1490:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_36
+  BirdTaxonomy_1491:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1492:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1493:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1494:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1495:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1496:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1497:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1498:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1499:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1500:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1501:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_37
+  BirdTaxonomy_1502:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1503:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1504:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1505:
+    Bird: Bird_296
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1506:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1507:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1508:
+    Bird: Bird_172
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1509:
+    Bird: Bird_292
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1510:
+    Bird: Bird_298
+    Taxonomy: Taxonomy_38
+  BirdTaxonomy_1511:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_39
+  BirdTaxonomy_1512:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_39
+  BirdTaxonomy_1513:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_39
+  BirdTaxonomy_1514:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_39
+  BirdTaxonomy_1515:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_39
+  BirdTaxonomy_1516:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1517:
+    Bird: Bird_118
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1518:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1519:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1520:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1521:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1522:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1523:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1524:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1525:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1526:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1527:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1528:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_40
+  BirdTaxonomy_1529:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_41
+  BirdTaxonomy_1530:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_41
+  BirdTaxonomy_1531:
+    Bird: Bird_251
+    Taxonomy: Taxonomy_41
+  BirdTaxonomy_1532:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_41
+  BirdTaxonomy_1533:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_41
+  BirdTaxonomy_1534:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_42
+  BirdTaxonomy_1535:
+    Bird: Bird_240
+    Taxonomy: Taxonomy_42
+  BirdTaxonomy_1536:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_42
+  BirdTaxonomy_1537:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_42
+  BirdTaxonomy_1538:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_42
+  BirdTaxonomy_1539:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1540:
+    Bird: Bird_297
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1541:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1542:
+    Bird: Bird_242
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1543:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1544:
+    Bird: Bird_245
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1545:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1546:
+    Bird: Bird_246
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1547:
+    Bird: Bird_247
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1548:
+    Bird: Bird_248
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1549:
+    Bird: Bird_249
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1550:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1551:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1552:
+    Bird: Bird_255
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1553:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1554:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1555:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1556:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1557:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1558:
+    Bird: Bird_184
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1559:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1560:
+    Bird: Bird_258
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1561:
+    Bird: Bird_259
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1562:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1563:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1564:
+    Bird: Bird_261
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1565:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1566:
+    Bird: Bird_251
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1567:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1568:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1569:
+    Bird: Bird_267
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1570:
+    Bird: Bird_268
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1571:
+    Bird: Bird_294
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1572:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1573:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1574:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1575:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1576:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1577:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1578:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1579:
+    Bird: Bird_270
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1580:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1581:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1582:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1583:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1584:
+    Bird: Bird_274
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1585:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1586:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1587:
+    Bird: Bird_278
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1588:
+    Bird: Bird_277
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1589:
+    Bird: Bird_276
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1590:
+    Bird: Bird_279
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1591:
+    Bird: Bird_280
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1592:
+    Bird: Bird_283
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1593:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1594:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1595:
+    Bird: Bird_282
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1596:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1597:
+    Bird: Bird_284
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1598:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1599:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1600:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1601:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1602:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1603:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1604:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1605:
+    Bird: Bird_288
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1606:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1607:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1608:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1609:
+    Bird: Bird_290
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1610:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_43
+  BirdTaxonomy_1611:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1612:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1613:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1614:
+    Bird: Bird_161
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1615:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1616:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1617:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1618:
+    Bird: Bird_240
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1619:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1620:
+    Bird: Bird_118
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1621:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1622:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1623:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1624:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1625:
+    Bird: Bird_254
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1626:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1627:
+    Bird: Bird_48
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1628:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1629:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1630:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1631:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1632:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1633:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1634:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1635:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1636:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1637:
+    Bird: Bird_263
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1638:
+    Bird: Bird_264
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1639:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1640:
+    Bird: Bird_265
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1641:
+    Bird: Bird_266
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1642:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1643:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1644:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1645:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1646:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1647:
+    Bird: Bird_97
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1648:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1649:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1650:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1651:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1652:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1653:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1654:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1655:
+    Bird: Bird_6
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1656:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1657:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1658:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1659:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1660:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1661:
+    Bird: Bird_275
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1662:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1663:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1664:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1665:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1666:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1667:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1668:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1669:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1670:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1671:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1672:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1673:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1674:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1675:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1676:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1677:
+    Bird: Bird_166
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1678:
+    Bird: Bird_295
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1679:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1680:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1681:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1682:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1683:
+    Bird: Bird_183
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1684:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1685:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1686:
+    Bird: Bird_178
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1687:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1688:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1689:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1690:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1691:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1692:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1693:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1694:
+    Bird: Bird_292
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1695:
+    Bird: Bird_298
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1696:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1697:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1698:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_44
+  BirdTaxonomy_1699:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1700:
+    Bird: Bird_241
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1701:
+    Bird: Bird_243
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1702:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1703:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1704:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1705:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1706:
+    Bird: Bird_186
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1707:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1708:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1709:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1710:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1711:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1712:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1713:
+    Bird: Bird_252
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1714:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1715:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1716:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1717:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1718:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1719:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1720:
+    Bird: Bird_28
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1721:
+    Bird: Bird_256
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1722:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1723:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1724:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1725:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1726:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1727:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1728:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1729:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1730:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1731:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1732:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1733:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1734:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1735:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1736:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1737:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1738:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1739:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1740:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1741:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1742:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1743:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1744:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1745:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1746:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1747:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1748:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1749:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1750:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1751:
+    Bird: Bird_149
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1752:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1753:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1754:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1755:
+    Bird: Bird_296
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1756:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1757:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1758:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1759:
+    Bird: Bird_273
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1760:
+    Bird: Bird_22
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1761:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1762:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1763:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1764:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1765:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1766:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1767:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1768:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1769:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1770:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1771:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1772:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1773:
+    Bird: Bird_142
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1774:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1775:
+    Bird: Bird_21
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1776:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1777:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1778:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1779:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1780:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1781:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1782:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1783:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1784:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1785:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1786:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1787:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1788:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1789:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1790:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1791:
+    Bird: Bird_172
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1792:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1793:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1794:
+    Bird: Bird_116
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1795:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1796:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1797:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1798:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1799:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1800:
+    Bird: Bird_237
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1801:
+    Bird: Bird_291
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1802:
+    Bird: Bird_104
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1803:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1804:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1805:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1806:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_45
+  BirdTaxonomy_1807:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1808:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1809:
+    Bird: Bird_250
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1810:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1811:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1812:
+    Bird: Bird_253
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1813:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1814:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1815:
+    Bird: Bird_260
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1816:
+    Bird: Bird_193
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1817:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1818:
+    Bird: Bird_2
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1819:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1820:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1821:
+    Bird: Bird_285
+    Taxonomy: Taxonomy_46
+  BirdTaxonomy_1822:
+    Bird: Bird_221
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1823:
+    Bird: Bird_225
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1824:
+    Bird: Bird_164
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1825:
+    Bird: Bird_163
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1826:
+    Bird: Bird_161
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1827:
+    Bird: Bird_175
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1828:
+    Bird: Bird_117
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1829:
+    Bird: Bird_173
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1830:
+    Bird: Bird_118
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1831:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1832:
+    Bird: Bird_197
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1833:
+    Bird: Bird_136
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1834:
+    Bird: Bird_168
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1835:
+    Bird: Bird_200
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1836:
+    Bird: Bird_186
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1837:
+    Bird: Bird_93
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1838:
+    Bird: Bird_62
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1839:
+    Bird: Bird_7
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1840:
+    Bird: Bird_76
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1841:
+    Bird: Bird_167
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1842:
+    Bird: Bird_222
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1843:
+    Bird: Bird_215
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1844:
+    Bird: Bird_137
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1845:
+    Bird: Bird_112
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1846:
+    Bird: Bird_177
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1847:
+    Bird: Bird_184
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1848:
+    Bird: Bird_224
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1849:
+    Bird: Bird_194
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1850:
+    Bird: Bird_176
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1851:
+    Bird: Bird_134
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1852:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1853:
+    Bird: Bird_34
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1854:
+    Bird: Bird_190
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1855:
+    Bird: Bird_121
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1856:
+    Bird: Bird_44
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1857:
+    Bird: Bird_65
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1858:
+    Bird: Bird_139
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1859:
+    Bird: Bird_212
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1860:
+    Bird: Bird_174
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1861:
+    Bird: Bird_133
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1862:
+    Bird: Bird_191
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1863:
+    Bird: Bird_122
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1864:
+    Bird: Bird_214
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1865:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1866:
+    Bird: Bird_140
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1867:
+    Bird: Bird_35
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1868:
+    Bird: Bird_181
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1869:
+    Bird: Bird_124
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1870:
+    Bird: Bird_223
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1871:
+    Bird: Bird_169
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1872:
+    Bird: Bird_70
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1873:
+    Bird: Bird_73
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1874:
+    Bird: Bird_189
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1875:
+    Bird: Bird_36
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1876:
+    Bird: Bird_46
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1877:
+    Bird: Bird_226
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1878:
+    Bird: Bird_77
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1879:
+    Bird: Bird_54
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1880:
+    Bird: Bird_85
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1881:
+    Bird: Bird_202
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1882:
+    Bird: Bird_99
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1883:
+    Bird: Bird_141
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1884:
+    Bird: Bird_218
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1885:
+    Bird: Bird_192
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1886:
+    Bird: Bird_217
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1887:
+    Bird: Bird_142
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1888:
+    Bird: Bird_87
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1889:
+    Bird: Bird_171
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1890:
+    Bird: Bird_195
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1891:
+    Bird: Bird_159
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1892:
+    Bird: Bird_198
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1893:
+    Bird: Bird_187
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1894:
+    Bird: Bird_213
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1895:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1896:
+    Bird: Bird_178
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1897:
+    Bird: Bird_92
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1898:
+    Bird: Bird_143
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1899:
+    Bird: Bird_172
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1900:
+    Bird: Bird_131
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1901:
+    Bird: Bird_114
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1902:
+    Bird: Bird_216
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1903:
+    Bird: Bird_199
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1904:
+    Bird: Bird_37
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1905:
+    Bird: Bird_170
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1906:
+    Bird: Bird_104
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1907:
+    Bird: Bird_110
+    Taxonomy: Taxonomy_47
+  BirdTaxonomy_1908:
+    Bird: Bird_1
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1909:
+    Bird: Bird_18
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1910:
+    Bird: Bird_63
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1911:
+    Bird: Bird_71
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1912:
+    Bird: Bird_165
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1913:
+    Bird: Bird_68
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1914:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1915:
+    Bird: Bird_72
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1916:
+    Bird: Bird_30
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1917:
+    Bird: Bird_75
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1918:
+    Bird: Bird_79
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1919:
+    Bird: Bird_81
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1920:
+    Bird: Bird_20
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1921:
+    Bird: Bird_51
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1922:
+    Bird: Bird_52
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1923:
+    Bird: Bird_84
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1924:
+    Bird: Bird_126
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1925:
+    Bird: Bird_50
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1926:
+    Bird: Bird_53
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1927:
+    Bird: Bird_123
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1928:
+    Bird: Bird_127
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1929:
+    Bird: Bird_135
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1930:
+    Bird: Bird_23
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1931:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1932:
+    Bird: Bird_206
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1933:
+    Bird: Bird_38
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1934:
+    Bird: Bird_22
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1935:
+    Bird: Bird_25
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1936:
+    Bird: Bird_98
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1937:
+    Bird: Bird_26
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1938:
+    Bird: Bird_27
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1939:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1940:
+    Bird: Bird_160
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1941:
+    Bird: Bird_31
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1942:
+    Bird: Bird_21
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1943:
+    Bird: Bird_232
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1944:
+    Bird: Bird_208
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1945:
+    Bird: Bird_209
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1946:
+    Bird: Bird_235
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1947:
+    Bird: Bird_166
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1948:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1949:
+    Bird: Bird_128
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1950:
+    Bird: Bird_287
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1951:
+    Bird: Bird_144
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1952:
+    Bird: Bird_129
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1953:
+    Bird: Bird_19
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1954:
+    Bird: Bird_238
+    Taxonomy: Taxonomy_48
+  BirdTaxonomy_1955:
+    Bird: Bird_32
+    Taxonomy: Taxonomy_49
+  BirdTaxonomy_1956:
+    Bird: Bird_158
+    Taxonomy: Taxonomy_49
+  BirdTaxonomy_1957:
+    Bird: Bird_152
+    Taxonomy: Taxonomy_49
+  BirdTaxonomy_1958:
+    Bird: Bird_29
+    Taxonomy: Taxonomy_50
+  BirdTaxonomy_1959:
+    Bird: Bird_147
+    Taxonomy: Taxonomy_50
+  BirdTaxonomy_1960:
+    Bird: Bird_39
+    Taxonomy: Taxonomy_50
+  BirdTaxonomy_1961:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_51
+  BirdTaxonomy_1962:
+    Bird: Bird_61
+    Taxonomy: Taxonomy_51
+  BirdTaxonomy_1963:
+    Bird: Bird_64
+    Taxonomy: Taxonomy_51
+  BirdTaxonomy_1964:
+    Bird: Bird_42
+    Taxonomy: Taxonomy_51
+  BirdTaxonomy_1965:
+    Bird: Bird_59
+    Taxonomy: Taxonomy_52
+  BirdTaxonomy_1966:
+    Bird: Bird_286
+    Taxonomy: Taxonomy_52
+  BirdTaxonomy_1967:
+    Bird: Bird_289
+    Taxonomy: Taxonomy_52
+  BirdTaxonomy_1968:
+    Bird: Bird_106
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1969:
+    Bird: Bird_80
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1970:
+    Bird: Bird_107
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1971:
+    Bird: Bird_108
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1972:
+    Bird: Bird_130
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1973:
+    Bird: Bird_109
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1974:
+    Bird: Bird_111
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1975:
+    Bird: Bird_230
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1976:
+    Bird: Bird_67
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1977:
+    Bird: Bird_83
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1978:
+    Bird: Bird_113
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1979:
+    Bird: Bird_115
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1980:
+    Bird: Bird_116
+    Taxonomy: Taxonomy_53
+  BirdTaxonomy_1981:
+    Bird: Bird_40
+    Taxonomy: Taxonomy_54
+  BirdTaxonomy_1982:
+    Bird: Bird_154
+    Taxonomy: Taxonomy_54
+  BirdTaxonomy_1983:
+    Bird: Bird_207
+    Taxonomy: Taxonomy_54
+  BirdTaxonomy_1984:
+    Bird: Bird_60
+    Taxonomy: Taxonomy_55
+  BirdTaxonomy_1985:
+    Bird: Bird_262
+    Taxonomy: Taxonomy_55
+  BirdTaxonomy_1986:
+    Bird: Bird_41
+    Taxonomy: Taxonomy_55
+  BirdTaxonomy_1987:
+    Bird: Bird_33
+    Taxonomy: Taxonomy_55
+  BirdTaxonomy_1988:
+    Bird: Bird_88
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1989:
+    Bird: Bird_89
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1990:
+    Bird: Bird_94
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1991:
+    Bird: Bird_91
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1992:
+    Bird: Bird_272
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1993:
+    Bird: Bird_102
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1994:
+    Bird: Bird_103
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1995:
+    Bird: Bird_90
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1996:
+    Bird: Bird_100
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1997:
+    Bird: Bird_105
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1998:
+    Bird: Bird_101
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_1999:
+    Bird: Bird_148
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_2000:
+    Bird: Bird_293
+    Taxonomy: Taxonomy_56
+  BirdTaxonomy_2001:
+    Bird: Bird_95
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2002:
+    Bird: Bird_82
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2003:
+    Bird: Bird_155
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2004:
+    Bird: Bird_96
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2005:
+    Bird: Bird_28
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2006:
+    Bird: Bird_86
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2007:
+    Bird: Bird_157
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2008:
+    Bird: Bird_156
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2009:
+    Bird: Bird_138
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2010:
+    Bird: Bird_234
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2011:
+    Bird: Bird_185
+    Taxonomy: Taxonomy_57
+  BirdTaxonomy_2012:
+    Bird: Bird_119
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2013:
+    Bird: Bird_244
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2014:
+    Bird: Bird_47
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2015:
+    Bird: Bird_228
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2016:
+    Bird: Bird_229
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2017:
+    Bird: Bird_74
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2018:
+    Bird: Bird_49
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2019:
+    Bird: Bird_11
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2020:
+    Bird: Bird_120
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2021:
+    Bird: Bird_182
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2022:
+    Bird: Bird_203
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2023:
+    Bird: Bird_257
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2024:
+    Bird: Bird_179
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2025:
+    Bird: Bird_193
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2026:
+    Bird: Bird_66
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2027:
+    Bird: Bird_201
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2028:
+    Bird: Bird_43
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2029:
+    Bird: Bird_9
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2030:
+    Bird: Bird_149
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2031:
+    Bird: Bird_57
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2032:
+    Bird: Bird_150
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2033:
+    Bird: Bird_58
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2034:
+    Bird: Bird_12
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2035:
+    Bird: Bird_231
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2036:
+    Bird: Bird_281
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2037:
+    Bird: Bird_233
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2038:
+    Bird: Bird_196
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2039:
+    Bird: Bird_210
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2040:
+    Bird: Bird_125
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2041:
+    Bird: Bird_55
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2042:
+    Bird: Bird_183
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2043:
+    Bird: Bird_151
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2044:
+    Bird: Bird_56
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2045:
+    Bird: Bird_211
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2046:
+    Bird: Bird_162
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2047:
+    Bird: Bird_8
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2048:
+    Bird: Bird_69
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2049:
+    Bird: Bird_188
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2050:
+    Bird: Bird_205
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2051:
+    Bird: Bird_220
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2052:
+    Bird: Bird_236
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2053:
+    Bird: Bird_219
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2054:
+    Bird: Bird_180
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2055:
+    Bird: Bird_239
+    Taxonomy: Taxonomy_58
+  BirdTaxonomy_2056:
+    Bird: Bird_48
+    Taxonomy: Taxonomy_59
+  BirdTaxonomy_2057:
+    Bird: Bird_97
+    Taxonomy: Taxonomy_59
+  BirdTaxonomy_2058:
+    Bird: Bird_6
+    Taxonomy: Taxonomy_59
+  BirdTaxonomy_2059:
+    Bird: Bird_5
+    Taxonomy: Taxonomy_59
+  BirdTaxonomy_2060:
+    Bird: Bird_15
+    Taxonomy: Taxonomy_59
+  BirdTaxonomy_2061:
+    Bird: Bird_227
+    Taxonomy: Taxonomy_60
+  BirdTaxonomy_2062:
+    Bird: Bird_204
+    Taxonomy: Taxonomy_60
+  BirdTaxonomy_2063:
+    Bird: Bird_271
+    Taxonomy: Taxonomy_60
+  BirdTaxonomy_2064:
+    Bird: Bird_2
+    Taxonomy: Taxonomy_60
+TaxonomySource:
+  TaxonomySource_1:
+    Taxonomy: Taxonomy_1
+    Source: Source_1
+  TaxonomySource_2:
+    Taxonomy: Taxonomy_2
+    Source: Source_1
+  TaxonomySource_3:
+    Taxonomy: Taxonomy_3
+    Source: Source_1
+  TaxonomySource_4:
+    Taxonomy: Taxonomy_4
+    Source: Source_1
+  TaxonomySource_5:
+    Taxonomy: Taxonomy_5
+    Source: Source_1
+  TaxonomySource_6:
+    Taxonomy: Taxonomy_6
+    Source: Source_1
+  TaxonomySource_7:
+    Taxonomy: Taxonomy_7
+    Source: Source_1
+  TaxonomySource_8:
+    Taxonomy: Taxonomy_8
+    Source: Source_1
+  TaxonomySource_9:
+    Taxonomy: Taxonomy_9
+    Source: Source_1
+  TaxonomySource_10:
+    Taxonomy: Taxonomy_10
+    Source: Source_1
+  TaxonomySource_11:
+    Taxonomy: Taxonomy_11
+    Source: Source_1
+  TaxonomySource_12:
+    Taxonomy: Taxonomy_12
+    Source: Source_1
+  TaxonomySource_13:
+    Taxonomy: Taxonomy_13
+    Source: Source_1
+  TaxonomySource_14:
+    Taxonomy: Taxonomy_14
+    Source: Source_1
+  TaxonomySource_15:
+    Taxonomy: Taxonomy_15
+    Source: Source_1
+  TaxonomySource_16:
+    Taxonomy: Taxonomy_16
+    Source: Source_1
+  TaxonomySource_17:
+    Taxonomy: Taxonomy_17
+    Source: Source_1
+  TaxonomySource_18:
+    Taxonomy: Taxonomy_18
+    Source: Source_1
+  TaxonomySource_19:
+    Taxonomy: Taxonomy_19
+    Source: Source_1
+  TaxonomySource_20:
+    Taxonomy: Taxonomy_20
+    Source: Source_1
+  TaxonomySource_21:
+    Taxonomy: Taxonomy_21
+    Source: Source_1
+  TaxonomySource_22:
+    Taxonomy: Taxonomy_22
+    Source: Source_1
+  TaxonomySource_23:
+    Taxonomy: Taxonomy_23
+    Source: Source_1
+  TaxonomySource_24:
+    Taxonomy: Taxonomy_24
+    Source: Source_1
+  TaxonomySource_25:
+    Taxonomy: Taxonomy_25
+    Source: Source_1
+  TaxonomySource_26:
+    Taxonomy: Taxonomy_26
+    Source: Source_1
+  TaxonomySource_27:
+    Taxonomy: Taxonomy_27
+    Source: Source_1
+  TaxonomySource_28:
+    Taxonomy: Taxonomy_28
+    Source: Source_1
+  TaxonomySource_29:
+    Taxonomy: Taxonomy_29
+    Source: Source_1
+  TaxonomySource_30:
+    Taxonomy: Taxonomy_30
+    Source: Source_1
+  TaxonomySource_31:
+    Taxonomy: Taxonomy_31
+    Source: Source_1
+  TaxonomySource_32:
+    Taxonomy: Taxonomy_32
+    Source: Source_1
+  TaxonomySource_33:
+    Taxonomy: Taxonomy_33
+    Source: Source_1
+  TaxonomySource_34:
+    Taxonomy: Taxonomy_34
+    Source: Source_1
+  TaxonomySource_35:
+    Taxonomy: Taxonomy_35
+    Source: Source_1
+  TaxonomySource_36:
+    Taxonomy: Taxonomy_36
+    Source: Source_1
+  TaxonomySource_37:
+    Taxonomy: Taxonomy_37
+    Source: Source_1
+  TaxonomySource_38:
+    Taxonomy: Taxonomy_38
+    Source: Source_1
+  TaxonomySource_39:
+    Taxonomy: Taxonomy_39
+    Source: Source_1
+  TaxonomySource_40:
+    Taxonomy: Taxonomy_40
+    Source: Source_1
+  TaxonomySource_41:
+    Taxonomy: Taxonomy_41
+    Source: Source_1
+  TaxonomySource_42:
+    Taxonomy: Taxonomy_42
+    Source: Source_1
+  TaxonomySource_43:
+    Taxonomy: Taxonomy_43
+    Source: Source_1
+  TaxonomySource_44:
+    Taxonomy: Taxonomy_44
+    Source: Source_1
+  TaxonomySource_45:
+    Taxonomy: Taxonomy_45
+    Source: Source_1
+  TaxonomySource_46:
+    Taxonomy: Taxonomy_46
+    Source: Source_1
+  TaxonomySource_47:
+    Taxonomy: Taxonomy_47
+    Source: Source_1
+  TaxonomySource_48:
+    Taxonomy: Taxonomy_48
+    Source: Source_1
+  TaxonomySource_49:
+    Taxonomy: Taxonomy_49
+    Source: Source_1
+  TaxonomySource_50:
+    Taxonomy: Taxonomy_50
+    Source: Source_1
+  TaxonomySource_51:
+    Taxonomy: Taxonomy_51
+    Source: Source_1
+  TaxonomySource_52:
+    Taxonomy: Taxonomy_52
+    Source: Source_1
+  TaxonomySource_53:
+    Taxonomy: Taxonomy_53
+    Source: Source_1
+  TaxonomySource_54:
+    Taxonomy: Taxonomy_54
+    Source: Source_1
+  TaxonomySource_55:
+    Taxonomy: Taxonomy_55
+    Source: Source_1
+  TaxonomySource_56:
+    Taxonomy: Taxonomy_56
+    Source: Source_1
+  TaxonomySource_57:
+    Taxonomy: Taxonomy_57
+    Source: Source_1
+  TaxonomySource_58:
+    Taxonomy: Taxonomy_58
+    Source: Source_1
+  TaxonomySource_59:
+    Taxonomy: Taxonomy_59
+    Source: Source_1
+  TaxonomySource_60:
+    Taxonomy: Taxonomy_60
+    Source: Source_1
