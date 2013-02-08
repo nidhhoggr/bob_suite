@@ -18,5 +18,18 @@ class BirdTaxonomyModel extends BaseModel {
         return $result;
     }
 
+    public function fetchTaxTypeByBirdId($bird_id) {
 
+        $sql="SELECT b.id, bt.taxonomy_id, t.taxonomytype_id
+              FROM bird b
+              JOIN bird_taxonomy as bt
+              ON b.id = bt.bird_id
+              JOIN taxonomy t
+              ON t.id = bt.taxonomy_id
+              WHERE b.id = $bird_id";
+
+        $result = $this->query($sql);
+
+        return $result;
+    }
 }

@@ -63,6 +63,6 @@ $bt->enqueueHead($styling.$scripts);
 $html = $bt->getTemplate();
 
 
-$html->find('#frontpage-intro', 0)->innertext = FormUtil::wrapDiv(TaxAssView::getCreator(),'assApp');
+$html->find('#frontpage-intro', 0)->innertext = FormUtil::wrapDiv(TaxAssView::getModifier(),'assApp');
 
 echo $html;

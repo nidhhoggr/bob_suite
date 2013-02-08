@@ -65,29 +65,57 @@ $( function() {
 
        if(one_for_all > 0) {
 
-       $.ajax({
-            type: 'POST',
-            data: {
-                'controller':'TaxAssController',
-                'function':'getBird',
-                'arguments':{'bird_id':one_for_all}
-            },
-            url: ajaxurl,
-            beforeSend: function() {
-                //remove child bird images
-            },
-            success: function(rsp){
-                var bird = $.parseJSON(rsp);
-                loadOneForAllImg(bird.imageurl);
-            }
-        });
-
+           $.ajax({
+               type: 'POST',
+               data: {
+                   'controller':'TaxAssController',
+                   'function':'getBird',
+                   'arguments':{'bird_id':one_for_all}
+               },
+               url: ajaxurl,
+               beforeSend: function() {
+               },
+               success: function(rsp){
+                   var bird = $.parseJSON(rsp);
+                   loadOneForAllImg(bird.imageurl);
+               }
+           });
         }
         else {
             unsetOneForAllImg();
         }
 
    });
+
+   $('.bird_id_modify_bird').live('change',function(e) {
+
+       modify_bird = $(this).val();
+
+       if(modify_bird > 0) {
+
+           $.ajax({
+                type: 'POST',
+                data: {
+                    'controller':'TaxAssController',
+                    'function':'getBird',
+                    'arguments':{'bird_id':modify_bird}
+                },
+                url: ajaxurl,
+                beforeSend: function() {
+                },
+                success: function(rsp){
+                    var bird = $.parseJSON(rsp);
+                    loadModifyBirdImg(bird.imageurl);
+                }
+            });
+
+            populateTaxonomiesByBird(modify_bird);
+        }
+        else {
+            unsetModifyBirdImg();
+        }
+   });
+
 
    $('#putAss').live('click',function(e) {
        e.preventDefault();
@@ -99,6 +127,31 @@ $( function() {
             data: {
                 'controller':'TaxAssController',
                 'function':'saveForm',
+                'arguments':{'form_data':form_data}
+            },
+            url: ajaxurl,
+            beforeSend: function() {
+                $('.igFlash').remove();
+            },
+            success: function(rsp){
+                rsp = $.parseJSON(rsp);
+                $.each(rsp.flashes, function(index,item) {
+                    $('.inputs').eq(index).prepend(item);
+                });
+            }
+       });
+   });
+
+   $('#putModAss').live('click',function(e) {
+       e.preventDefault();
+
+       var form_data = $('.assForm').serialize();
+
+       $.ajax({
+            type: 'POST',
+            data: {
+                'controller':'TaxAssController',
+                'function':'saveModForm',
                 'arguments':{'form_data':form_data}
             },
             url: ajaxurl,
@@ -126,12 +179,12 @@ $( function() {
 
 });
 
-unsetOneForAllImg = function() {
+unsetImg = function(selector) {
 
-    $('#one_for_all_img').removeAttr('src').css('height','0px');
+    $(selector).removeAttr('src').css('height','0px');
 }
 
-loadOneForAllImg = function(url) {
+loadImg = function(selector,url) {
 
     $("<img>", {
         src: url,
@@ -139,7 +192,46 @@ loadOneForAllImg = function(url) {
             unsetOneForAllImg();
         },
         load: function() {
-            $('#one_for_all_img').attr('src',url).css('height','300px');
+            $(selector).attr('src',url).css('height','300px');
         }
     });
+}
+
+unsetModifyBirdImg = function() {
+
+    unsetImg('#modify_bird_img');
+}
+
+loadModifyBirdImg = function(url) {
+
+    loadImg('#modify_bird_img',url);
+}
+
+unsetOneForAllImg = function() {
+
+    unsetImg('#one_for_all_img');
+}
+
+loadOneForAllImg = function(url) {
+
+    loadImg('#one_for_all_img',url);
+}
+
+populateTaxonomiesByBird = function(bird_id) {
+
+       $.ajax({
+            type: 'POST',
+            data: {
+                'controller':'TaxAssController',
+                'function':'getModInputs',
+                'arguments':{'bird_id':bird_id}
+            },
+            url: ajaxurl,
+            beforeSend: function() {
+                $('.igFlash').remove();
+            },
+            success: function(rsp){
+                $('.assForm').html(rsp);
+            }
+       });
 }

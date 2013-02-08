@@ -45,11 +45,37 @@ class TaxAssController {
         echo json_encode(array('flashes'=>$flashes));    
     }
 
+    /**
+     * find existing, deleted, and modified flashes
+     */
+    //public function saveModForm() {
+
+    //}
+
     public function getBird($args) {
         global $BirdModel;
         extract($args);
         $birds = $BirdModel->findBy(array('conditions'=>array("id=".$bird_id),'fetchArray'=>true));
         echo json_encode($birds[0]);
+    }
+
+    public function getTaxonomies($args) {
+        global $BirdTaxonomyModel;
+        extract($args);
+        $BirdTaxonomyModel->fetchTaxTypeByBirdId($bird_id);
+        while($bird = $BirdTaxonomyModel->fetchNextObject())
+            $birds[] = $bird;
+        echo json_encode($birds);
+    }
+
+    public function getModInputs($args) {
+        global $BirdTaxonomyModel;
+        extract($args);
+        $BirdTaxonomyModel->fetchTaxTypeByBirdId($bird_id);
+        while($bird = $BirdTaxonomyModel->fetchNextObject())
+            $inputs .= TaxAssView::getModifyAssInputs($bird);
+
+        echo $inputs;
     }
 
     private function parseFormData($form_data) {

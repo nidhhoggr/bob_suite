@@ -9,7 +9,9 @@ class FormUtil {
         return '<div class="'.$class.'">'.$input.'</div>';
     }
 
-    public static function getBirdSelector($select_id=null) {
+  
+    //needs to be cached
+    public static function getBirdSelector($select_id=null,$selected=null) {
         global $BirdModel;
 
         $content ='<select class="bird_id_'.$select_id.'" name="bird_id"><option value="0"> - select - </option>';
@@ -18,7 +20,13 @@ class FormUtil {
 
         while($bird = $BirdModel->fetchNextObject()) {
 
-            $content .='<option value="'.$bird->id.'">'.$bird->name.'</option>';
+            $content .='<option value="'.$bird->id.'"';
+
+            if($bird->id == $selected)            
+                $content .= ' selected="selected" ';
+
+
+            $content .='>'.$bird->name.'</option>';
         }
 
         $content .= '</select>';
@@ -26,7 +34,8 @@ class FormUtil {
         return $content;
     }
 
-    public static function getTaxonomySelector($ttid) {
+    //needs to be cached
+    public static function getTaxonomySelector($ttid,$selected=null) {
         global $TaxonomyModel;
 
         $content ='<select name="taxonomy_id"><option value="0"> - select - </option>';
@@ -35,7 +44,12 @@ class FormUtil {
 
         while($tm = $TaxonomyModel->fetchNextObject()) {
 
-            $content .='<option value="'.$tm->id.'">'.$tm->name.'</option>';
+            $content .='<option value="'.$tm->id.'"';
+
+            if($tm->id == $selected) 
+                $content .= ' selected="selected" ';
+
+            $content .='>'.$tm->name.'</option>';
         }
 
         $content .= '</select>';
@@ -43,7 +57,8 @@ class FormUtil {
         return $content;
     }
 
-    public static function getTaxonomyTypeSelector() {
+    //needs to be cached
+    public static function getTaxonomyTypeSelector($selected=null) {
         global $TaxonomyTypeModel;
 
         $content ='<select name="taxonomy_type_id"><option value="0"> - select - </option>';
@@ -52,7 +67,12 @@ class FormUtil {
 
         while($tt = $TaxonomyTypeModel->fetchNextObject()) {
 
-            $content .='<option value="'.$tt->id.'">'.$tt->name.'</option>';
+            $content .='<option value="'.$tt->id.'"';
+
+            if($tt->id == $selected) 
+                $content .= ' selected="selected" ';
+
+            $content .='>'.$tt->name.'</option>';
         }
 
         $content .= '</select>';
