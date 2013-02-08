@@ -12,13 +12,13 @@ $styling =<<<EOF
 
 <style type="text/css">
 
-.assForm {
+.assForm .inputs {
 
     width: 500px;
     border: 1px inset #000;
     padding: 10px;
     margin: 15px;
-
+    background-color: #FCFFF0;
 }
 
 .assApp .input {
@@ -32,33 +32,37 @@ $styling =<<<EOF
     margin-left: 20px;
 }
 
+.assApp .igFlash {
+
+    width: 100%;
+    background-color: #FAF0E6;
+    border: 1px solid #EECBAD;
+    marging: 3px;
+    padding: 3px;
+}
+
+.assApp .error {
+    color: #FF3300;
+    font-weight: bold;
+}
+
+.assApp .success {
+    color: #385E0F;
+    font-weight: bold;
+}
+
 </style>
 
 EOF;
 
+$scripts = '<script type="text/javascript">var ajaxurl = \''.bird_interface_url.'ajax_handler.php\';</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/taxAss.js"></script>';
 
-$bt->enqueueHead($styling);
+$bt->enqueueHead($styling.$scripts);
 $html = $bt->getTemplate();
 
-$content = FormUtil::wrapDiv("One For All?" . FormUtil::getBirdSelector()) . getAssForm() . getButtons();
 
-$html->find('#frontpage-intro', 0)->innertext = FormUtil::wrapDiv($content,'assApp');
+$html->find('#frontpage-intro', 0)->innertext = FormUtil::wrapDiv(TaxAssView::getCreator(),'assApp');
 
 echo $html;
-
-function getButtons() {
-
-    $buttons = array('addAss'=>'Add Associator',
-                     'remAss'=>'Delete Associator',
-                     'putAss'=>'Save');
-
-    foreach($buttons as $k=>$v) $btns .= FormUtil::getButton($k,$v);
-
-    return FormUtil::wrapDiv($btns,'btns');
-}
-
-function getAssForm() {
-
-    return '<form class="assForm">'.FormUtil::wrapDiv('Bird:' . FormUtil::getBirdSelector()) . 
-            FormUtil::wrapDiv('Taxonomy Type:' . FormUtil::getTaxonomyTypeSelector()).'</form>';
-}

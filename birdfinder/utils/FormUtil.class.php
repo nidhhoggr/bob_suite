@@ -9,10 +9,10 @@ class FormUtil {
         return '<div class="'.$class.'">'.$input.'</div>';
     }
 
-    public static function getBirdSelector() {
+    public static function getBirdSelector($select_id=null) {
         global $BirdModel;
 
-        $content ='<select name="bird_id"><option> - select - </option>';
+        $content ='<select class="bird_id_'.$select_id.'" name="bird_id"><option value="0"> - select - </option>';
 
         $BirdModel->findAll();
 
@@ -29,7 +29,7 @@ class FormUtil {
     public static function getTaxonomySelector($ttid) {
         global $TaxonomyModel;
 
-        $content ='<select name="taxonomy_id"><option> - select - </option>';
+        $content ='<select name="taxonomy_id"><option value="0"> - select - </option>';
 
         $TaxonomyModel->query("SELECT * FROM taxonomy WHERE taxonomytype_id = ".$ttid." ORDER BY name ASC");
 
@@ -46,7 +46,7 @@ class FormUtil {
     public static function getTaxonomyTypeSelector() {
         global $TaxonomyTypeModel;
 
-        $content ='<select name="taxonomy_type_id"><option> - select - </option>';
+        $content ='<select name="taxonomy_type_id"><option value="0"> - select - </option>';
 
         $TaxonomyTypeModel->query("SELECT * FROM taxonomytype ORDER BY name ASC");
 

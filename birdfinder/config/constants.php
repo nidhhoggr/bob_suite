@@ -5,6 +5,7 @@ define("BF_TEST_DIR",dirname(__FILE__). '/../tests/');
 define("BF_MODEL_DIR", dirname(__FILE__). '/../models/');
 define("BF_CONTROLLER_DIR", dirname(__FILE__). '/../controllers/');
 define("BF_SOURCE_DIR", dirname(__FILE__). '/../sources/');
+define("BF_VIEW_DIR", dirname(__FILE__). '/../views/');
 define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
 //only for shell usage
