@@ -19,6 +19,7 @@ if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $sandbox) {
     define('DBNAME','zmijevik_birdfinder');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
+    define("PEAR_LIB",'/home/zmijevik/php/');
 
     define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/backend.php/');
     define('bird_interface_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/');

@@ -1,0 +1,42 @@
+.assForm .inputs {
+
+    width: 500px;
+    border: 1px inset #000;
+    padding: 10px;
+    margin: 15px;
+    background-color: #FCFFF0;
+}
+
+.assApp .input {
+    margin: 5px 5px 20px;
+    font-weight: bold;
+}
+
+.assApp .input select {
+
+    display: block;
+    margin-left: 20px;
+}
+
+.assApp .igFlash {
+
+    width: 90%;
+    background-color: #FAF0E6;
+    border: 1px solid #EECBAD;
+    margin: 3px;
+    padding: 3px;
+}
+
+.assApp .error {
+    color: #FF3300;
+    font-weight: bold;
+}
+
+.assApp .success {
+    color: #385E0F;
+    font-weight: bold;
+}
+
+.assApp .interfaceToggle .input {
+    display: inline;
+}

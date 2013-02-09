@@ -29,6 +29,7 @@
                     <ul id="nav-pages">
                         <li><?=link_to('Birds','bird/index')?></li>
                         <li><?=link_to('Taxonomies','bird_taxonomy/index')?></li>
+                        <li><a href="<?=sfConfig::get('sf_birdfinderinterface_root') ?>associate.php">Association Modifier</a></li>
                     </ul>
                 </div><!--end nav-->
             </div><!--end header-->
@@ -61,7 +62,6 @@
     	
 	
     		<div id="bobo_footer">
-				
 				<p class="bobo_copyright">Copyright &copy; 2012 &middot; Avianweb LLC &middot; All Rights Reserved</p>
 				   
                 </div><!--end footer-->

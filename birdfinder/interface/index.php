@@ -1,6 +1,5 @@
 <?php
 require_once(dirname(__FILE__) . '/../config/bootstrap.php');
-require_once(dirname(__FILE__) . '/template/bob_template.class.php');
 
 $it = new BobTemplate("http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/old.php");
 $interface = $it->getTemplate();

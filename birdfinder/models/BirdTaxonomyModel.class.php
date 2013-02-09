@@ -20,13 +20,17 @@ class BirdTaxonomyModel extends BaseModel {
 
     public function fetchTaxTypeByBirdId($bird_id) {
 
-        $sql="SELECT b.id, bt.taxonomy_id, t.taxonomytype_id
+        $sql="SELECT bt.id, bt.taxonomy_id, t.taxonomytype_id
               FROM bird b
               JOIN bird_taxonomy as bt
               ON b.id = bt.bird_id
               JOIN taxonomy t
               ON t.id = bt.taxonomy_id
-              WHERE b.id = $bird_id";
+              JOIN taxonomytype tt
+              ON t.taxonomytype_id = tt.id
+              WHERE b.id = $bird_id
+              ORDER BY tt.weight, t.name ASC
+             ";
 
         $result = $this->query($sql);
 

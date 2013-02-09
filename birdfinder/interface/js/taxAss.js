@@ -3,6 +3,38 @@ $( function() {
    //holds the bird id in an instance variable for mass add
    var one_for_all = 0;
 
+   $('#toggleCreator').live('click',function() {
+
+        $.ajax({
+            type: 'POST',
+            data: {
+                'controller':'TaxAssController',
+                'function':'getCreator',
+                'arguments':{}
+            },
+            url: ajaxurl,
+            success: function(rsp){
+                $('.interfaceContainer').html(rsp);
+            }
+        });
+   });
+
+   $('#toggleModifier').live('click',function() {
+
+       $.ajax({
+            type: 'POST',
+            data: {
+                'controller':'TaxAssController',
+                'function':'getModifier',
+                'arguments':{}
+            },
+            url: ajaxurl,
+            success: function(rsp){
+                $('.interfaceContainer').html(rsp);
+            }
+        });
+   });
+
    $('#addAss').live('click',function(e) {
        e.preventDefault();
 
@@ -32,7 +64,7 @@ $( function() {
            $('.inputs:last').remove();
    });
 
-   $('select[name=taxonomy_type_id]').live('change',function() {
+   $('.taxonomy_type_id').live('change',function() {
 
        var select = this;
 
@@ -46,7 +78,7 @@ $( function() {
             url: ajaxurl,
             beforeSend: function() {
                 $(select).parent().parent().
-                find('select[name=taxonomy_id]').parent().remove();
+                find('.taxonomy_id').parent().remove();
             },
             success: function(rsp){
                 $(select).parent().parent().append(rsp);
@@ -145,14 +177,16 @@ $( function() {
    $('#putModAss').live('click',function(e) {
        e.preventDefault();
 
-       var form_data = $('.assForm').serialize();
+       var form_data = serializeAssForm();
+
+       var deletable_ig = $('.assForm input:checked').parent().parent();
 
        $.ajax({
             type: 'POST',
             data: {
                 'controller':'TaxAssController',
                 'function':'saveModForm',
-                'arguments':{'form_data':form_data}
+                'arguments':{'bird_id':modify_bird,'form_data':form_data}
             },
             url: ajaxurl,
             beforeSend: function() {
@@ -163,20 +197,34 @@ $( function() {
                 $.each(rsp.flashes, function(index,item) {
                     $('.inputs').eq(index).prepend(item);
                 });
+                setTimeout(function() {
+                    $.each(deletable_ig,function() {
+                        $(this).fadeOut(300,function() { $(this).remove(); });
+                    });
+                },4000);
             }
        });
    });
 
    $('#wipeAss').live('click',function(e) {
        e.preventDefault();
-       
+
        $('.bird_id_one_for_all').val(0);
        one_for_all = 0;
-       unsetOneForAllImg(); 
+       unsetOneForAllImg();
        $('.inputs').remove();
        $('#addAss').click();
    });
 
+   $('#wipeModAss').live('click',function(e) {
+       e.preventDefault();
+       
+       
+       $('.bird_id_modify_bird').val(0);
+       modify_bird = 0;
+       unsetModifyBirdImg();
+       $('.inputs').remove();
+   });
 });
 
 unsetImg = function(selector) {
@@ -189,7 +237,7 @@ loadImg = function(selector,url) {
     $("<img>", {
         src: url,
         error: function() {
-            unsetOneForAllImg();
+            unsetImg(selector);
         },
         load: function() {
             $(selector).attr('src',url).css('height','300px');
@@ -223,15 +271,32 @@ populateTaxonomiesByBird = function(bird_id) {
             type: 'POST',
             data: {
                 'controller':'TaxAssController',
-                'function':'getModInputs',
+                'function':'getTaxonomies',
                 'arguments':{'bird_id':bird_id}
             },
             url: ajaxurl,
-            beforeSend: function() {
-                $('.igFlash').remove();
-            },
             success: function(rsp){
-                $('.assForm').html(rsp);
+                rsp = $.parseJSON(rsp);
+                $('.assForm').html(rsp.html).promise().done(function() {
+                    $.each(rsp.bird_taxes, function(index,bird_tax) {
+                        $('.inputs').eq(index).find('.taxonomy_type_id').val(bird_tax.taxonomytype_id);
+                        $('.inputs').eq(index).find('.taxonomy_id').val(bird_tax.taxonomy_id);
+                    });
+                });
             }
        });
+}
+
+serializeAssForm = function() {
+
+    var input_groups = {};
+
+    $.each($('.assForm .inputs'), function(index,input_group) {
+        input_groups[index] = {};
+        input_groups[index]['id'] = $(input_group).find('.birdtaxonomy_id').val();
+        input_groups[index]['taxonomy_id'] = $(input_group).find('.taxonomy_id').val();
+        input_groups[index]['delete'] = $(input_group).find('.deleteAss').prop('checked');
+    });
+
+    return input_groups;
 }

@@ -14,22 +14,36 @@ class FormUtil {
     public static function getBirdSelector($select_id=null,$selected=null) {
         global $BirdModel;
 
-        $content ='<select class="bird_id_'.$select_id.'" name="bird_id"><option value="0"> - select - </option>';
+        $pCache = new CachePEAR('FormUtil');
 
-        $BirdModel->findAll();
+        $cKeyName = 'getBirdSelector_'.$select_id;
 
-        while($bird = $BirdModel->fetchNextObject()) {
+        if($pCache->bEnabled) {
+   
+            if(!$pCache->getData($cKeyName)) {
 
-            $content .='<option value="'.$bird->id.'"';
+                $content ='<select class="bird_id_'.$select_id.'" name="bird_id"><option value="0"> - select - </option>';
 
-            if($bird->id == $selected)            
-                $content .= ' selected="selected" ';
+                $BirdModel->findAll();
 
+                while($bird = $BirdModel->fetchNextObject()) {
+  
+                    $content .='<option value="'.$bird->id.'"';
+  
+                    if($bird->id == $selected)            
+                        $content .= ' selected="selected" ';
 
-            $content .='>'.$bird->name.'</option>';
+                    $content .='>'.$bird->name.'</option>';
+                }
+
+                $content .= '</select>';
+
+                $pCache->setData($cKeyName,$content);
+            }
+            else {
+                $content .= $pCache->getData($cKeyName);
+            }
         }
-
-        $content .= '</select>';
 
         return $content;
     }
@@ -38,21 +52,36 @@ class FormUtil {
     public static function getTaxonomySelector($ttid,$selected=null) {
         global $TaxonomyModel;
 
-        $content ='<select name="taxonomy_id"><option value="0"> - select - </option>';
+        $pCache = new CachePEAR('FormUtil');
 
-        $TaxonomyModel->query("SELECT * FROM taxonomy WHERE taxonomytype_id = ".$ttid." ORDER BY name ASC");
+        $cKeyName = 'getTaxonomySelector_'.$ttid;
 
-        while($tm = $TaxonomyModel->fetchNextObject()) {
+        if($pCache->bEnabled) {
+   
+            if(!$pCache->getData($cKeyName)) {
 
-            $content .='<option value="'.$tm->id.'"';
+                $content ='<select class="taxonomy_id" name="taxonomy_id"><option value="0"> - select - </option>';
 
-            if($tm->id == $selected) 
-                $content .= ' selected="selected" ';
+                $TaxonomyModel->query("SELECT * FROM taxonomy WHERE taxonomytype_id = ".$ttid." ORDER BY name ASC");
 
-            $content .='>'.$tm->name.'</option>';
+                while($tm = $TaxonomyModel->fetchNextObject()) {
+
+                    $content .='<option value="'.$tm->id.'"';
+
+                    if($tm->id == $selected) 
+                        $content .= ' selected="selected" ';
+
+                    $content .='>'.$tm->name.'</option>';
+                }
+
+                $content .= '</select>';
+
+                $pCache->setData($cKeyName,$content);
+            }
+            else {
+                $content .= $pCache->getData($cKeyName);
+            }
         }
-
-        $content .= '</select>';
 
         return $content;
     }
@@ -61,22 +90,47 @@ class FormUtil {
     public static function getTaxonomyTypeSelector($selected=null) {
         global $TaxonomyTypeModel;
 
-        $content ='<select name="taxonomy_type_id"><option value="0"> - select - </option>';
+        $pCache = new CachePEAR('FormUtil');
 
-        $TaxonomyTypeModel->query("SELECT * FROM taxonomytype ORDER BY name ASC");
+        $cKeyName = 'getTaxonomTypeSelector_';
 
-        while($tt = $TaxonomyTypeModel->fetchNextObject()) {
+        if($pCache->bEnabled) {
 
-            $content .='<option value="'.$tt->id.'"';
+            if(!$pCache->getData($cKeyName)) {
 
-            if($tt->id == $selected) 
-                $content .= ' selected="selected" ';
+                $content ='<select class="taxonomy_type_id" name="taxonomy_type_id"><option value="0"> - select - </option>';
 
-            $content .='>'.$tt->name.'</option>';
+                $TaxonomyTypeModel->query("SELECT * FROM taxonomytype ORDER BY name ASC");
+
+                while($tt = $TaxonomyTypeModel->fetchNextObject()) {
+
+                    $content .='<option value="'.$tt->id.'"';
+
+                    if($tt->id == $selected) 
+                        $content .= ' selected="selected" ';
+
+                    $content .='>'.$tt->name.'</option>';
+                }
+
+                $content .= '</select>';
+
+                $pCache->setData($cKeyName,$content);
+            }
+            else {
+                $content .= $pCache->getData($cKeyName);
+            }
         }
 
-        $content .= '</select>';
-
         return $content;
+    }
+
+    public static function getCheckbox($class) {
+
+        return '<input type="checkbox" class="'.$class.'" />';
+    }
+
+    public static function getRadio($name,$id,$extra=null) {
+
+        return '<input type="radio" name="'.$name.'" id="'.$id.'" '.$extra.'/>';
     }
 }

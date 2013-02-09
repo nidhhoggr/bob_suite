@@ -9,7 +9,7 @@ class TaxAssView {
         $form .= self::getCreateAssForm();
         $form .= self::getCreateButtons();
 
-        return $form;
+        return FormUtil::wrapDiv($form,'interfaceContainer');
     }
 
     
@@ -20,7 +20,7 @@ class TaxAssView {
         $form .= self::getModifyAssForm();
         $form .= self::getModifyButtons();
 
-        return $form;
+        return FormUtil::wrapDiv($form,'interfaceContainer');
     }
 
     public static function getCreateButtons() {
@@ -33,6 +33,16 @@ class TaxAssView {
         foreach($buttons as $k=>$v) $btns .= FormUtil::getButton($k,$v);
 
         return FormUtil::wrapDiv($btns,'btns');
+    }
+
+    public static function getInterfaceToggle() {
+
+        $name = "interface_toggle";
+
+        $rad .= FormUtil::wrapDiv("Creator " . FormUtil::getRadio($name,"toggleCreator",'checked'));
+        $rad .= FormUtil::wrapDiv("Modifier " . FormUtil::getRadio($name,"toggleModifier"));
+
+        return FormUtil::wrapDiv($rad,'interfaceToggle');
     }
 
     public static function getModifyButtons() {
@@ -66,10 +76,11 @@ class TaxAssView {
         return FormUtil::wrapDiv($form,'inputs');
     }
 
-    public static function getModifyAssInputs($bird) {
-        $form .= FormUtil::wrapDiv('Bird:' . FormUtil::getBirdSelector('of_tax',$bird->id));
-        $form .= FormUtil::wrapDiv('Taxonomy Type:' . FormUtil::getTaxonomyTypeSelector($bird->taxonomytype_id));
-        $form .= FormUtil::wrapDiv('Taxonomy:' . FormUtil::getTaxonomySelector($bird->taxonomytype_id,$bird->taxonomy_id));
+    public static function getModifyAssInputs($bird_tax) {
+        $form .= FormUtil::wrapDiv('Taxonomy Type:' . FormUtil::getTaxonomyTypeSelector());
+        $form .= FormUtil::wrapDiv('Taxonomy:' . FormUtil::getTaxonomySelector($bird_tax->taxonomytype_id));
+        $form .= FormUtil::wrapDiv('Delete:' . FormUtil::getCheckbox('deleteAss'));
+        $form .= FormUtil::wrapDiv('<input type="hidden" class="birdtaxonomy_id" value="'.$bird_tax->id.'" />');
         return FormUtil::wrapDiv($form,'inputs');
     }
 }
