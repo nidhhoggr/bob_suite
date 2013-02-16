@@ -14,9 +14,9 @@ class BirdModel extends SupraModel {
         return $this->query($SQL);
     }
 
-    public function findAll() {
+    public function findAll($sortBy="name") {
 
-        $SQL = "SELECT * FROM bird ORDER BY name ASC";
+        $SQL = "SELECT * FROM bird ORDER BY $sortBy ASC";
 
         return $this->query($SQL);
     }

@@ -8,15 +8,15 @@ class FormUtil {
     public static function wrapDiv($input, $class='input') {
         return '<div class="'.$class.'">'.$input.'</div>';
     }
-
   
     //needs to be cached
-    public static function getBirdSelector($select_id=null,$selected=null) {
+    public static function getBirdSelector($select_id=null,$selected=null,$propername=false) {
         global $BirdModel;
 
         $pCache = new CachePEAR('FormUtil');
 
-        $cKeyName = 'getBirdSelector_'.$select_id;
+        $cKeyName = 'getBirdSelector_' . $select_id;
+        $cKeyName .= ($propername)?'_propername':'';
 
         if($pCache->bEnabled) {
    
@@ -24,7 +24,7 @@ class FormUtil {
 
                 $content ='<select class="bird_id_'.$select_id.'" name="bird_id"><option value="0"> - select - </option>';
 
-                $BirdModel->findAll();
+                $BirdModel->findAll(($propername)?'propername':'name');
 
                 while($bird = $BirdModel->fetchNextObject()) {
   
@@ -33,7 +33,10 @@ class FormUtil {
                     if($bird->id == $selected)            
                         $content .= ' selected="selected" ';
 
-                    $content .='>'.$bird->name.'</option>';
+                    if($propername)
+                        $content .='>'.$bird->propername.'</option>';
+                    else
+                        $content .='>'.$bird->name.'</option>';
                 }
 
                 $content .= '</select>';

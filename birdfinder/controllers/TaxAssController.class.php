@@ -22,14 +22,20 @@ class TaxAssController {
 
         echo FormUtil::wrapDiv('Taxonomy:' . $select);
     }
- 
+
+    public function getBirdSelector($args) {
+        extract($args);
+
+        echo FormUtil::getBirdSelector($className,null,(bool)$isPropername);    
+    }
+
     /**
      * ajax method to append inputs to the form
      */
     public function getCreateAssFormInputs($args) {
         extract($args); 
 
-        echo TaxAssView::getCreateAssInputs(empty($withBird));
+        echo TaxAssView::getCreateAssInputs(empty($withBird),$isPropername);
     }
 
     /**

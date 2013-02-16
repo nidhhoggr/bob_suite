@@ -2,6 +2,10 @@ $( function() {
 
    //holds the bird id in an instance variable for mass add
    var one_for_all = 0;
+   //holds the boolean value of the bird if it is using the propername
+   var isPropername = 0;
+   //holds the boolean value of the interface if its the modifier interface
+   var isModifying = false;
 
    $('#toggleCreator').live('click',function() {
 
@@ -14,6 +18,7 @@ $( function() {
             },
             url: ajaxurl,
             success: function(rsp){
+                isModifying = false;
                 $('.interfaceContainer').html(rsp);
             }
         });
@@ -30,9 +35,28 @@ $( function() {
             },
             url: ajaxurl,
             success: function(rsp){
+                isModifying = true;
                 $('.interfaceContainer').html(rsp);
             }
         });
+   });
+
+   $('#toggleBirdProperName').live('click',function() {
+       isPropername = 1;
+
+       if(isModifying)
+           getBirdSelector('.bird_id_modify_bird','modify_bird',isPropername);
+       else
+           getBirdSelector('.bird_id_one_for_all','one_for_all',isPropername);
+   });
+
+   $('#toggleBirdName').live('click',function() {
+       isPropername = 0;
+
+       if(isModifying)
+           getBirdSelector('.bird_id_modify_bird','modify_bird',isPropername);
+       else
+           getBirdSelector('.bird_id_one_for_all','one_for_all',isPropername);
    });
 
    $('#addAss').live('click',function(e) {
@@ -43,7 +67,7 @@ $( function() {
             data: {
                 'controller':'TaxAssController',
                 'function':'getCreateAssFormInputs',
-                'arguments':{}
+                'arguments':{'isPropername':isPropername}
             },
             url: ajaxurl,
             success: function(rsp){
@@ -114,7 +138,7 @@ $( function() {
            });
         }
         else {
-            unsetOneForAllImg();
+            wipeAss(); 
         }
 
    });
@@ -144,7 +168,7 @@ $( function() {
             populateTaxonomiesByBird(modify_bird);
         }
         else {
-            unsetModifyBirdImg();
+            wipeModAss();
         }
    });
 
@@ -208,24 +232,54 @@ $( function() {
 
    $('#wipeAss').live('click',function(e) {
        e.preventDefault();
-
-       $('.bird_id_one_for_all').val(0);
        one_for_all = 0;
-       unsetOneForAllImg();
-       $('.inputs').remove();
-       $('#addAss').click();
+       isPropername = 0;
+       wipeAss();
    });
 
    $('#wipeModAss').live('click',function(e) {
        e.preventDefault();
-       
-       
-       $('.bird_id_modify_bird').val(0);
-       modify_bird = 0;
-       unsetModifyBirdImg();
-       $('.inputs').remove();
+       one_for_all = 0;
+       isPropername = 0;
+       wipeModAss();    
    });
 });
+
+wipeModAss = function() {
+
+    $('#toggleModifier').click();
+}
+
+wipeAss = function() {
+
+    $('#toggleCreator').click();
+}
+
+getBirdSelector = function(selector, className, isPropername) {
+  
+   $.ajax({
+        type: 'POST',
+        data: {
+            'controller':'TaxAssController',
+            'function':'getBirdSelector',
+            'arguments':{
+                'isPropername':isPropername,
+                'className':className
+            }
+        },
+        url: ajaxurl,
+        success: function(rsp){
+            $(selector).replaceWith(rsp);
+
+            if(className == "one_for_all") {
+
+                getBirdSelector('.bird_id_of_tax','of_tax',isPropername);
+            }
+            else if(className == "modify_bird") {
+            }
+        }
+   });
+}
 
 unsetImg = function(selector) {
 

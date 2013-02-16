@@ -5,7 +5,7 @@ class TaxAssView {
     public static function getCreator() {
 
         $form .= '<img id="one_for_all_img" />';
-        $form .= FormUtil::wrapDiv("One For All?" . FormUtil::getBirdSelector("one_for_all"));
+        $form .= FormUtil::wrapDiv("One For All?" . self::getBirdSortToggle() . FormUtil::getBirdSelector("one_for_all"),'one-for-all-wrap');
         $form .= self::getCreateAssForm();
         $form .= self::getCreateButtons();
 
@@ -16,7 +16,7 @@ class TaxAssView {
     public static function getModifier() {
 
         $form .= '<img id="modify_bird_img" />';
-        $form .= FormUtil::wrapDiv("Bird: " . FormUtil::getBirdSelector("modify_bird"));
+        $form .= FormUtil::wrapDiv("Bird: " . self::getBirdSortToggle() . FormUtil::getBirdSelector("modify_bird"));
         $form .= self::getModifyAssForm();
         $form .= self::getModifyButtons();
 
@@ -45,6 +45,16 @@ class TaxAssView {
         return FormUtil::wrapDiv($rad,'interfaceToggle');
     }
 
+    public static function getBirdSortToggle() {
+
+        $name = "bird_sort_toggle";
+
+        $rad .= FormUtil::wrapDiv("Bird Name " . FormUtil::getRadio($name,"toggleBirdName",'checked'));
+        $rad .= FormUtil::wrapDiv("Bird Proper Name " . FormUtil::getRadio($name,"toggleBirdProperName"));
+
+        return FormUtil::wrapDiv($rad,'birdSortToggle');
+    }
+
     public static function getModifyButtons() {
 
         $buttons = array(
@@ -68,10 +78,10 @@ class TaxAssView {
         return $form;
     }
 
-    public static function getCreateAssInputs($withBird=true) {
+    public static function getCreateAssInputs($withBird=true,$isPropername=false) {
 
         if($withBird)
-        $form .= FormUtil::wrapDiv('Bird:' . FormUtil::getBirdSelector('of_tax'));
+        $form .= FormUtil::wrapDiv('Bird:' . FormUtil::getBirdSelector('of_tax',null,(bool)$isPropername));
         $form .= FormUtil::wrapDiv('Taxonomy Type:' . FormUtil::getTaxonomyTypeSelector());
         return FormUtil::wrapDiv($form,'inputs');
     }
