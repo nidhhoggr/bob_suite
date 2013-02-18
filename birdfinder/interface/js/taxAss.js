@@ -111,11 +111,16 @@ $( function() {
             },
             url: ajaxurl,
             beforeSend: function() {
-                $(select).parent().parent().
-                find('.taxonomy_id').parent().remove();
+                if(!isModifying) {
+                  $(select).parent().parent().
+                  find('.taxonomy_id').parent().remove();
+                }
             },
             success: function(rsp){
-                $(select).parent().parent().append(rsp);
+                if(!isModifying)
+                  $(select).parent().parent().append(rsp);
+                else 
+                  $(select).parent().parent().find('.taxonomy_id').html(rsp);
             }
         });
    });
