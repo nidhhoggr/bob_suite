@@ -88,7 +88,7 @@ class TaxAssController {
     public function getTaxonomies($args) {
         global $BirdTaxonomyModel;
         extract($args);
-        $BirdTaxonomyModel->fetchTaxTypeByBirdId($bird_id);
+        $BirdTaxonomyModel->fetchTaxTypeByBirdId($bird_id,$taxonomytype_id);
         while($bird_tax = $BirdTaxonomyModel->fetchNextObject()) {
             $bird_taxes[] = $bird_tax;
             $html.= TaxAssView::getModifyAssInputs($bird_tax);

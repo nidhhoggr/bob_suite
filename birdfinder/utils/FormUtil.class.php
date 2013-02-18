@@ -90,18 +90,18 @@ class FormUtil {
     }
 
     //needs to be cached
-    public static function getTaxonomyTypeSelector($selected=null) {
+    public static function getTaxonomyTypeSelector($selected=null,$id="taxonomy_type_id") {
         global $TaxonomyTypeModel;
 
         $pCache = new CachePEAR('FormUtil');
 
-        $cKeyName = 'getTaxonomTypeSelector_';
+        $cKeyName = 'getTaxonomTypeSelector_' . $id;
 
         if($pCache->bEnabled) {
 
             if(!$pCache->getData($cKeyName)) {
 
-                $content ='<select class="taxonomy_type_id" name="taxonomy_type_id"><option value="0"> - select - </option>';
+                $content ='<select id="'.$id.'" class="'.$id.'" name="'.$id.'"><option value="0"> - select - </option>';
 
                 $TaxonomyTypeModel->query("SELECT * FROM taxonomytype ORDER BY name ASC");
 

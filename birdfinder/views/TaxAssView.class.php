@@ -17,6 +17,7 @@ class TaxAssView {
 
         $form .= '<img id="modify_bird_img" />';
         $form .= FormUtil::wrapDiv("Bird: " . self::getBirdSortToggle() . FormUtil::getBirdSelector("modify_bird"));
+        $form .= FormUtil::wrapDiv("Taxonomy Type: " . FormUtil::getTaxonomyTypeSelector(null,"modify_bird_taxtype"));
         $form .= self::getModifyAssForm();
         $form .= self::getModifyButtons();
 

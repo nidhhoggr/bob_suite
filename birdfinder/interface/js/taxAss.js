@@ -7,6 +7,8 @@ $( function() {
    //holds the boolean value of the interface if its the modifier interface
    var isModifying = false;
 
+
+   //radio the creator interface
    $('#toggleCreator').live('click',function() {
 
         $.ajax({
@@ -24,6 +26,8 @@ $( function() {
         });
    });
 
+
+   //radio the modifier interface
    $('#toggleModifier').live('click',function() {
 
        $.ajax({
@@ -41,6 +45,8 @@ $( function() {
         });
    });
 
+
+   //radio display bird select by propername
    $('#toggleBirdProperName').live('click',function() {
        isPropername = 1;
 
@@ -50,6 +56,7 @@ $( function() {
            getBirdSelector('.bird_id_one_for_all','one_for_all',isPropername);
    });
 
+   //radio display bird select by regular name
    $('#toggleBirdName').live('click',function() {
        isPropername = 0;
 
@@ -59,6 +66,7 @@ $( function() {
            getBirdSelector('.bird_id_one_for_all','one_for_all',isPropername);
    });
 
+   //click button add association group
    $('#addAss').live('click',function(e) {
        e.preventDefault();
 
@@ -82,12 +90,14 @@ $( function() {
         });
    }); 
 
+   //click button remove association group
    $('#remAss').live('click',function() {
 
        if($('.inputs').size() > 1)
            $('.inputs:last').remove();
    });
 
+   //select taxonomy type to associate
    $('.taxonomy_type_id').live('change',function() {
 
        var select = this;
@@ -110,6 +120,7 @@ $( function() {
         });
    });
 
+   //select a bird to use for all associations
    $('.bird_id_one_for_all').live('change',function(e) {
 
        one_for_all = $(this).val();
@@ -143,6 +154,7 @@ $( function() {
 
    });
 
+   //select a bird to modify
    $('.bird_id_modify_bird').live('change',function(e) {
 
        modify_bird = $(this).val();
@@ -165,14 +177,18 @@ $( function() {
                 }
             });
 
-            populateTaxonomiesByBird(modify_bird);
+            populateTaxonomiesByBird(modify_bird,null);
         }
         else {
             wipeModAss();
         }
    });
 
+   $('.modify_bird_taxtype').live('click',function() {
+       populateTaxonomiesByBird(modify_bird,$(this).val());
+   });
 
+   //submit creator associations
    $('#putAss').live('click',function(e) {
        e.preventDefault();
 
@@ -198,6 +214,7 @@ $( function() {
        });
    });
 
+   //submit modified associations
    $('#putModAss').live('click',function(e) {
        e.preventDefault();
 
@@ -230,6 +247,7 @@ $( function() {
        });
    });
 
+   //reset the creator interface
    $('#wipeAss').live('click',function(e) {
        e.preventDefault();
        one_for_all = 0;
@@ -237,6 +255,7 @@ $( function() {
        wipeAss();
    });
 
+   //reset the modifier interface
    $('#wipeModAss').live('click',function(e) {
        e.preventDefault();
        one_for_all = 0;
@@ -319,14 +338,14 @@ loadOneForAllImg = function(url) {
     loadImg('#one_for_all_img',url);
 }
 
-populateTaxonomiesByBird = function(bird_id) {
+populateTaxonomiesByBird = function(bird_id,taxonomytype_id) {
 
        $.ajax({
             type: 'POST',
             data: {
                 'controller':'TaxAssController',
                 'function':'getTaxonomies',
-                'arguments':{'bird_id':bird_id}
+                'arguments':{'bird_id':bird_id,'taxonomytype_id':taxonomytype_id}
             },
             url: ajaxurl,
             success: function(rsp){
