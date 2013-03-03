@@ -1,0 +1,7 @@
+*.swo
+*.swp
+*error_log
+./birdfinder/interface/.htaccess
+./birdfinder/cache/*
+./birdfindermanager/cache/*
+./bob/sites/default/settings.php

@@ -4,8 +4,7 @@ require_once(BF_LIB_DIR.'HTML-DOM-Parser/simple_html_dom.php');
 class BobTemplate {
 
     function __construct($url) {
-        $this->html_dom = new simple_html_dom();
-        $this->html_dom->load_file($url);
+        $this->html_dom = file_get_html($url);
     }
 
     function setBaseHref($baseHref) {
@@ -22,7 +21,7 @@ class BobTemplate {
          
     }
 
-    function setPageTtitle($title) {
+    function setPageTitle($title) {
 
         $this->html_dom->find('title',0)->plaintext = "this is the titile";
     }

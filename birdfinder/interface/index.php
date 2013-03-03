@@ -2,6 +2,7 @@
 require_once(dirname(__FILE__) . '/../config/bootstrap.php');
 
 $it = new BobTemplate(bird_interface_url . "old.php");
+
 $interface = $it->getTemplate();
 
 $head = $interface->find('head',0)->innertext;

@@ -8,7 +8,10 @@ define("BF_SOURCE_DIR", dirname(__FILE__). '/../sources/');
 define("BF_VIEW_DIR", dirname(__FILE__). '/../views/');
 define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
-$prodbox = true;
+
+
+$prodbox = false;
+$staging = true;
 //only for shell usage
 $sandbox = false;
 
@@ -26,7 +29,7 @@ if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
     define('bird_interface_url','http://beautyofbirds.com/birdfinder/interface/');
     define('bird_drupal_url','http://beautyofbirds.com/');
 }
-else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com')) {
+else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $staging) {
 
     //SET THE CONNECTION GLOBALS HERE
     define('DBUSER','zmijevik');
@@ -36,8 +39,9 @@ else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com')) {
     define('DBDRIVER','mysql');
     define("PEAR_LIB",'/home/zmijevik/php/');
 
-    define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/backend.php/');
+    define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/');
     define('bird_interface_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/');
+    define('bird_drupal_url','http://supraliminalsolutions.com/clients/sibylle/bob/');
 } 
 else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
 
