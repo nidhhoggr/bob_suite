@@ -8,10 +8,25 @@ define("BF_SOURCE_DIR", dirname(__FILE__). '/../sources/');
 define("BF_VIEW_DIR", dirname(__FILE__). '/../views/');
 define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
+$prodbox = true;
 //only for shell usage
-$sandbox = true;
+$sandbox = false;
 
-if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $sandbox) {
+if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
+
+    //SET THE CONNECTION GLOBALS HERE
+    define('DBUSER','beautyof');
+    define('DBPASSWORD','QbkAz#486K9;');
+    define('DBNAME','beautyof_birdfinder');
+    define('DBHOST','localhost');
+    define('DBDRIVER','mysql');
+    define("PEAR_LIB",'/home/beautyof/php/');
+
+    define('bird_manager_url','http://beautyofbirds.com/birdfindermanager/web/');
+    define('bird_interface_url','http://beautyofbirds.com/birdfinder/interface/');
+    define('bird_drupal_url','http://beautyofbirds.com/');
+}
+else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com')) {
 
     //SET THE CONNECTION GLOBALS HERE
     define('DBUSER','zmijevik');

@@ -16,7 +16,7 @@
   <body>
       <div id="tabs" style="min-height: 800px;">
         <div id="left_content">
-        <h2 id="bird_name_label"><?=$bird['name']?> - <?=$bird['propername']?> <span id="edit_bird"><a target="_blank" href="<?=bird_manager_url . 'bird/' . $bird['id'] ?>/edit">edit bird</a></span></h2>
+        <h2 id="bird_name_label"><?=$bird['name']?> - <?=$bird['propername']?></h2>
         <div id="about_bird" class="greyBgWithCorners">
         <h3><a href="<?=$bird['imageurl']?>" target="_blank" title="click me">Wikipedia Image</a></h3>
         <?=$bird['about']?>

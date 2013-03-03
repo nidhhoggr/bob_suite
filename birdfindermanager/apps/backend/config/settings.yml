@@ -7,6 +7,17 @@ prod:
     logging_enabled:        false
     js_frontend_root:       /index.php
     js_backend_root:        /backend.php
+    birdfinderinterface_root: /birdfinder/interface/
+
+stage:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+    js_frontend_root:       /frontend_dev.php
+    js_backend_root:        /backend_dev.php
     birdfinderinterface_root: /clients/sibylle/birdfinder/interface/
 
 dev:

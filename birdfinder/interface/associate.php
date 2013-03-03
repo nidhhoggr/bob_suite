@@ -11,7 +11,7 @@ if($pCache->bEnabled) {
 
     if(!$pCache->getData($cKeyName)) {
 */
-        $bt = new BobTemplate("http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/backend.php/bird");
+        $bt = new BobTemplate(bird_manager_url);
 
         $enqueue ='
         <script type="text/javascript">var ajaxurl = \''.bird_interface_url.'ajax_handler.php\';</script>

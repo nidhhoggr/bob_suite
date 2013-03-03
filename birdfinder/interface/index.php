@@ -1,7 +1,7 @@
 <?php
 require_once(dirname(__FILE__) . '/../config/bootstrap.php');
 
-$it = new BobTemplate("http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/old.php");
+$it = new BobTemplate(bird_interface_url . "old.php");
 $interface = $it->getTemplate();
 
 $head = $interface->find('head',0)->innertext;
@@ -20,8 +20,7 @@ $(function() {
 EOF;
 $content = $interface->find('#tabs', 0)->outertext;
 
-$bt = new BobTemplate("http://supraliminalsolutions.com/clients/sibylle/bob/");
-//$bt->setBaseHref("http://clonedparts.com/");
+$bt = new BobTemplate(bird_drupal_url);
 $bt->removeHeadScripts();
 $bt->enqueueHead($head);
 $bt->resetContent($content);
