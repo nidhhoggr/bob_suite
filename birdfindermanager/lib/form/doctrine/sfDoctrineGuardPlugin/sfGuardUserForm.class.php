@@ -10,6 +10,5 @@
  */
 class sfGuardUserForm extends PluginsfGuardUserForm {
     public function configure() {
-        $this->getWidget('ssn')->setHidden();
     }
 }

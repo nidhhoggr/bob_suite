@@ -11,7 +11,7 @@ define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
 
 $prodbox = false;
-$staging = true;
+$staging = false;
 //only for shell usage
 $sandbox = false;
 
@@ -40,6 +40,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $staging) 
     define("PEAR_LIB",'/home/zmijevik/php/');
 
     define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/');
+    define('bird_managertemplate_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/frontend.php');
     define('bird_interface_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/');
     define('bird_drupal_url','http://supraliminalsolutions.com/clients/sibylle/bob/');
 } 

@@ -30,6 +30,7 @@
                         <li><?=link_to('Birds','bird/index')?></li>
                         <li><?=link_to('Taxonomies','bird_taxonomy/index')?></li>
                         <li><a href="<?=sfConfig::get('sf_birdfinderinterface_root') ?>associate.php">Association Modifier</a></li>
+                        <li><?=link_to('Logout','sfGuardAuth/signout')?></li>
                     </ul>
                 </div><!--end nav-->
             </div><!--end header-->

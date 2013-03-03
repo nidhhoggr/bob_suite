@@ -5,8 +5,20 @@ prod:
   .settings:
     no_script_name:         true
     logging_enabled:        false
-    js_frontend_root:       /uscpr/web/index.php
-    js_backend_root:        /uscpr/web/backend.php
+    js_frontend_root:       index.php
+    js_backend_root:        backend.php
+    backend_root:           http://beautyofbirds.com/birdfindermanager/web/
+
+stage:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+    js_frontend_root:       index.php
+    js_backend_root:        backend.php
+    backend_root:           http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/
 
 dev:
   .settings:

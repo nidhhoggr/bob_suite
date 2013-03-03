@@ -2,7 +2,7 @@
 <html lang="en">	
     <head>		
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
-        <title>SuperAccountant</title>
+        <title>Bird Finder Administrator</title>
         <!--[if IE 6]>
             <link rel="stylesheet" href="/css/bobo/ie6.css" />
         <![endif]--> 
@@ -13,6 +13,7 @@
         <?php include_metas() ?>
         <?php include_title() ?>
         <?php use_stylesheet('bobo/style.css') ?>
+        <?php use_stylesheet('admin.css') ?>
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
         <script type="text/javascript">
@@ -21,18 +22,16 @@
     </script>
     </head>
     <body>	
-        <div id="wrap">
-            <div id="header">
-                <a href="#" title="[ADD LINK TITLE]">
-                    <img src="/images/logo.png" />
-                </a>       	
-                <h2>Title Of Application</h2>           	
-                <div id="nav">
+        <div id="bobo_wrap">
+            <div id="bobo_header">
+                <h2>Bird Finder Administrator</h2>           	
+                <div id="bobo_nav">
                     <ul id="nav-pages">
-                    <?php
-                    //include the menu respective to the nav
-                    ?>
-                    </ul><!--end nav-pages-->
+                        <li><a href="<?=sfConfig::get('sf_backend_root') ?>bird">Bird</a></li>
+                        <li><a href="<?=sfConfig::get('sf_backend_root') ?>bird_taxonomy">Taxonomy</a></li>
+                        <li><a href="<?=sfConfig::get('sf_birdfinderinterface_root') ?>associate.php">Association Modifier</a></li>
+                        <li><a href="<?=sfConfig::get('sf_backend_root') ?>logout">Logout</a></li>
+                    </ul>
                 </div><!--end nav-->
             </div><!--end header-->
             <div id="frontpage-content">      
@@ -47,10 +46,24 @@
     			</div><!--end featured-projects--> 
     			    			
     		</div><!--end frontpage-content--> 
-    		
-    		<div id="footer">
-				
-				<p class="copyright">Copyright &copy; 2012 &middot; SuperAccountant &middot; All Rights Reserved</p>
+                <div id="bobo_nav">
+                    <ul id="nav-pages">
+                        <li><?=link_to('Bird','bird/index')?></li>
+                        <li><?=link_to('Taxonomy Types','taxonomytype/index')?></li>
+                        <li><?=link_to('Taxonomy','taxonomy/index')?></li>
+                        <li><?=link_to('Bird Taxonomy','bird_taxonomy/index')?></li>
+                    </ul>
+                    <ul id="nav-pages">
+                        <li><?=link_to('Source','source/index')?></li>
+                        <li><?=link_to('Bird Source','bird/index')?></li>
+                        <li><?=link_to('Taxonomy Source','taxonomy_source/index')?></li>
+                        <li><?=link_to('Taxonomy Type Source','taxonomytype_source/index')?></li>
+                    </ul><!--end nav-pages-->
+                </div><!--end nav-->
+    	
+	
+    		<div id="bobo_footer">
+				<p class="bobo_copyright">Copyright &copy; 2012 &middot; Avianweb LLC &middot; All Rights Reserved</p>
 				   
                 </div><!--end footer-->
             

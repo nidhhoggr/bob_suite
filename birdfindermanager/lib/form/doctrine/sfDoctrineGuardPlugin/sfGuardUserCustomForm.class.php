@@ -15,19 +15,5 @@ class sfGuardUserCustomForm extends BasesfGuardUserAdminForm {
       }
 
       unset($this['permissions_list'],$this['groups_list']);
-
-      if($this->getObject()->exists()) {
-
-          unset($this['password'],$this['password_again']);
-
-      }
-
-      $this->embedAddress();
-
-      //only provide m2m functioanlity for doctors and technologists 
-      //if(!$this->getObject()->getPatient()->getId())
-          //$this->embedGroupUserLocations();
-
-      $this->embedPhoneNumbers();
   }
 }

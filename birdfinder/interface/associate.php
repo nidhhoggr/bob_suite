@@ -1,6 +1,13 @@
 <?php
 require_once(dirname(__FILE__) . '/../config/bootstrap.php');
 
+require_once(dirname(__FILE__).'/../../birdfindermanager/config/ProjectConfiguration.class.php');
+$configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'stage', false);
+$instance = sfContext::createInstance($configuration);
+if(!$instance->getUser()->isAuthenticated()) {
+    header("Location: " . bird_manager_url);
+}
+
 /*
 
 $pCache = new CachePEAR('BobTemplate');
@@ -11,7 +18,7 @@ if($pCache->bEnabled) {
 
     if(!$pCache->getData($cKeyName)) {
 */
-        $bt = new BobTemplate(bird_manager_url);
+        $bt = new BobTemplate(bird_managertemplate_url);
 
         $enqueue ='
         <script type="text/javascript">var ajaxurl = \''.bird_interface_url.'ajax_handler.php\';</script>
