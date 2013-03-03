@@ -6,7 +6,8 @@ $( function() {
    var isPropername = 0;
    //holds the boolean value of the interface if its the modifier interface
    var isModifying = false;
-
+   //holds the taxonomy type id for the modifier form
+   var selectedTaxType = null;
 
    //radio the creator interface
    $('#toggleCreator').live('click',function() {
@@ -182,7 +183,7 @@ $( function() {
                 }
             });
 
-            populateTaxonomiesByBird(modify_bird,null);
+            populateTaxonomiesByBird(modify_bird,selectedTaxType);
         }
         else {
             wipeModAss();
@@ -190,7 +191,10 @@ $( function() {
    });
 
    $('.modify_bird_taxtype').live('click',function() {
-       populateTaxonomiesByBird(modify_bird,$(this).val());
+
+       selectedTaxType = $(this).val();
+
+       populateTaxonomiesByBird(modify_bird,selectedTaxType);
    });
 
    //submit creator associations

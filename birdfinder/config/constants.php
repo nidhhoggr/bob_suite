@@ -15,7 +15,7 @@ if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $sandbox) {
 
     //SET THE CONNECTION GLOBALS HERE
     define('DBUSER','zmijevik');
-    define('DBPASSWORD','2crscM,jxs3Z');
+    define('DBPASSWORD','a1genda666');
     define('DBNAME','zmijevik_birdfinder');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
