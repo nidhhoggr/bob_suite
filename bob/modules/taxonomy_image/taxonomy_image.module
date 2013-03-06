@@ -790,6 +790,22 @@ function taxonomy_image_delete($tid) {
   }
 }
 
+
+function get_taxonomy_image_path() {
+
+  $taxonomy_image_path = file_directory_path() .'/'. variable_get('taxonomy_image_path', 'category_pictures') .'/';
+  $full_path = $taxonomy_image_path . $path;
+
+  return $full_path;
+}
+
+function get_taxonomy_image_filename($tid) 
+{
+    $file = str_replace(get_taxonomy_image_path(),'',taxonomy_image_get_url($tid));
+    $file_stuff = explode('/',$file);
+    return end($file_stuff);
+}
+
 /**
  * Check if the given TID has an image associated.
  *
