@@ -13,6 +13,7 @@ class BirdForm extends BaseBirdForm
   public function configure()
   {
       $this->widgetSchema['wikipedia'] = new sfWidgetFormInputHidden();
+      $this->widgetSchema['drupalinfo'] = new sfWidgetFormInputHidden();
       $this->widgetSchema['imageurl'] = new sfWidgetFormTextarea(array(), array('class' => 'no-editor'));
       $this->widgetSchema['about'] = new sfWidgetFormTextarea(array(), array());
       $this->widgetSchema['paraphrased'] = new sfWidgetFormInputCheckbox(array('label'=>"Check this box when done paraphrasing"));

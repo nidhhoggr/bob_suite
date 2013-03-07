@@ -6,6 +6,20 @@ class BirdTaxonomyModel extends BaseModel {
         $this->setTable("bird_taxonomy");
     }
 
+    public function findByTaxTypeAndBird($taxtype_id,$bird_id) {
+
+        $sql="SELECT t.*
+              FROM bird_taxonomy bt
+              JOIN taxonomy t
+              ON t.id = bt.taxonomy_id
+              WHERE t.taxonomytype_id = $taxtype_id
+              AND bt.bird_id = $bird_id";
+
+        $result = $this->query($sql);
+
+        return $result;
+    }
+
     public function fetchWhereIn($field,$in) {
 
         $sql="SELECT bt.* 
@@ -37,5 +51,11 @@ class BirdTaxonomyModel extends BaseModel {
         $result = $this->query($sql);
 
         return $result;
+    }
+
+    public function deleteById($id) {
+
+        $sql="DELETE FROM bird_taxonomy WHERE id = $id";
+        $this->execute($sql);
     }
 }

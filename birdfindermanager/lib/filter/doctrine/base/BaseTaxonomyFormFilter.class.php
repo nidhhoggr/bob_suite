@@ -15,11 +15,17 @@ abstract class BaseTaxonomyFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'taxonomytype_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Taxonomytype'), 'add_empty' => true)),
       'name'            => new sfWidgetFormFilterInput(),
+      'imageurl'        => new sfWidgetFormFilterInput(),
+      'about'           => new sfWidgetFormFilterInput(),
+      'drupalinfo'      => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'taxonomytype_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Taxonomytype'), 'column' => 'id')),
       'name'            => new sfValidatorPass(array('required' => false)),
+      'imageurl'        => new sfValidatorPass(array('required' => false)),
+      'about'           => new sfValidatorPass(array('required' => false)),
+      'drupalinfo'      => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('taxonomy_filters[%s]');
@@ -42,6 +48,9 @@ abstract class BaseTaxonomyFormFilter extends BaseFormFilterDoctrine
       'id'              => 'Number',
       'taxonomytype_id' => 'ForeignKey',
       'name'            => 'Text',
+      'imageurl'        => 'Text',
+      'about'           => 'Text',
+      'drupalinfo'      => 'Text',
     );
   }
 }

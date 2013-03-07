@@ -12,6 +12,7 @@
  * @property text $wikipedia
  * @property text $about
  * @property boolean $paraphrased
+ * @property text $drupalinfo
  * @property Doctrine_Collection $BirdSource
  * @property Doctrine_Collection $BirdTaxonomy
  * 
@@ -22,6 +23,7 @@
  * @method text                getWikipedia()    Returns the current record's "wikipedia" value
  * @method text                getAbout()        Returns the current record's "about" value
  * @method boolean             getParaphrased()  Returns the current record's "paraphrased" value
+ * @method text                getDrupalinfo()   Returns the current record's "drupalinfo" value
  * @method Doctrine_Collection getBirdSource()   Returns the current record's "BirdSource" collection
  * @method Doctrine_Collection getBirdTaxonomy() Returns the current record's "BirdTaxonomy" collection
  * @method Bird                setId()           Sets the current record's "id" value
@@ -31,6 +33,7 @@
  * @method Bird                setWikipedia()    Sets the current record's "wikipedia" value
  * @method Bird                setAbout()        Sets the current record's "about" value
  * @method Bird                setParaphrased()  Sets the current record's "paraphrased" value
+ * @method Bird                setDrupalinfo()   Sets the current record's "drupalinfo" value
  * @method Bird                setBirdSource()   Sets the current record's "BirdSource" collection
  * @method Bird                setBirdTaxonomy() Sets the current record's "BirdTaxonomy" collection
  * 
@@ -71,6 +74,9 @@ abstract class BaseBird extends sfDoctrineRecord
              'type' => 'boolean',
              'notnull' => true,
              'default' => false,
+             ));
+        $this->hasColumn('drupalinfo', 'text', null, array(
+             'type' => 'text',
              ));
     }
 

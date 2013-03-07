@@ -11,7 +11,7 @@ define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
 
 $prodbox = false;
-$staging = false;
+$staging = true;
 //only for shell usage
 $sandbox = false;
 

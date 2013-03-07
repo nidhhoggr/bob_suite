@@ -1,6 +1,11 @@
 <?php
 class TaxonomyTypeController extends BaseController
 {
+    public function __construct() {
+
+        parent::__construct(__CLASS__);
+    }
+
     public function displayTabs($tax_types)
     {
         global $Utility;

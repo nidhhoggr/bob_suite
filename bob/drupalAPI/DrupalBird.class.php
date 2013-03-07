@@ -51,6 +51,9 @@ class BaseDrupalBird {
     }
 
     public function updateNodeAndTax($nodeinfo) {
+
+        $this->loginAdmin();
+
         extract($nodeinfo);
 
         $node = node_load($nid);

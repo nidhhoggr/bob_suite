@@ -38,6 +38,7 @@ class BirdModel extends SupraModel {
                 LEFT JOIN bird_taxonomy as bt
                 ON bt.bird_id = b.id
                 WHERE bt.taxonomy_id = $taxId
+                GROUP BY b.id
                 ORDER BY b.name ASC";
 
         return $this->query($SQL);

@@ -28,6 +28,7 @@ Bird:
     wikipedia:        { type: text}
     about:            { type: text}
     paraphrased:      { type: boolean, notnull: true, default: false }
+    drupalinfo:       { type: text }
 
 BirdSource:
   columns:
@@ -54,6 +55,9 @@ Taxonomy:
     id:               { type: integer, primary: true, autoincrement: true }
     taxonomytype_id:  { type: integer, notnull: true }
     name:             { type: string(72) }
+    imageurl:         { type: string(256) }
+    about:            { type: text}
+    drupalinfo:       { type: text }
 
 Taxonomytype:
   columns:

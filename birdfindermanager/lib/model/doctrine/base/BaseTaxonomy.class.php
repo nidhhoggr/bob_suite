@@ -8,6 +8,9 @@
  * @property integer $id
  * @property integer $taxonomytype_id
  * @property string $name
+ * @property string $imageurl
+ * @property text $about
+ * @property text $drupalinfo
  * @property Taxonomytype $Taxonomytype
  * @property Doctrine_Collection $BirdTaxonomy
  * @property Doctrine_Collection $TaxonomySource
@@ -15,12 +18,18 @@
  * @method integer             getId()              Returns the current record's "id" value
  * @method integer             getTaxonomytypeId()  Returns the current record's "taxonomytype_id" value
  * @method string              getName()            Returns the current record's "name" value
+ * @method string              getImageurl()        Returns the current record's "imageurl" value
+ * @method text                getAbout()           Returns the current record's "about" value
+ * @method text                getDrupalinfo()      Returns the current record's "drupalinfo" value
  * @method Taxonomytype        getTaxonomytype()    Returns the current record's "Taxonomytype" value
  * @method Doctrine_Collection getBirdTaxonomy()    Returns the current record's "BirdTaxonomy" collection
  * @method Doctrine_Collection getTaxonomySource()  Returns the current record's "TaxonomySource" collection
  * @method Taxonomy            setId()              Sets the current record's "id" value
  * @method Taxonomy            setTaxonomytypeId()  Sets the current record's "taxonomytype_id" value
  * @method Taxonomy            setName()            Sets the current record's "name" value
+ * @method Taxonomy            setImageurl()        Sets the current record's "imageurl" value
+ * @method Taxonomy            setAbout()           Sets the current record's "about" value
+ * @method Taxonomy            setDrupalinfo()      Sets the current record's "drupalinfo" value
  * @method Taxonomy            setTaxonomytype()    Sets the current record's "Taxonomytype" value
  * @method Taxonomy            setBirdTaxonomy()    Sets the current record's "BirdTaxonomy" collection
  * @method Taxonomy            setTaxonomySource()  Sets the current record's "TaxonomySource" collection
@@ -48,6 +57,16 @@ abstract class BaseTaxonomy extends sfDoctrineRecord
         $this->hasColumn('name', 'string', 72, array(
              'type' => 'string',
              'length' => 72,
+             ));
+        $this->hasColumn('imageurl', 'string', 256, array(
+             'type' => 'string',
+             'length' => 256,
+             ));
+        $this->hasColumn('about', 'text', null, array(
+             'type' => 'text',
+             ));
+        $this->hasColumn('drupalinfo', 'text', null, array(
+             'type' => 'text',
              ));
     }
 

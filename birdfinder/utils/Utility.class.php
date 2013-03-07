@@ -18,6 +18,35 @@ class Utility
         return $name;
     }
 
+    public function humanizeString($name) {
+
+        $words = explode('-',$name);
+
+        foreach($words as $k=>$v) {
+        
+            if($v!="and")
+                $words[$k] = ucfirst($v);
+        }   
+
+        $words = implode(' ',$words);
+ 
+        return $words;
+    }
+
+    function getGoogleImg($k) {
+        $link = "http://images.google.com/images?q=$k&tbm=isch";
+        $code = file_get_contents($link,'r');
+
+        ereg ("imgurl=http://www.[A-Za-z0-9-]*.[A-Za-z]*[^.]*.[A-Za-z]*", $code, $img);
+        ereg ("http://(.*)", $img[0], $img_pic);
+
+        $firstImage = $img_pic[0];
+        $firstImage = trim("$firstImage");
+
+        // Display image
+        return $firstImage;
+    }
+
     function findSimilarFromSortedResult($result, $exceptions = array() , $trimmables = array(), $verbose = false)
     {
         $matching_rows = array();
@@ -125,6 +154,14 @@ class Utility
         }
 
         return $string;
+    }
+
+    function dbPutArray($array) {
+        return base64_encode(serialize($array));
+    }
+
+    function dbGetArray($array) {
+        return unserialize(base64_decode($array));
     }
 }
 

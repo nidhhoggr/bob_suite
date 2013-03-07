@@ -19,6 +19,7 @@ abstract class BaseBirdFormFilter extends BaseFormFilterDoctrine
       'wikipedia'   => new sfWidgetFormFilterInput(),
       'about'       => new sfWidgetFormFilterInput(),
       'paraphrased' => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'drupalinfo'  => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
@@ -28,6 +29,7 @@ abstract class BaseBirdFormFilter extends BaseFormFilterDoctrine
       'wikipedia'   => new sfValidatorPass(array('required' => false)),
       'about'       => new sfValidatorPass(array('required' => false)),
       'paraphrased' => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'drupalinfo'  => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('bird_filters[%s]');
@@ -54,6 +56,7 @@ abstract class BaseBirdFormFilter extends BaseFormFilterDoctrine
       'wikipedia'   => 'Text',
       'about'       => 'Text',
       'paraphrased' => 'Boolean',
+      'drupalinfo'  => 'Text',
     );
   }
 }

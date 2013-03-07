@@ -12,5 +12,8 @@ class TaxonomyForm extends BaseTaxonomyForm
 {
   public function configure()
   {
+      $this->widgetSchema['drupalinfo'] = new sfWidgetFormInputHidden();
+      $this->widgetSchema['imageurl'] = new sfWidgetFormTextarea(array(), array('class' => 'no-editor'));
+      $this->widgetSchema['about'] = new sfWidgetFormTextarea(array(), array());
   }
 }

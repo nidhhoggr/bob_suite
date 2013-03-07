@@ -18,12 +18,18 @@ abstract class BaseTaxonomyForm extends BaseFormDoctrine
       'id'              => new sfWidgetFormInputHidden(),
       'taxonomytype_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Taxonomytype'), 'add_empty' => false)),
       'name'            => new sfWidgetFormInputText(),
+      'imageurl'        => new sfWidgetFormTextarea(),
+      'about'           => new sfWidgetFormInputText(),
+      'drupalinfo'      => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'              => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'taxonomytype_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Taxonomytype'))),
       'name'            => new sfValidatorString(array('max_length' => 72, 'required' => false)),
+      'imageurl'        => new sfValidatorString(array('max_length' => 256, 'required' => false)),
+      'about'           => new sfValidatorPass(array('required' => false)),
+      'drupalinfo'      => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('taxonomy[%s]');

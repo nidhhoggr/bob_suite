@@ -1,6 +1,11 @@
 <?php
 class BirdController extends BaseController {
 
+    public function __construct() {
+
+        parent::__construct(__CLASS__);
+    }
+
     public function displaySelectedBirds($taxonomy_ids) {
 
         if(!empty($taxonomy_ids)) {

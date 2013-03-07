@@ -22,6 +22,7 @@ abstract class BaseBirdForm extends BaseFormDoctrine
       'wikipedia'   => new sfWidgetFormInputText(),
       'about'       => new sfWidgetFormInputText(),
       'paraphrased' => new sfWidgetFormInputCheckbox(),
+      'drupalinfo'  => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
@@ -32,6 +33,7 @@ abstract class BaseBirdForm extends BaseFormDoctrine
       'wikipedia'   => new sfValidatorPass(array('required' => false)),
       'about'       => new sfValidatorPass(array('required' => false)),
       'paraphrased' => new sfValidatorBoolean(array('required' => false)),
+      'drupalinfo'  => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('bird[%s]');

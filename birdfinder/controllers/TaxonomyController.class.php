@@ -1,6 +1,39 @@
 <?php
 class TaxonomyController extends BaseController
 {
+    public function __construct() {
+
+        parent::__construct(__CLASS__);
+    }
+
+    public function cleanDuplicateAssociations() {
+        global $BirdModel, $BirdTaxonomyModel;
+
+        $birds = $BirdModel->find();   
+
+        foreach($birds as $bird) {
+
+            $taxs = array();
+
+            $BirdTaxonomyModel->findByTaxTypeAndBird(36,$bird['id']);
+
+            echo $bird['name'] . "\r\n";
+
+            while($bt = $BirdTaxonomyModel->fetchNextObject()) {
+
+                if(!in_array($bt->name,$taxs)) {
+                    $taxs[] = $bt->name;
+                    echo "\t$bt->name" . "\r\n";
+                }
+                else {
+                    $tax_remove[] = $bt->id;
+                    echo "\t duplicate $bt->name" . "\r\n";
+                    $BirdTaxonomyModel->deleteById($bt->id);
+                }
+            }
+        }
+    }
+
     public function resizeTaxList($result)
     {
         global $Utility;
