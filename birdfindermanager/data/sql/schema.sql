@@ -3,7 +3,7 @@ CREATE TABLE bird (id BIGINT AUTO_INCREMENT, name VARCHAR(72), propername VARCHA
 CREATE TABLE bird_source (id BIGINT AUTO_INCREMENT, bird_id BIGINT NOT NULL, source_id BIGINT NOT NULL, link TEXT, INDEX bird_id_idx (bird_id), INDEX source_id_idx (source_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE bird_taxonomy (id BIGINT AUTO_INCREMENT, bird_id BIGINT NOT NULL, taxonomy_id BIGINT NOT NULL, INDEX bird_id_idx (bird_id), INDEX taxonomy_id_idx (taxonomy_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE source (id BIGINT AUTO_INCREMENT, name VARCHAR(72), link TEXT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE taxonomy (id BIGINT AUTO_INCREMENT, taxonomytype_id BIGINT NOT NULL, name VARCHAR(72), imageurl TEXT, about text, drupalinfo text, INDEX taxonomytype_id_idx (taxonomytype_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE taxonomy (id BIGINT AUTO_INCREMENT, taxonomytype_id BIGINT NOT NULL, name VARCHAR(72), imageurl TEXT, about text, drupalinfo text, described TINYINT(1) DEFAULT '0' NOT NULL, INDEX taxonomytype_id_idx (taxonomytype_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE taxonomy_source (id BIGINT AUTO_INCREMENT, taxonomy_id BIGINT NOT NULL, source_id BIGINT NOT NULL, INDEX taxonomy_id_idx (taxonomy_id), INDEX source_id_idx (source_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE taxonomytype (id BIGINT AUTO_INCREMENT, name VARCHAR(72), weight BIGINT NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE taxonomytype_source (id BIGINT AUTO_INCREMENT, taxonomytype_id BIGINT NOT NULL, source_id BIGINT NOT NULL, INDEX taxonomytype_id_idx (taxonomytype_id), INDEX source_id_idx (source_id), PRIMARY KEY(id)) ENGINE = INNODB;

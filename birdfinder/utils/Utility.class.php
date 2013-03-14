@@ -157,11 +157,19 @@ class Utility
     }
 
     function dbPutArray($array) {
-        return base64_encode(serialize($array));
+          return implode(',',$array);
+//        return base64_encode(serialize($array));
     }
 
     function dbGetArray($array) {
-        return unserialize(base64_decode($array));
+
+          $arr = explode(',',$array);
+
+          $newarr['nid'] = $arr[0];
+          $newarr['tid'] = $arr[1];
+
+          return $newarr;
+//        return unserialize(base64_decode($array));
     }
 }
 

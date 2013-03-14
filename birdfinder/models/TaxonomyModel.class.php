@@ -57,4 +57,9 @@ class TaxonomyModel extends SupraModel {
             "taxonomytype_id = $id"
         )));
     }
+
+    public function nullifyDrupalInfo($id) {
+        $sql = "update taxonomy set drupalinfo = NULL where id = $id";
+        $this->execute($sql);
+    }
 }

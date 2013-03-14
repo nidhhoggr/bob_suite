@@ -15,7 +15,7 @@ generator:
       actions: ~
       fields:  ~
       list:    
-        display: [Taxonomytype,name]
+        display: [Taxonomytype,name,described]
       filter:  ~
       form:    ~
       edit:    ~

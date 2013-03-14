@@ -43,11 +43,82 @@ class BaseDrupalBird {
     }
 
     public function deleteNodeAndTax($nid) {
+ 
         $this->loginAdmin();
         $node = node_load($nid);
-        $tid = key($node->taxonomy);
-        taxonomy_del_term($tid);
-        node_delete($nid);
+
+        if($node) {
+            $tid = key($node->taxonomy);
+
+            if($tid) {
+                $this->cleanTaxAndNode(" = $tid");
+            }
+            else {
+                $this->cleanNode(" = $nid");
+            }
+        }
+    }
+
+    public function cleanTaxAndNode($condition) {
+        global $BirdModel;
+        
+        $bfdb = $BirdModel->getDatabase();
+        mysql_select_db('zmijevik_bob');
+
+        $sql = "
+        DELETE td.*, th.*, ti.*, tn.*, n.*, ncs.*, nc.*, nr.*
+        FROM bob_term_data td
+        LEFT JOIN bob_term_hierarchy th ON td.tid = th.tid
+        LEFT JOIN bob_term_image ti ON td.tid = ti.tid
+        LEFT JOIN bob_term_node tn ON td.tid = tn.tid
+        LEFT JOIN bob_node n ON tn.nid = n.nid
+        LEFT JOIN bob_node_comment_statistics ncs ON tn.nid = ncs.nid
+        LEFT JOIN bob_node_counter nc ON tn.nid = nc.nid
+        LEFT JOIN bob_node_revisions nr ON tn.nid = nr.nid
+        WHERE td.tid $condition";
+
+        $BirdModel->execute($sql);
+        mysql_select_db($bfdb);
+    }
+
+    public function cleanNode($condition) {
+        global $BirdModel;
+
+        $bfdb = $BirdModel->getDatabase();
+ 
+        mysql_select_db('zmijevik_bob');
+
+        $sql = "
+        DELETE n.*, ncs.*, nc.*, nr.*
+        FROM bob_node n
+        LEFT JOIN bob_node_comment_statistics ncs ON n.nid = ncs.nid
+        LEFT JOIN bob_node_counter nc ON n.nid = nc.nid
+        LEFT JOIN bob_node_revisions nr ON n.nid = nr.nid
+        WHERE n.nid $condition";
+
+        $BirdModel->execute($sql);
+
+        mysql_select_db($bfdb);
+    }
+
+    public function cleanTax($condition) {
+        global $BirdModel;
+
+        $bfdb = $BirdModel->getDatabase();
+        mysql_select_db('zmijevik_bob');
+
+        $sql = "
+        DELETE
+        td.*, th.*, ti.*, tn.*
+        FROM bob_term_data td
+        LEFT JOIN bob_term_hierarchy th ON td.tid = th.tid
+        LEFT JOIN bob_term_image ti ON td.tid = ti.tid
+        LEFT JOIN bob_term_node tn ON td.tid = tn.tid
+        WHERE td.tid $condition
+        ";
+
+        $BirdModel->execute($sql);
+        mysql_select_db($bfdb);
     }
 
     public function updateNodeAndTax($nodeinfo) {

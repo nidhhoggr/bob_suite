@@ -18,6 +18,7 @@ abstract class BaseTaxonomyFormFilter extends BaseFormFilterDoctrine
       'imageurl'        => new sfWidgetFormFilterInput(),
       'about'           => new sfWidgetFormFilterInput(),
       'drupalinfo'      => new sfWidgetFormFilterInput(),
+      'described'       => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
     ));
 
     $this->setValidators(array(
@@ -26,6 +27,7 @@ abstract class BaseTaxonomyFormFilter extends BaseFormFilterDoctrine
       'imageurl'        => new sfValidatorPass(array('required' => false)),
       'about'           => new sfValidatorPass(array('required' => false)),
       'drupalinfo'      => new sfValidatorPass(array('required' => false)),
+      'described'       => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
     ));
 
     $this->widgetSchema->setNameFormat('taxonomy_filters[%s]');
@@ -51,6 +53,7 @@ abstract class BaseTaxonomyFormFilter extends BaseFormFilterDoctrine
       'imageurl'        => 'Text',
       'about'           => 'Text',
       'drupalinfo'      => 'Text',
+      'described'       => 'Boolean',
     );
   }
 }

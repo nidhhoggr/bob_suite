@@ -12,9 +12,9 @@ $birds = $BirdModel->find(array(
     )
 ));
 
-$args = getopt("a:t::");
+$args = getopt("a:t");
 $action = $args['a'];
-$test = $args['t'];
+$test = isset($args['t']);
 $method = $action . 'Bird';
 
 foreach($birds as $bird) {
@@ -25,6 +25,7 @@ foreach($birds as $bird) {
 
     while($order = $BirdTaxonomyModel->fetchNextObject()) {
 
+        var_dump($order);
         $drupalinfo = $Utility->dbGetArray($order->drupalinfo);
         $order_ids[] = $drupalinfo['tid'];
     }
@@ -40,20 +41,15 @@ function deleteBird($bird) {
     extract($bird);
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
 
-    echo "deleting " . $bird['name'] . "\r\n";
+    echo "deleting " . $bird['name'] . ": " . $drupalinfo['nid'] . "\r\n";
  
     $dps->deleteBirdSpecies($drupalinfo['nid']);
 
-    $nid = null;
-    $tid = null;
-
-    $BirdModel->id = $id;
-    $BirdModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid'));
-    $BirdModel->save();
+    $BirdModel->nullifyDrupalInfo($id);
 }
 
 function saveBird($bird) {
-    global $dps, $Utility, $BirdModel, $order_ids;
+    global $dps, $test, $Utility, $BirdModel, $order_ids;
 
     extract($bird);
 
@@ -69,7 +65,7 @@ function saveBird($bird) {
             'parent'=>$order_ids
         )
     );
-
+    
     if($test) { print_r($orderinfo);die();}
 
     if(empty($drupalinfo['nid'])) {

@@ -11,6 +11,7 @@
  * @property string $imageurl
  * @property text $about
  * @property text $drupalinfo
+ * @property boolean $described
  * @property Taxonomytype $Taxonomytype
  * @property Doctrine_Collection $BirdTaxonomy
  * @property Doctrine_Collection $TaxonomySource
@@ -21,6 +22,7 @@
  * @method string              getImageurl()        Returns the current record's "imageurl" value
  * @method text                getAbout()           Returns the current record's "about" value
  * @method text                getDrupalinfo()      Returns the current record's "drupalinfo" value
+ * @method boolean             getDescribed()       Returns the current record's "described" value
  * @method Taxonomytype        getTaxonomytype()    Returns the current record's "Taxonomytype" value
  * @method Doctrine_Collection getBirdTaxonomy()    Returns the current record's "BirdTaxonomy" collection
  * @method Doctrine_Collection getTaxonomySource()  Returns the current record's "TaxonomySource" collection
@@ -30,6 +32,7 @@
  * @method Taxonomy            setImageurl()        Sets the current record's "imageurl" value
  * @method Taxonomy            setAbout()           Sets the current record's "about" value
  * @method Taxonomy            setDrupalinfo()      Sets the current record's "drupalinfo" value
+ * @method Taxonomy            setDescribed()       Sets the current record's "described" value
  * @method Taxonomy            setTaxonomytype()    Sets the current record's "Taxonomytype" value
  * @method Taxonomy            setBirdTaxonomy()    Sets the current record's "BirdTaxonomy" collection
  * @method Taxonomy            setTaxonomySource()  Sets the current record's "TaxonomySource" collection
@@ -67,6 +70,11 @@ abstract class BaseTaxonomy extends sfDoctrineRecord
              ));
         $this->hasColumn('drupalinfo', 'text', null, array(
              'type' => 'text',
+             ));
+        $this->hasColumn('described', 'boolean', null, array(
+             'type' => 'boolean',
+             'notnull' => true,
+             'default' => false,
              ));
     }
 

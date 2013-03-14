@@ -21,6 +21,7 @@ abstract class BaseTaxonomyForm extends BaseFormDoctrine
       'imageurl'        => new sfWidgetFormTextarea(),
       'about'           => new sfWidgetFormInputText(),
       'drupalinfo'      => new sfWidgetFormInputText(),
+      'described'       => new sfWidgetFormInputCheckbox(),
     ));
 
     $this->setValidators(array(
@@ -30,6 +31,7 @@ abstract class BaseTaxonomyForm extends BaseFormDoctrine
       'imageurl'        => new sfValidatorString(array('max_length' => 256, 'required' => false)),
       'about'           => new sfValidatorPass(array('required' => false)),
       'drupalinfo'      => new sfValidatorPass(array('required' => false)),
+      'described'       => new sfValidatorBoolean(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('taxonomy[%s]');

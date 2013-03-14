@@ -31,15 +31,10 @@ function deleteOrder($orders) {
 
     foreach($orders as $t) {
         extract($t);
-        $drupalinfo = unserialize(base64_decode($drupalinfo));
+        $drupalinfo = $Utility->dbGetArray($drupalinfo);
+
         $dpo->deleteBirdOrder($drupalinfo['nid']);
-
-        $nid = null;
-        $tid = null;
-
-        $TaxonomyModel->id = $id;
-        $TaxonomyModel->drupalinfo = base64_encode(serialize(compact('nid','tid')));
-        $TaxonomyModel->save();
+        $TaxonomyModel->nullifyDrupalInfo($id);
     }
 }
 
@@ -52,7 +47,7 @@ function saveOrder($orders) {
 
         $name = $Utility->humanizeString($name);
 
-        $drupalinfo = unserialize(base64_decode($drupalinfo));
+        $drupalinfo = $Utility->dbGetArray($drupalinfo);
 
         $orderinfo = array(
             'nid'=>$drupalinfo['nid'],
@@ -83,7 +78,7 @@ function saveOrder($orders) {
         $tid = key($node->taxonomy);
 
         $TaxonomyModel->id = $id;
-        $TaxonomyModel->drupalinfo = base64_encode(serialize(compact('nid','tid'))); 
+        $TaxonomyModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid')); 
         $TaxonomyModel->save();
     }
 }

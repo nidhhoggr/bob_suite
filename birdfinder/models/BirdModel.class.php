@@ -56,4 +56,9 @@ class BirdModel extends SupraModel {
 
         return $this->query($SQL);
     }
+
+    public function nullifyDrupalInfo($id) {
+        $sql = "update bird set drupalinfo = NULL where id = $id";
+        $this->execute($sql);
+    }
 }

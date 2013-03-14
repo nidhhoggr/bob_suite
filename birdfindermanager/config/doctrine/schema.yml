@@ -58,6 +58,7 @@ Taxonomy:
     imageurl:         { type: string(256) }
     about:            { type: text}
     drupalinfo:       { type: text }
+    described:        { type: boolean, notnull: true, default: false }
 
 Taxonomytype:
   columns:
