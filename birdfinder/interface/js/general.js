@@ -1,65 +1,82 @@
+var selected_taxonomies = {};
 $( function() { 
 
             clearForms();
+
+            $("#radio input").live('click', function() {
+
+                var input = $(this);
+                var name = input.attr('name');
+              
+                if(input.val() == "0") {
+                    deselectInTab(input);
+                } else { 
  
-            $("#checkbox").live('click', function() {
-
-                var input = $(this).find('input');
-
-                if($(this).find('input').attr('checked')) {
-                    input.removeAttr('checked');
-                    
-                    $('#selection_log').find($('div[data-id='+input.val()+']')).remove();
-                    $(this).css('background-color','#FFF');
+                    selected_taxonomies[name] = {};
+                    selected_taxonomies[name]['value'] = input.val();
+                    selected_taxonomies[name]['literal'] = input.data('literal');
+ 
+                    updateBirdList();
+                    updateSelectionLog();
                 }
-                else { 
-                    $(this).css('background-color','#FFD39B');
-                    $('#selection_log').append('<div class="tag" data-id="'+input.val()+'">'+input.data('literal')+'</div>');
-                    input.attr('checked','checked');
-                }
-                updateBirdList();
-            });
+                console.log(selected_taxonomies);
 
-            $("#checkbox input").live('click', function() {
-
-                if($(this).attr('checked')) {
-                    $(this).removeAttr('checked');
-                    $(this).parent().css('background-color','#FFF');
-                }
-                else { 
-                    $(this).parent().css('background-color','#FFD39B');
-                    $(this).attr('checked','checked');
-                }
-                updateBirdList();
+                $('input[name='+name+']').parent().css('background-color','#FFF');
+                $(input.parent()).css('background-color','#FFD39B');
             });
 
             $("#selection_log .tag").live('click', function() {
                 var tax_id = $(this).data('id');
+                var taxtype = $(this).data('taxtype');
                 var checkbox = $('#tabs').find('input[value='+tax_id+']');
                 checkbox.removeAttr('checked');
                 checkbox.parent().css('background-color','#FFF');
-                $(this).remove();
+                selected_taxonomies[taxtype] = {};
                 updateBirdList();
+                updateSelectionLog();
             });
-
-            
 
             $("#tabs").tabs();
 });
 
+var deselectInTab = function(input) {
+    selected_taxonomies[input.attr('name')] = {};
+    updateBirdList();
+    updateSelectionLog();
+}
+
+var updateSelectionLog = function() {
+
+    $('#selection_log').html(null);
+
+    for(var taxtype in selected_taxonomies) {
+
+        if(typeof selected_taxonomies[taxtype].value !== "undefined") {
+
+            var value = selected_taxonomies[taxtype].value;
+            var literal = selected_taxonomies[taxtype].literal;
+
+            $('#selection_log').append('<div class="tag" data-taxtype="'+taxtype+'" data-id="'+value+'">'+literal+'</div>');
+        }
+    }
+}
+
 var getSelectedIds = function() {
 
     var taxids = [];
- 
-    $('#selection_log').find($('div')).each(function() { 
- 
-        taxids.push($(this).data('id'));
-    });
 
+    for(var taxtype in selected_taxonomies) {
+
+        if(typeof selected_taxonomies[taxtype].value !== "undefined") 
+            taxids.push(selected_taxonomies[taxtype].value);
+    }
+ 
     return taxids;
 }
 
 var updateBirdList = function() {
+
+        console.log(getSelectedIds()); 
 
         $.ajax({
             type: 'POST',

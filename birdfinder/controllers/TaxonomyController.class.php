@@ -38,22 +38,27 @@ class TaxonomyController extends BaseController
     {
         global $Utility;
         $row_count = $this->model->numRows();
+        $recordCount = 0;
         if ($row_count > 10) {
             $columnsOf = round($row_count / 2);
-            $recordCount = 0;
             echo '<div id="column1">';
             while ($obj = $this->model->fetchNextObject($result)) {
+                if($recordCount == 0)
+                    echo '<div id="radio">None<input type="radio" name="taxtype_' . $obj->taxonomytype_id . '" checked="checked" value="0"/></div>';
                 if ($recordCount == $columnsOf) echo '</div><div id="column2">';
                 $dname = $Utility->dehumanizeString($obj->name);
-                echo '<div id="checkbox">' . $obj->name . '<input type="checkbox" name="' . $dname . '" data-literal="' . $obj->name . '" value="' . $obj->id . '" /></div>';
+                echo '<div id="radio">' . $obj->name . '<input type="radio" name="taxtype_' . $obj->taxonomytype_id . '" data-literal="' . $obj->name . '" value="' . $obj->id . '" /></div>';
                 $recordCount++;
             }
             echo '</div>';
             echo '<div id="cleaner"></div>';
         } else {
             while ($obj = $this->model->fetchNextObject($result)) {
+                if($recordCount == 0) 
+                    echo '<div id="radio">None<input type="radio" name="taxtype_' . $obj->taxonomytype_id . '" checked="checked" value="0"/></div>';
                 $dname = $Utility->dehumanizeString($obj->name);
-                echo '<div id="checkbox">' . $obj->name . '<input type="checkbox" name="' . $dname . '" data-literal="' . $obj->name . '" value="' . $obj->id . '" /></div>';
+                echo '<div id="radio">' . $obj->name . '<input type="radio" name="taxtype_' . $obj->taxonomytype_id . '" data-literal="' . $obj->name . '" value="' . $obj->id . '" /></div>';
+                $recordCount++;
             }
         }
     }

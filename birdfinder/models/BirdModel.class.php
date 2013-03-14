@@ -46,6 +46,44 @@ class BirdModel extends SupraModel {
 
     public function findAllByTaxonomyIds($ids) {
 
+        $birds_exclusive = array();
+
+        foreach($ids as $id) {
+
+            $SQL = "SELECT b.id
+                    FROM bird AS b
+                    INNER JOIN bird_taxonomy AS bt ON bt.bird_id = b.id
+                    INNER JOIN taxonomy AS t ON t.id = bt.taxonomy_id
+                    WHERE t.id = $id
+                    GROUP BY b.id";
+
+            $resource = $this->query($SQL);
+         
+            $birds = array();
+ 
+            while($bird = $this->fetchNextObject()) {
+                    $birds[$bird->id] = 1;
+            }
+
+ 
+            if(count($birds_exclusive))
+                $birds_exclusive = array_intersect_key($birds_exclusive,$birds);
+            else
+                $birds_exclusive = $birds;
+        }
+      
+
+        $SQL = "SELECT b.*
+                FROM bird AS b
+                WHERE b.id
+                IN ( ".implode(',',array_keys($birds_exclusive))." )
+                GROUP BY b.id";
+ 
+        return $this->query($SQL);
+    }
+
+    public function findAllByTaxonomyIdsInclusive($ids) {
+
         $SQL = "SELECT b.*
                 FROM bird AS b
                 INNER JOIN bird_taxonomy AS bt ON bt.bird_id = b.id

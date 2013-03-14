@@ -7,11 +7,11 @@
             margin: 0px auto;
         }
 
-        #checkbox {
+        #checkbox, #radio {
             padding: 10px;
         }
 
-        #checkbox:hover {
+        #checkbox:hover, #radio:hover {
             background-color: #FFFCCF;
         }
 
