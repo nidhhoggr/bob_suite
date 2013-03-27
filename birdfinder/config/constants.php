@@ -53,6 +53,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
 
-    define('bird_manager_url','http://sfprojects/birdfinder/web/backend.php/');
-    define('bird_interface_url','http://clients/sibylle/birdsofbeauty/birdfinder/injection_engine/interface/');
+    define('bird_manager_url','http://beautyofbirds/birdfindermanager/web/');
+    define('bird_interface_url','http://beautyofbirds/birdfinder/interface/');
+    define('bird_drupal_url','http://beautyofbirds/bob/');
 }
