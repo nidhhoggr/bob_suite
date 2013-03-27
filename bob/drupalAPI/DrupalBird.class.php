@@ -42,6 +42,38 @@ class BaseDrupalBird {
         return $node;
     }
 
+    public function updateNodeAndTax($nodeinfo) {
+
+        $this->loginAdmin();
+
+        extract($nodeinfo);
+
+        $node = node_load($nid);
+
+        foreach($nodeinfo as $k=>$v) {
+            if($k!="nid" && $k!="taxonomy" && !is_array($v))
+                $node->$k = $v;
+        }
+
+        node_save($node);
+
+        if(is_array($taxonomy)) {
+
+            $tid = key($node->taxonomy);
+
+            $update_tax = array_merge($taxonomy,compact('tid'));
+
+            if(count($image)) { 
+                //update the image
+                taxonomy_image_add_from_url($tid,$image['url'],$image['name']);
+            }  
+ 
+            taxonomy_save_term($update_tax);
+        }
+
+        return $node;
+    }
+
     public function deleteNodeAndTax($nid) {
  
         $this->loginAdmin();
@@ -120,35 +152,6 @@ class BaseDrupalBird {
         $BirdModel->execute($sql);
         mysql_select_db($bfdb);
     }
-
-    public function updateNodeAndTax($nodeinfo) {
-
-        $this->loginAdmin();
-
-        extract($nodeinfo);
-
-        $node = node_load($nid);
-
-        foreach($speciesinfo as $k=>$v) {
-            if($k!="nid" && $k!="taxonomy" && !is_array($v))
-                $node->$k = $v;
-        }
-
-        node_save($node);
-
-        if(is_array($taxonomy)) {
-
-            $tid = key($node->taxonomy);
-
-            $update_tax = array_merge($taxonomy,compact('tid'));
-
-            taxonomy_save_term($update_tax);
-        }
-
-        return $node;
-    }
-
-
 }
 
 class DrupalBirdSpecies extends BaseDrupalBird {

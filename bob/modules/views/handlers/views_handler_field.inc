@@ -582,6 +582,8 @@ If you would like to have the characters %5B and %5D please use the html entity 
    * the user.
    */
   function render_as_link($alter, $text, $tokens) {
+
+
     $value = '';
 
     if (!empty($alter['prefix'])) {
@@ -672,13 +674,31 @@ If you would like to have the characters %5B and %5D please use the html entity 
       $options['language'] = $this->options['alter']['language'];
     }
 
-    $value .= l($text, $path, $options);
+    $value .= l($text, $this->clean_path($text,$path,$options), $options);
 
     if (!empty($alter['suffix'])) {
       $value .= filter_xss_admin(strtr($alter['suffix'], $tokens));
     }
 
     return $value;
+  }
+
+
+  function clean_path($text,$path,$options) {
+
+        $path_pieces = explode('/',$path); 
+
+        $path = $path_pieces[1];
+        $path = html_entity_decode(urldecode(urldecode($path)),ENT_QUOTES);
+
+        if (module_exists('pathauto')) {
+
+            module_load_include('inc','pathauto','pathauto');
+
+            $path = pathauto_cleanstring($path);
+
+        }
+        return $path_pieces[0] . '/' . $path;
   }
 
   /**

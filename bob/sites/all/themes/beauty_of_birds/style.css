@@ -1078,6 +1078,30 @@ tbody{
     padding-top: 10px;
     text-align: center;
 }
+
+.species-tags {
+
+}
+        .species-tags #taxtype_label {
+
+            font-weight: bold;
+            font-style: italic;
+        }
+ 
+        .species-tags .unremovable_tag {
+            display: inline;
+            color: #3E6D8E;
+            background: #E0EAF1 url('../images/smallx.png') no-repeat right center;
+            border-bottom: 1px solid #3E6D8E;
+            border-right: 1px solid #7F9FB6;
+            padding: 3px 3px 3px 3px;
+            margin: 2px 2px 2px 0;
+            text-decoration: none;
+            font-size: 90%;
+            white-space: nowrap;
+            line-height: 3em;
+        }
+
 .latestvideouser{
     width:480px;
     height:366px;
@@ -1686,8 +1710,11 @@ li.statistics_counter{
 }
 
 #quicktabs_container_bird_species {
-    padding: 20px;
-    padding-left: 0px;
+    font-size: 10px;
+}
+
+#quicktabs_container_bird_order {
+    font-size: 10px;
 }
 
 .view-Taxonomy-terms .views-field-tid {
@@ -1714,7 +1741,6 @@ li.statistics_counter{
 
 .view-species-term-page .views-field-description {
     width: 470px;
-    float: left;
 }
 
 .view-species-page .jcarousel-skin-default .jcarousel-clip-horizontal {

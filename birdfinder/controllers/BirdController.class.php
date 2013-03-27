@@ -41,14 +41,16 @@ class BirdController extends BaseController {
 
               $TaxonomyModel->findByBirdIdAndTaxonomyTypeId($bird_id,$taxtype->id);
 
-              echo '<span id="taxtype_label">'.$taxtype->name.'</span>';
-              echo '<div id="selection_log">';
+              $tags .= '<span id="taxtype_label">'.$taxtype->name.'</span>';
+              $tags .= '<div id="selection_log">';
 
               while ($tax = $TaxonomyModel->fetchNextObject()) {
-                  echo '<div class="unremovable_tag">'.$tax->name.'</div>';
+                  $tags .= '<div class="unremovable_tag">'.$tax->name.'</div>';
               }
 
-              echo '</div><div id="cleaner"></div>';
+              $tags .= '</div><div id="cleaner"></div>';
           }
+
+        return $tags;
     }
 }

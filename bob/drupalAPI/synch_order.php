@@ -47,8 +47,10 @@ function saveOrder($orders) {
 
         $name = $Utility->humanizeString($name);
 
-        $drupalinfo = $Utility->dbGetArray($drupalinfo);
+        $name = str_replace("'", '', $name);
 
+        $drupalinfo = $Utility->dbGetArray($drupalinfo);
+ 
         $orderinfo = array(
             'nid'=>$drupalinfo['nid'],
             'body'=>null,

@@ -6,33 +6,49 @@ require_once(dirname(__FILE__) . '/../../birdfinder/config/bootstrap.php');
 
 $dps = new DrupalBirdSpecies();
 
-$birds = $BirdModel->find(array(
-    'conditions'=>array(
-        'paraphrased'=>1
-    )
-));
-
-$args = getopt("a:t");
+$args = getopt("a:tb::");
 $action = $args['a'];
 $test = isset($args['t']);
 $method = $action . 'Bird';
+$birdid = $args['b'];
 
-foreach($birds as $bird) {
-    
-    $order_ids = array();
+if($birdid) {
 
-    $BirdTaxonomyModel->findByTaxTypeAndBird(36,$bird['id']);
+    $bird = $BirdModel->findOneBy(array(
+        'conditions'=>array(
+            "id = $birdid"
+        ),
+        'fetchArray'=>true
+    ));
+
+    $BirdTaxonomyModel->findByTaxTypeAndBird(36,$birdid);
 
     while($order = $BirdTaxonomyModel->fetchNextObject()) {
-
-        var_dump($order);
         $drupalinfo = $Utility->dbGetArray($order->drupalinfo);
-        $order_ids[] = $drupalinfo['tid'];
     }
 
-    //if(!count($order_ids)) $empty_birds[] = $bird['name'];
- 
     $method($bird);
+}
+else {
+
+    $birds = $BirdModel->findBy(array(
+        'conditions'=>array(
+            'paraphrased'=>1
+        )
+    ));
+
+    foreach($birds as $bird) {
+
+        $BirdTaxonomyModel->findByTaxTypeAndBird(36,$bird['id']);
+
+        while($order = $BirdTaxonomyModel->fetchNextObject()) {
+
+           $drupalinfo = $Utility->dbGetArray($order->drupalinfo);
+        }
+
+ 
+        $method($bird);
+    }
 }
 
 function deleteBird($bird) {
@@ -48,19 +64,26 @@ function deleteBird($bird) {
     $BirdModel->nullifyDrupalInfo($id);
 }
 
+
+
+
 function saveBird($bird) {
     global $dps, $test, $Utility, $BirdModel, $order_ids;
 
     extract($bird);
 
+    $name = str_replace("'", '', $name);
+
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
+ 
+    $tagContent = getBirdTagContent($bird);
 
     $orderinfo = array(
         'nid'=>$drupalinfo['nid'],
-        'body'=>null,
+        'body'=>$tagContent,
         'title'=>$name,
         'taxonomy'=>array(
-            'name'=>$name,
+            'name'=>str_replace("'", '', $name),
             'description'=>$about,
             'parent'=>$order_ids
         )
@@ -88,4 +111,9 @@ function saveBird($bird) {
     $BirdModel->id = $id;
     $BirdModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid')); 
     $BirdModel->save();
+}
+
+function getBirdTagContent($bird) {
+    global $BirdController;
+    return $BirdController->displayAssociatedTags($bird['id']);
 }

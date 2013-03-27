@@ -24,6 +24,10 @@ $updatespeciesinfo = array(
         'description'=>'this bird is infamous for huffing farts'
         'parent'=array(),
     ),
+    'image'=>array(
+        'url'=>'http://stevesuttie.files.wordpress.com/2012/05/no-farting.jpg',
+        'name'=>'fartsmoker_again.jpg'
+    )
 );
 
 $dps = new DrupalBirdSpecies();
