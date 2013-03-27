@@ -1,10 +1,11 @@
-*.htaccess
+.htaccess
 *.swo
 *.swp
 */error_log
-./birdfinder/.htaccess
-./birdfinder/interface/.htaccess
-./birdfinder/cache/*
-./birdfindermanager/cache/*
-./bob/sites/default/settings.php
+birdfinder/.htaccess
+birdfinder/interface/.htaccess
+birdfinder/cache/*
+birdfindermanager/cache/*
+birdfindermanager/log/*
+bob/sites/default/settings.php
 birdfindermanager/config/databases.yml
