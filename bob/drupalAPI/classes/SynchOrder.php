@@ -47,14 +47,15 @@ class SynchOrder {
         )
     );
 
-    $orderinfo['image'] = array(
-        'image'=>array(
-            'url'=>$imageurl,
-            'name'=>'sync_' . $Utility->dehumanizeString($name) . '.jpg'
-        )
-    );
-
     if(empty($drupalinfo['nid'])) {
+
+        $orderinfo['image'] = array(
+            'image'=>array(
+                'url'=>$imageurl,
+                'name'=>'sync_' . $Utility->dehumanizeString($name) . '.jpg'
+            )
+        );
+
         $node = $this->dpo->createBirdOrder($orderinfo);
         echo "creating $name \r\n";
     }

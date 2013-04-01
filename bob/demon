@@ -1,0 +1,56 @@
+#!/usr/bin/php
+<?php
+
+/**
+* @author      Joseph Pesie, Supraliminal Solutions LLC
+  @date        03.31.13
+  @description
+      this is a bash script that will simplify the synching and flushing
+      process from the symfony and drupal databases. The scripts implement
+      classes within the drupal API
+*/
+$args = getopt('f::o::s::a::');
+
+
+if(isset($args['a'])) {
+        flushDrupal();
+        synchOrders();
+        synchSpecies();
+        synchSpecies();
+        flushUrls();
+}
+else {
+
+    if(isset($args['f'])) {
+        flushDrupal();
+    }
+    if(isset($args['o'])) {
+        synchOrders();
+    }
+    if(isset($args['s'])) {
+        synchSpecies();
+    }
+}
+
+function flushDrupal() {
+        echo "\n\nflushing drupal\n\n";
+        system('php ./drupalAPI/flush.php');
+        system('php ./drupalAPI/synch_order.php -adelete');
+        system('php ./drupalAPI/synch_species.php -adelete');
+        system("find . -type f -name 'sync_*' -exec rm {} \;");
+}
+
+function synchOrders() {
+        echo "\n\nsynching orders\n\n";
+        system('php ./drupalAPI/synch_order.php -asave');
+}
+
+function synchSpecies() {
+        echo "\n\nsynching species\n\n";
+        system('php ./drupalAPI/synch_species.php -asave');
+}
+
+function flushUrls() {
+        echo "\n\nflushing urls\n\n";
+        system('php ./drupalAPI/url_alias.php -f');
+}

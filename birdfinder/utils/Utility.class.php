@@ -1,21 +1,20 @@
 <?php
 class Utility
 {
-    public function dehumanizeString($name)
+    public function dehumanizeString($str)
     {
-        //remove commas
-        $name = str_replace(',', '', $name);
-        //remove spaces with dashes
-        $name = str_replace(' ', '-', $name);
-        //repace open paren with dash
-        $name = str_replace('(', '-', $name);
-        //remove close paren
-        $name = str_replace(')', '', $name);
-        //remove double dashes
-        $name = str_replace('--', '-', $name);
-        //convert to lowercase
-        $name = strtolower($name);
-        return $name;
+        $delimiter = "-";
+
+	if( !empty($replace) ) {
+		$str = str_replace((array)$replace, ' ', $str);
+	}
+
+	$clean = iconv('UTF-8', 'ASCII//TRANSLIT', $str);
+	$clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $clean);
+	$clean = strtolower(trim($clean, '-'));
+	$clean = preg_replace("/[\/_|+ -]+/", $delimiter, $clean);
+
+	return $clean;
     }
 
     public function humanizeString($name) {

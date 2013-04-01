@@ -54,12 +54,12 @@ class SynchSpecies {
         die();
     }
 
-    $speciesinfo['image'] = array(
-        'url'=>$imageurl,
-        'name'=>'sync_' . $Utility->dehumanizeString($name) . '.jpg'
-    );
-
     if(empty($drupalinfo['nid'])) {
+
+        $speciesinfo['image'] = array(
+            'url'=>$imageurl,
+            'name'=>'sync_' . $Utility->dehumanizeString($name) . '.jpg'
+        );
  
         $node = $this->dps->createBirdSpecies($speciesinfo);
         echo "creating $name \r\n";

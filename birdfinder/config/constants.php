@@ -11,9 +11,9 @@ define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
 
 $prodbox = false;
-$staging = false;
+$staging = true;
 //only for shell usage
-$sandbox = true;
+$sandbox = false;
 
 if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
 
@@ -21,6 +21,7 @@ if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
     define('DBUSER','beautyof');
     define('DBPASSWORD','QbkAz#486K9;');
     define('DBNAME','beautyof_birdfinder');
+    define('DBNAME_DRUPAL','beautyof_bob');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
     define("PEAR_LIB",'/home/beautyof/php/');
@@ -35,6 +36,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $staging) 
     define('DBUSER','zmijevik');
     define('DBPASSWORD','a1genda666');
     define('DBNAME','zmijevik_birdfinder');
+    define('DBNAME_DRUPAL','zmijevik_bob');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
     define("PEAR_LIB",'/home/zmijevik/php/');
@@ -50,6 +52,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
     define('DBUSER','root');
     define('DBPASSWORD','root');
     define('DBNAME','bob_birdfinder');
+    define('DBNAME_DRUPAL','bob');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
     define("PEAR_LIB",null);

@@ -4,10 +4,12 @@ require_once(dirname(__FILE__) . '/../../../birdfinder/libs/SupraModel/SupraMode
 class DrupalModel extends SupraModel {
 
     public function configure() {
+        mysql_select_db(DBNAME_DRUPAL); 
         $this->setTable('bob_term_data');
     }
 
-    public function cleanTaxAndNode($condition) {
+    public function cleanTaxAndNode($condition) { 
+
         $sql = "
         DELETE
         td.*, th.*, ti.*, tn.*, n.*, ncs.*, nc.*, nr.*
