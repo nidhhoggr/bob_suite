@@ -11,9 +11,9 @@ define("BF_UTIL_DIR", dirname(__FILE__). '/../utils/');
 
 
 $prodbox = false;
-$staging = true;
+$staging = false;
 //only for shell usage
-$sandbox = false;
+$sandbox = true;
 
 if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
 
@@ -52,6 +52,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
     define('DBNAME','bob_birdfinder');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
+    define("PEAR_LIB",null);
 
     define('bird_manager_url','http://beautyofbirds/birdfindermanager/web/');
     define('bird_interface_url','http://beautyofbirds/birdfinder/interface/');
