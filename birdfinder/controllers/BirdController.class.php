@@ -7,6 +7,7 @@ class BirdController extends BaseController {
     }
 
     public function displaySelectedBirds($taxonomy_ids) {
+        global $Utility;
 
         if(!empty($taxonomy_ids)) {
 
@@ -19,14 +20,33 @@ class BirdController extends BaseController {
 
         $html = '<div id="selectedBirdCount">Total Birds <span class="counter">'.$count.'</span></div>';
 
-        $html .= '<ul>';
+        $html .= '<table id="selectedBirds">';
+
+        $rowCount = 0;
 
         while($sb = $this->model->fetchNextObject()) {
-  
-            $html .= '<li><a target="_blank" href="bird.php?id='.$sb->id.'">' . $sb->name . '</a></li>';
+
+            if($rowCount == 3) {
+
+                $rowCount = 0;
+              
+                $html .= '<tr class="selectedBirdRow">'. $rowHtml .'</tr>';
+
+                $rowHtml = null;
+            }
+
+            $urlname = $Utility->dehumanizeString($sb->name);
+ 
+            $route = bird_drupal_url . "bird-species/".$urlname;
+
+            $imageurl = bird_drupal_url . "sites/default/files/imagecache/image_70X70/category_pictures/sync_" . $urlname . ".jpg";
+
+            $rowHtml .= '<td><h4 class="row_birdName"><a href="'.$route.'">' . $sb->name . '</a></h4><a href="'.$route.'"><img src="'.$imageurl.'" /></a></td>';
+
+            $rowCount++;
         }
         
-        $html .= '</ul>';
+        $html .= '</div>';
 
         echo $html;
     }

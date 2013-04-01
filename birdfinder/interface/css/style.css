@@ -47,3 +47,11 @@
             white-space: nowrap;
         }
 
+        #selectedBirdCount {
+            font-style: oblique;
+            font-size: 18px;
+        }
+
+        .selectedBirdRow td {
+            text-align: center;
+        }

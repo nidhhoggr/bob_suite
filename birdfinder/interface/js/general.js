@@ -97,7 +97,16 @@ var updateBirdList = function() {
 var updateBirdListCount = function() {
 
         var count = $('#selectedBirdCount .counter').text();
-        $('li[role=tab] .counter').text(": " + count);
+
+
+        if(count > 0) { 
+            $('li[aria-controls=selectedBirds]').addClass('ui-state-error');
+        }
+        else {
+            $('li[aria-controls=selectedBirds]').removeClass('ui-state-error');
+        }
+
+        $('li[aria-controls=selectedBirds] .counter').text(": " + count);
 }
 
 var clearForms = function() {

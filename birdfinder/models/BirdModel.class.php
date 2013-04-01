@@ -55,7 +55,9 @@ class BirdModel extends SupraModel {
                     INNER JOIN bird_taxonomy AS bt ON bt.bird_id = b.id
                     INNER JOIN taxonomy AS t ON t.id = bt.taxonomy_id
                     WHERE t.id = $id
-                    GROUP BY b.id";
+                    GROUP BY b.id
+                    ORDER BY b.name
+                    ";
 
             $resource = $this->query($SQL);
          
@@ -90,7 +92,9 @@ class BirdModel extends SupraModel {
                 INNER JOIN taxonomy AS t ON t.id = bt.taxonomy_id
                 WHERE t.id
                 IN ( ".implode(',',$ids)." )
-                GROUP BY b.id";
+                GROUP BY b.id
+                ORDER BY b.name ASC
+                ";
 
         return $this->query($SQL);
     }
