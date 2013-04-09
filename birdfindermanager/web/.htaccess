@@ -1,4 +1,6 @@
-Options +FollowSymLinks +ExecCGI
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks +ExecCGI
+Options +SymLinksIfOwnerMatch +ExecCGI
 
 <IfModule mod_rewrite.c>
   RewriteEngine On

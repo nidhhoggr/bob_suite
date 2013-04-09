@@ -29,22 +29,25 @@ if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
     define('bird_manager_url','http://beautyofbirds.com/birdfindermanager/web/');
     define('bird_interface_url','http://beautyofbirds.com/birdfinder/interface/');
     define('bird_drupal_url','http://beautyofbirds.com/');
+    ini_set('include_path', PEAR_LIB);
 }
 else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com') || $staging) {
 
     //SET THE CONNECTION GLOBALS HERE
-    define('DBUSER','zmijevik');
-    define('DBPASSWORD','a1genda666');
-    define('DBNAME','zmijevik_birdfinder');
-    define('DBNAME_DRUPAL','zmijevik_bob');
+    define('DBUSER','suprali1');
+    define('DBPASSWORD','A1genda666!');
+    define('DBNAME','suprali1_birdfinder');
+    define('DBNAME_DRUPAL','suprali1_bob');
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
-    define("PEAR_LIB",'/home/zmijevik/php/');
+    define("PEAR_LIB",'/home/suprali1/php/');
 
     define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/');
-    define('bird_managertemplate_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/frontend.php');
+    define('bird_managertemplate_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/backend.html');
     define('bird_interface_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/');
     define('bird_drupal_url','http://supraliminalsolutions.com/clients/sibylle/bob/');
+    // Works in all PHP versions
+    ini_set('include_path', PEAR_LIB);
 } 
 else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
 

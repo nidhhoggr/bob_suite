@@ -23,7 +23,7 @@ class BobTemplate {
 
     function setPageTitle($title) {
 
-        $this->html_dom->find('title',0)->plaintext = "this is the titile";
+        $this->html_dom->find('title',0)->plaintext = "this is the title";
     }
 
     function removeHeadScripts() {
@@ -35,6 +35,8 @@ class BobTemplate {
 
     function resetContent($content="") {
         $this->html_dom->find('.sidebar-left', 0)->outertext = "";
+        $this->html_dom->find('.topbanner', 0)->outertext = "";
+        $this->html_dom->find('#bottom_ad2', 0)->outertext = "";
         $this->html_dom->find('#middle-wrapper', 0)->outertext = $content;
     }
 
