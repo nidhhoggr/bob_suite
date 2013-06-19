@@ -79,7 +79,8 @@ class BirdModel extends SupraModel {
                 FROM bird AS b
                 WHERE b.id
                 IN ( ".implode(',',array_keys($birds_exclusive))." )
-                GROUP BY b.id";
+                GROUP BY b.id
+                ORDER BY b.name";
  
         return $this->query($SQL);
     }

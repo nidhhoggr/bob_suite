@@ -47,6 +47,7 @@ function reg_with_pic_form_alter(&$form, &$form_state, $form_id) {
  */
 function reg_with_pic_user($op, &$edit, &$user, $category = NULL) {
   if (variable_get('user_pictures', 0)) {
+
     switch ($op) {
       case 'register':
 

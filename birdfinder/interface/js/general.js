@@ -19,7 +19,6 @@ $( function() {
                     updateBirdList();
                     updateSelectionLog();
                 }
-                console.log(selected_taxonomies);
 
                 $('input[name='+name+']').parent().css('background-color','#FFF');
                 $(input.parent()).css('background-color','#FFD39B');
@@ -75,8 +74,6 @@ var getSelectedIds = function() {
 }
 
 var updateBirdList = function() {
-
-        console.log(getSelectedIds()); 
 
         $.ajax({
             type: 'POST',
