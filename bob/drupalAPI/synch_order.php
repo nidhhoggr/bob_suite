@@ -13,6 +13,7 @@ $action = $args['a'];
 $method = $action . 'Order';
 $orderid = $args['o'];
 
+mysql_select_db(DBNAME);
 if($orderid) {
 
     $order = $TaxonomyModel->findOneBy(array(

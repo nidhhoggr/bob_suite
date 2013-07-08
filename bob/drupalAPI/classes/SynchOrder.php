@@ -23,7 +23,9 @@ class SynchOrder {
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
     echo "deleting " . $order['name'] . ": " . $drupalinfo['nid'] . "\r\n";
     $this->dpo->deleteBirdOrder($drupalinfo['nid']);
+    mysql_select_db(DBNAME);
     $TaxonomyModel->nullifyDrupalInfo($id);
+    mysql_select_db(DBNAME_DRUPAL);
   }
 
   function saveOrder($order) {
@@ -67,8 +69,10 @@ class SynchOrder {
     $nid = $node->nid;
     $tid = key($node->taxonomy);
 
+    mysql_select_db(DBNAME);
     $TaxonomyModel->id = $id;
     $TaxonomyModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid')); 
     $TaxonomyModel->save();
+    mysql_select_db(DBNAME_DRUPAL);
   }
 }

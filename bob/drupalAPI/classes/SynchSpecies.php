@@ -24,7 +24,9 @@ class SynchSpecies {
  
     $this->dps->deleteBirdSpecies($drupalinfo['nid']);
 
+    mysql_select_db(DBNAME);
     $BirdModel->nullifyDrupalInfo($id);
+    mysql_select_db(DBNAME_DRUPAL);
   }
 
   public function saveBird($bird) {
@@ -73,20 +75,27 @@ class SynchSpecies {
     $nid = $node->nid;
     $tid = key($node->taxonomy);
 
+    mysql_select_db(DBNAME);
+
     $BirdModel->id = $id;
     $BirdModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid')); 
     $BirdModel->save();
+    mysql_select_db(DBNAME_DRUPAL);
   }
 
   public function getBirdTagContent($bird) {
     global $BirdController;
 
-    return $BirdController->displayAssociatedTags($bird['id']);
+    mysql_select_db(DBNAME);
+    $tags = $BirdController->displayAssociatedTags($bird['id']);
+    mysql_select_db(DBNAME_DRUPAL);
+    return $tags;
   }
 
   public function getSpeciesParent($bird_id) {
     global $BirdTaxonomyModel, $Utility;
 
+    mysql_select_db(DBNAME);
     $BirdTaxonomyModel->findByTaxTypeAndBird(36,$bird_id);
 
     while($order = $BirdTaxonomyModel->fetchNextObject()){ 
@@ -94,5 +103,6 @@ class SynchSpecies {
     }
     
     return $drupalinfo['tid'];
+    mysql_select_db(DBNAME_DRUPAL);
   }
 }

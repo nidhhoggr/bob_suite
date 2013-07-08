@@ -14,6 +14,8 @@ $ss->setDebugMode(isset($args['t']));
 $method = $action . 'Bird';
 $birdid = $args['b'];
 
+mysql_select_db(DBNAME);
+
 if($birdid) {
 
     $bird = $BirdModel->findOneBy(array(

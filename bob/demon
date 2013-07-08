@@ -17,7 +17,7 @@ if(isset($args['a'])) {
         synchOrders();
         synchSpecies();
         synchSpecies();
-        flushUrls();
+        flushAndCreateUrls();
 }
 else {
 
@@ -50,7 +50,7 @@ function synchSpecies() {
         system('php ./drupalAPI/synch_species.php -asave');
 }
 
-function flushUrls() {
-        echo "\n\nflushing urls\n\n";
-        system('php ./drupalAPI/url_alias.php -f');
+function flushAndCreateUrls() {
+        echo "\n\nflushing and creating urls\n\n";
+        system('php ./drupalAPI/url_alias.php -a');
 }

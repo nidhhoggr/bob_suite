@@ -28,7 +28,7 @@ $DrupalModel->setTable('bob_url_alias');
 function flushAliases() { 
     global $DrupalModel;
 
-    $DrupalModel->cleanUrlAliases("pid > 463");
+    $DrupalModel->cleanUrlAliases("pid > 462");
 }
 
 function generateAliases() {
@@ -38,6 +38,10 @@ function generateAliases() {
 
     $speciesAliases = getSpeciesAliases();
 
+    //$aliases = $orderAliases;
+
+    //$aliases = $speciesAliases;
+
     $aliases = array_merge($orderAliases,$speciesAliases);
 
     $DrupalModel->setTable('bob_url_alias');
@@ -46,8 +50,8 @@ function generateAliases() {
    
         extract($alias);
 
-        $DrupalModel->src = $src;
-        $DrupalModel->dst = $dst;
+        $DrupalModel->src = trim($src);
+        $DrupalModel->dst = trim($dst);
         $DrupalModel->save();
     }
 }
