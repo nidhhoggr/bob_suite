@@ -29,7 +29,11 @@ class SynchSpecies {
     mysql_select_db(DBNAME_DRUPAL);
   }
 
-  public function saveBird($bird) {
+  public function createBird($bird) {
+      return $this->saveBird($bird,true);
+  }
+
+  public function saveBird($bird,$createOnly=false) {
     global $Utility, $BirdModel;
 
     extract($bird);
@@ -37,7 +41,9 @@ class SynchSpecies {
     $name = str_replace("'", '', $name);
 
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
- 
+
+    if(!empty($drupalinfo['nid']) && $createOnly) return;
+
     $tagContent = $this->getBirdTagContent($bird);
 
     $speciesinfo = array(

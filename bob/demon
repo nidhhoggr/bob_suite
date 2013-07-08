@@ -9,7 +9,7 @@
       process from the symfony and drupal databases. The scripts implement
       classes within the drupal API
 */
-$args = getopt('f::o::s::a::');
+$args = getopt('f::o::s::a::c::');
 
 
 if(isset($args['a'])) {
@@ -30,6 +30,9 @@ else {
     if(isset($args['s'])) {
         synchSpecies();
     }
+    if(isset($args['c'])) {
+        createSpecies();
+    }
 }
 
 function flushDrupal() {
@@ -48,6 +51,11 @@ function synchOrders() {
 function synchSpecies() {
         echo "\n\nsynching species\n\n";
         system('php ./drupalAPI/synch_species.php -asave');
+}
+
+function createSpecies() {
+        echo "\n\ncreating species\n\n";
+        system('php ./drupalAPI/synch_species.php -acreate');
 }
 
 function flushAndCreateUrls() {
