@@ -9,30 +9,27 @@
       process from the symfony and drupal databases. The scripts implement
       classes within the drupal API
 */
-$args = getopt('f::o::s::a::c::');
+$args = getopt('f::o::s::a::c::h::');
 
 
 if(isset($args['a'])) {
-        flushDrupal();
-        synchOrders();
-        synchSpecies();
-        synchSpecies();
-        flushAndCreateUrls();
-}
-else {
-
-    if(isset($args['f'])) {
-        flushDrupal();
-    }
-    if(isset($args['o'])) {
-        synchOrders();
-    }
-    if(isset($args['s'])) {
-        synchSpecies();
-    }
-    if(isset($args['c'])) {
-        createSpecies();
-    }
+    flushDrupal();
+    synchOrders();
+    synchSpecies();
+    synchSpecies();
+    flushAndCreateUrls();
+} else if(isset($args['f'])) {
+    flushDrupal();
+} else if(isset($args['o'])) {
+    synchOrders();
+} else if(isset($args['s'])) {
+    synchSpecies();
+} else if(isset($args['c'])) {
+    createSpecies();
+} else if(isset($args['h'])) {
+    help();
+} else {
+    help();
 }
 
 function flushDrupal() {
@@ -62,3 +59,19 @@ function flushAndCreateUrls() {
         echo "\n\nflushing and creating urls\n\n";
         system('php ./drupalAPI/url_alias.php -a');
 }
+
+function help() {
+        echo "\n\nflushing drupal\n\n";
+        echo "\tphp ./drupalAPI/flush.php\n";
+        echo "\tphp ./drupalAPI/synch_order.php -adelete\n";
+        echo "\tphp ./drupalAPI/synch_species.php -adelete\n";
+        echo "\tfind . -type f -name 'sync_*' -exec rm {} \;\n";
+        echo "\n\nsynching orders\n\n";
+        echo "\tphp ./drupalAPI/synch_order.php -asave\n";
+        echo "\n\nsynching species\n\n";
+        echo "\tphp ./drupalAPI/synch_species.php -asave\n";
+        echo "\n\ncreating species\n\n";
+        echo "\tphp ./drupalAPI/synch_species.php -acreate\n";
+        echo "\n\nflushing and creating urls\n\n";
+        echo "\tphp ./drupalAPI/url_alias.php -a\n";
+} 
