@@ -73,16 +73,18 @@ class BirdModel extends SupraModel {
             else
                 $birds_exclusive = $birds;
         }
-      
 
-        $SQL = "SELECT b.*
-                FROM bird AS b
-                WHERE b.id
-                IN ( ".implode(',',array_keys($birds_exclusive))." )
-                GROUP BY b.id
-                ORDER BY b.name";
+        if(count($birds_exclusive) != 0) { 
+      
+            $SQL = "SELECT b.*
+                    FROM bird AS b
+                    WHERE b.id
+                    IN ( ".implode(',',array_keys($birds_exclusive))." )
+                    GROUP BY b.id
+                    ORDER BY b.name";
  
-        return $this->query($SQL);
+            return $this->query($SQL);
+        }
     }
 
     public function findAllByTaxonomyIdsInclusive($ids) {

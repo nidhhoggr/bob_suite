@@ -45,6 +45,9 @@ class BirdController extends BaseController {
 
             $rowCount++;
         }
+
+        if(!is_null($rowHtml))
+            $html .= '<tr class="selectedBirdRow">'. $rowHtml .'</tr>';
         
         $html .= '</div>';
 
