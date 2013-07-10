@@ -1,0 +1,7 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=suprali1_birdfinder'
+      username: suprali1
+      password: A1genda666!
