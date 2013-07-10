@@ -1,0 +1,7 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=beautyof_birdfinder'
+      username: beautyof
+      password: @Joseph7a*
