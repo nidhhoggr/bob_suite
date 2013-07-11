@@ -1,14 +1,10 @@
 to install:
 
-1) navigate to the ignorable directory for the respective deployment environment
-2) run 'cp -r . ../../'
-3) chmod -r 0777 birdfinder/cache
-4) chmod -r 0777 bob/sites/default/files
-5) chmod -r 0777 birdfindermanager/cache
-6) chmod -r 0777 birdfindermanager/log
-7) change the email address at site configuration -> site information 
-8) change the link to the bird id tab in the navigation to mathc the respective deployment environment at:
+1) backup current database and store outside of this directory, import sqldumps from sqlbu to respective databases
+2) navigate to the ignorable directory for the respective deployment environment, run 'cp -r . ../../'
+3) mkdir birdfindermanager/cache birdfindermanager/log
+4) chmod -r 0777 birdfinder/cache bob/sites/default/files birdfindermanager/cache birdfindermanager/log
+5) change the email address at site configuration -> site information 
+6) change the link to the bird id tab in the navigation to mathc the respective deployment environment at:
 http://beautyofbirds.com/admin/build/menu-customize/primary-links
-9) set the caching mode at site configuration -> site performance
-10) set the respecitve deployment environment in birdfindermanager/web/backend.php
-11) set the respecitve deployment environment in birdfinder/interface/associate.php 
+7) set the caching mode at site configuration -> site performance

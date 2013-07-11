@@ -3,7 +3,7 @@ require_once(dirname(__FILE__) . '/../config/bootstrap.php');
 
 require_once(dirname(__FILE__).'/../../birdfindermanager/config/ProjectConfiguration.class.php');
 
-$configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'dev', false);
+$configuration = ProjectConfiguration::getApplicationConfiguration('backend', symfony_deployment_environment, false);
 
 $instance = sfContext::createInstance($configuration);
 if(!$instance->getUser()->isAuthenticated()) {
