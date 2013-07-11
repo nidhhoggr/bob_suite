@@ -19,6 +19,7 @@ $sandbox = true;
     define('DBDRIVER','mysql');
     define("PEAR_LIB",null);
 
+    define('symfony_deployment_environment','dev');
     define('bird_manager_url','http://beautyofbirds/birdfindermanager/web/');
     define('bird_managertemplate_url','http://beautyofbirds/birdfindermanager/web/frontend.php');
     define('bird_interface_url','http://beautyofbirds/birdfinder/interface/');
