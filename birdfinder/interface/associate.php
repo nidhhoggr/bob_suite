@@ -2,7 +2,9 @@
 require_once(dirname(__FILE__) . '/../config/bootstrap.php');
 
 require_once(dirname(__FILE__).'/../../birdfindermanager/config/ProjectConfiguration.class.php');
-$configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'prod', true);
+
+$configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'dev', false);
+
 $instance = sfContext::createInstance($configuration);
 if(!$instance->getUser()->isAuthenticated()) {
     header("Location: " . bird_manager_url);

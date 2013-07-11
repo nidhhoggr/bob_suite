@@ -29,7 +29,7 @@ dev:
     etag:                   false
     js_frontend_root:       /frontend_dev.php
     js_backend_root:        /backend_dev.php
-    birdfinderinterface_root: /clients/sibylle/birdfinder/interface/
+    birdfinderinterface_root: /birdfinder/interface/
 
 test:
   .settings:
