@@ -1,0 +1,10 @@
+to install:
+
+1) navigate to the ignorable directory for the respective deployment environment
+2) run 'cp -r . ../../'
+3) chmod -r 0777 birdfinder/cache
+4) chmod -r 0777 bob/sites/default/files
+5) change the email address at site configuration -> site information 
+6) change the link to the bird id tab in the navigation to mathc the respective deployment environment at:
+http://beautyofbirds.com/admin/build/menu-customize/primary-links
+7) set the caching mode at site configuration -> site performance

@@ -10,3 +10,4 @@ birdfindermanager/log/*
 bob/sites/default/settings.php
 birdfindermanager/config/databases.yml
 birdfinder/config/constants.php
+bob/sites/default/files/imagecache/*
