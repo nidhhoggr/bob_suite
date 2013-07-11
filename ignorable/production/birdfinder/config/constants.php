@@ -23,6 +23,7 @@ if(@strstr($_SERVER['HTTP_HOST'],'beautyofbirds.com') || $prodbox) {
     define("PEAR_LIB",'/home/beautyof/php/');
 
     define('bird_manager_url','http://beautyofbirds.com/birdfindermanager/web/');
+    define('bird_managertemplate_url','http://beautyofbirds.com/birdfindermanager/web/frontend.php');
     define('bird_interface_url','http://beautyofbirds.com/birdfinder/interface/');
     define('bird_drupal_url','http://beautyofbirds.com/');
 }
@@ -37,6 +38,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'supraliminalsolutions.com')) {
     define("PEAR_LIB",'/home/zmijevik/php/');
 
     define('bird_manager_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/backend.php/');
+    define('bird_managertemplate_url','http://supraliminalsolutions.com/clients/sibylle/birdfindermanager/web/frontend.php');
     define('bird_interface_url','http://supraliminalsolutions.com/clients/sibylle/birdfinder/interface/');
 } 
 else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
@@ -48,6 +50,7 @@ else if(@strstr($_SERVER['HTTP_HOST'],'clients') || $sandbox) {
     define('DBHOST','localhost');
     define('DBDRIVER','mysql');
 
-    define('bird_manager_url','http://sfprojects/birdfinder/web/backend.php/');
+    define('bird_manager_url','http://sfprojects/birdfindermanager/web/backend.php/');
+    define('bird_managertemplate_url','http://sfprojects/birdfindermanager/web/frontend.php');
     define('bird_interface_url','http://clients/sibylle/birdsofbeauty/birdfinder/injection_engine/interface/');
 }
