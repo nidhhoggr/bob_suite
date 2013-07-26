@@ -1725,6 +1725,37 @@ li.statistics_counter{
     font-size: 10px;
 }
 
+#quicktabs_container_bird_order .views-field-tid  {
+    float: none;
+    text-align: center;
+}
+
+#quicktabs_container_bird_order .views-field-name {
+    padding: 0px 5px 5px 5px;
+}
+
+#quicktabs_container_bird_order .views-field-name a {
+    font-weight: bold;
+}
+
+#quicktabs_container_bird_order_leftcol {
+    font-size: 10px;
+}
+
+#quicktabs_container_bird_order_leftcol .views-field-tid  {
+    float: none;
+    text-align: center;
+}
+
+#quicktabs_container_bird_order_leftcol .views-field-name {
+    padding: 0px 5px 5px 5px;
+}
+
+#quicktabs_container_bird_order_leftcol .views-field-name a {
+    font-weight: bold;
+}
+
+
 .view-Taxonomy-terms .views-field-tid {
     display: block;
     float: left;
@@ -1746,6 +1777,12 @@ li.statistics_counter{
     padding: 5px;
     min-width: 20px;
 }
+
+#quicktabs-bird_order_leftcol ul.quicktabs_tabs.quicktabs-style-sky li a, #quicktabs-bird_order_leftcol ul.quicktabs_tabs.quicktabs-style-sky li a:visited {
+    padding: 5px;
+    min-width: 20px;
+}
+
 
 .view-species-term-page .views-field-description {
     width: 470px;
@@ -1784,4 +1821,21 @@ li.statistics_counter{
 
 .views_slideshow_controls a {
     margin: 0 10px 0 10px;
+}
+
+.block h2 { 
+    text-align: center;
+    
+/*
+    background: url(images/images/lh-tp.jpg) repeat-y;
+    color: #fff;
+    padding: 18px 10px 10px 10px;
+*/
+}
+
+.block:after {
+    background: url(images/images/lh-tp.jpg) repeat-y;
+    display: block;
+    height: 10px;
+    width: 100%; 
 }
