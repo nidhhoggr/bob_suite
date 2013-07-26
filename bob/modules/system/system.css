@@ -153,7 +153,7 @@ tr.merge-up, tr.merge-up td, tr.merge-up th {
   color: #f00;
 }
 .more-link {
-  text-align: left; /* LTR */
+  text-align: right; /* LTR */
 }
 .more-help-link {
   font-size: 0.85em;

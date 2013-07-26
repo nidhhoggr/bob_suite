@@ -1,17 +1,16 @@
 <?php
-
 /**
  * @file
  *   Glossary administration functions and forms.
  */
 
-/* 
+/*
  *  This is the introductory stuff for the settings.
- */ 
+ */
 function glossary_settings_page() {
   $mb_status = extension_loaded('mbstring') ? t('enabled') : t('disabled');
   $overload = ini_get('mbstring.func_overload') ? t('enabled') : t('disabled');
-  $output = '<p>'. t('Multibyte string support is !status; multibyte function overload is !overload.', array('!status' => $mb_status, '!overload' => $overload)) .'</p>'; 
+  $output = '<p>'. t('Multibyte string support is !status; multibyte function overload is !overload.', array('!status' => $mb_status, '!overload' => $overload)) .'</p>';
   $output .= drupal_get_form('glossary_general_settings_form');
   return $output;
 }
@@ -154,19 +153,12 @@ function glossary_general_settings_form() {
   return system_settings_form($form);
 }
 
-/* 
+/*
  *  This is the form for the getting the user's alphabet for the alphabar.
- */ 
+ */
 function glossary_alphabet_form() {
   global $language;
   $form = array();
-  
-//  $status = db_fetch_array(db_query("SHOW TABLE STATUS LIKE 'term_data'"));
-//  $lang = $language->language .' ('. $language->name .')';
-//  $form['locale'] = array(
-//    '#type' => 'markup',
-//    '#value' => '<big>'. t('The current locale is set to "@loc". The term_data collation is "!collate".', array('@loc' => $lang, '!collate' => $status['Collation'])) .'</big>',
-//    );
 
   $form['alphabet'] = array(
     '#type' => 'textarea',
@@ -213,7 +205,7 @@ function glossary_alphabet_form() {
     '#type' => 'textarea',
     '#title' => t('Alphabar instruction'),
     '#default_value' => variable_get('glossary_alphabar_instruction', _alphabar_instruction_default()),
-    '#description' => t('This is the text that will appear immediately below the alphabar.'),
+    '#description' => t('This is the text that will appear immediately below the alphabar. HTML may not be rendered correctly.'),
     '#rows' => 1,
     );
 
@@ -223,9 +215,21 @@ function glossary_alphabet_form() {
     '#weight' => 5,
     );
 
-  return $form;    
+  return $form;
 }
 
+function glossary_alphabet_form_validate($form, &$form_state) {
+  if (strip_tags($form_state['values']['alphabet']) != $form_state['values']['alphabet']) {
+    form_set_error('alphabet', t('Invalid characters in the alphabet.'));
+  }
+  if (strip_tags($form_state['values']['digits']) != $form_state['values']['digits']) {
+    form_set_error('digits', t('Invalid characters in the digits.'));
+  }
+}
+
+/**
+ * Form submission handler for the alphabar.
+ */
 function glossary_alphabet_form_submit($form, &$form_state) {
   variable_set('glossary_alphabet', explode(' ', $form_state['values']['alphabet']));
   if ($form_state['values']['digits']) {
@@ -241,9 +245,9 @@ function glossary_alphabet_form_submit($form, &$form_state) {
   drupal_set_message(t('Configuration saved'), 'status');
 }
 
-/* 
+/*
  *  This is the form for the settings for an individual input format.
- */ 
+ */
 function glossary_filter_form($form_state, $format = 1) {
   drupal_add_js(drupal_get_path('module', 'glossary') .'/glossary.js', 'module');
 
@@ -259,7 +263,7 @@ function glossary_filter_form($form_state, $format = 1) {
   if (!$options) {
     drupal_set_message(t('No vocabularies were found. Until you set up, and select, at least one vocabulary for Glossary, no substitutions can be done.'));
   }
-  
+
   // Make sure we know if we need to clear the cache.
   variable_del('glossary_need_to_clear_cache', TRUE);
 
@@ -278,7 +282,7 @@ function glossary_filter_form($form_state, $format = 1) {
     $cache_msg = t('This filter may be cached.');
 
     // Is there anything in the cache now?
-    // We can't use cache_get because we would need the md5 hash of the text.  
+    // We can't use cache_get because we would need the md5 hash of the text.
     $cached_content = db_result(db_query("SELECT COUNT(cid) FROM {cache_filter} WHERE cid LIKE ('%d:%%')", $format));
     if ($cached_content == 0) {
       $cache_exist = FALSE;
@@ -336,7 +340,7 @@ function glossary_filter_form($form_state, $format = 1) {
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
     );
-    
+
   $form['filter']['match']["glossary_match_$format"] = array(
 //    '#type' => 'select',
     '#type' => 'radios',
@@ -502,7 +506,7 @@ function glossary_filter_form_submit($form, &$form_state) {
   variable_set("glossary_superscript_$format", $form_state['values']["glossary_superscript"]);
   variable_set("glossary_icon_$format", $form_state['values']["glossary_icon"]);
   drupal_set_message(t('Configuration has been updated.'));
-   
+
   return;
 }
 
@@ -518,5 +522,5 @@ function glossary_clearcache_form() {
     );
   $form['#submit'][] = '_glossary_clear_cache';
 
-  return $form;  
+  return $form;
 }

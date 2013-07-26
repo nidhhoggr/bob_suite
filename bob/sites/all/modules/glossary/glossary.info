@@ -3,9 +3,9 @@ description = Maintain a glossary on your site.
 dependencies[] = taxonomy
 core = 6.x
 
-; Information added by drupal.org packaging script on 2011-02-25
-version = "6.x-1.x-dev"
+; Information added by drupal.org packaging script on 2012-05-09
+version = "6.x-1.8"
 core = "6.x"
 project = "glossary"
-datestamp = "1298619341"
+datestamp = "1336524957"
 
