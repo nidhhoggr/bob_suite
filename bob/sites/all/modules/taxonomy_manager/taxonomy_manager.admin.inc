@@ -1785,6 +1785,7 @@ function taxonomy_manager_term_data_edit() {
     }
     $term = (array) taxonomy_get_term($tid);
     $term['fields'] = $param['term_data']['fields'];
+
     module_invoke_all('taxonomy', 'update', 'term', $term);
     module_invoke_all('taxonomy_manager_term_data_submit', $param, $values);
   }

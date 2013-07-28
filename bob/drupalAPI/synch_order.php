@@ -8,10 +8,13 @@ require_once(dirname(__FILE__) . '/classes/SynchOrder.php');
 
 $so = new SynchOrder();
 
-$args = getopt("a:o::");
+$args = getopt("a:o::r::");
 $action = $args['a'];
 $method = $action . 'Order';
 $orderid = $args['o'];
+
+if(isset($args['r']))
+    $so->saveRelationsToggled = true;
 
 mysql_select_db(DBNAME);
 if($orderid) {

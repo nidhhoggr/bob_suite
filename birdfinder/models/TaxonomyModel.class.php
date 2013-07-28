@@ -58,6 +58,10 @@ class TaxonomyModel extends SupraModel {
         )));
     }
 
+    public function fetchChildSpeciesByOrderId($id) {
+
+    } 
+
     public function nullifyDrupalInfo($id) {
         $sql = "update taxonomy set drupalinfo = NULL where id = $id";
         $this->execute($sql);

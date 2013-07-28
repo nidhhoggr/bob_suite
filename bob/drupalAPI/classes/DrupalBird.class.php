@@ -14,19 +14,22 @@ class BaseDrupalBird {
 
         extract($nodeinfo);
 
+    
+        //build data for the taxonomy term
         $term = array(
             'vid' => $vid, // Voacabulary ID
             'name' => $taxonomy['name'], // Term Name 
-            'description' => $taxonomy['description']
+            'description' => $taxonomy['description'],
+            'relations'=>$taxonomy['relations']
         );
 
-        //create the node
+        //save the taxonomy term
         taxonomy_save_term($term);
 
-        //create the image
+        //create the image for the taxonomy term
         taxonomy_image_add_from_url($term['tid'],$image['url'],$image['name']);
 
-        //save the trait information as a node
+        //build the object for the trait node
         $node = new stdClass();
         $node->title = $title;
         $node->body = $body;
@@ -35,6 +38,7 @@ class BaseDrupalBird {
         $node->created = time();
         $node->taxonomy = array(taxonomy_get_term($term['tid']));
 
+        //save the node
         if ($node = node_submit($node)) {
             node_save($node);
         }
@@ -94,9 +98,7 @@ class BaseDrupalBird {
     public function cleanTaxAndNode($condition) {
         global $BirdModel;
         
-        $bfdb = $BirdModel->getDatabase();
-        //mysql_select_db('zmijevik_bob');
-        mysql_select_db('bob');
+        mysql_select_db(DBNAME_DRUPAL);
 
         $sql = "
         DELETE td.*, th.*, ti.*, tn.*, n.*, ncs.*, nc.*, nr.*
@@ -111,16 +113,14 @@ class BaseDrupalBird {
         WHERE td.tid $condition";
 
         $BirdModel->execute($sql);
-        mysql_select_db($bfdb);
+
+        mysql_select_db(DBNAME);
     }
 
     public function cleanNode($condition) {
         global $BirdModel;
 
-        $bfdb = $BirdModel->getDatabase();
- 
-        //mysql_select_db('zmijevik_bob');
-        mysql_select_db('bob');
+        mysql_select_db(DBNAME_DRUPAL);
 
         $sql = "
         DELETE n.*, ncs.*, nc.*, nr.*
@@ -132,14 +132,14 @@ class BaseDrupalBird {
 
         $BirdModel->execute($sql);
 
-        mysql_select_db($bfdb);
+        mysql_select_db(DBNAME);
     }
 
     public function cleanTax($condition) {
         global $BirdModel;
 
-        $bfdb = $BirdModel->getDatabase();
-        mysql_select_db('zmijevik_bob');
+
+        mysql_select_db(DBNAME_DRUPAL);
 
         $sql = "
         DELETE
@@ -152,7 +152,18 @@ class BaseDrupalBird {
         ";
 
         $BirdModel->execute($sql);
-        mysql_select_db($bfdb);
+        mysql_select_db(DBNAME);
+    }
+
+    public function cleanUrlAliases($condition) {
+        global $BirdModel;
+
+        mysql_select_db(DBNAME_DRUPAL);
+
+        $sql = "DELETE FROM bob_url_alias WHERE $condition";
+
+        $BirdModel->execute($sql);
+        mysql_select_db(DBNAME);
     }
 }
 
@@ -167,6 +178,11 @@ class DrupalBirdSpecies extends BaseDrupalBird {
 
         $this->deleteNodeAndTax($nid);
     }
+
+    public function deleteBirdSpeciesUrlAlias($drupalinfo) {
+        extract($drupalinfo);
+        $this->cleanUrlAliases("src = 'taxonomy/term/".$tid."' OR src = 'node/".$nid."'");
+    } 
 
     public function updateBirdSpecies($speciesinfo) {  
 
@@ -185,6 +201,12 @@ class DrupalBirdOrder extends BaseDrupalBird {
 
         $this->deleteNodeAndTax($nid);
     }
+
+    public function deleteBirdOrderUrlAlias($drupalinfo) {
+        extract($drupalinfo);
+        $this->cleanUrlAliases("src = 'taxonomy/term/".$tid."' OR src = 'node/".$nid."'");
+    } 
+
 
     public function updateBirdOrder($orderinfo) {
 

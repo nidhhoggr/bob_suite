@@ -10,7 +10,7 @@ $ss = new SynchSpecies();
 
 $args = getopt("a:tb::");
 $action = $args['a'];
-$ss->setDebugMode(isset($args['t']));
+//$ss->setDebugMode(isset($args['t']));
 $method = $action . 'Bird';
 $birdid = $args['b'];
 

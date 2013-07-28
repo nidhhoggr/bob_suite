@@ -10,6 +10,17 @@ require_once(dirname(__FILE__) . '/../classes/SynchOrder.php');
 $ss = new SynchSpecies();
 $so = new SynchOrder();
 
+$tids = array(17774,17775);
+
+foreach($tids as $tid) {
+
+  print_r(taxonomy_get_children($tid));
+  //print_r(taxonomy_get_related($tid));
+  //print_r(taxonomy_get_parents($tid));
+}
+
+/*
+
 //well use the ferral pigeon
 $birdid = "195";
 $orderid = "541";
@@ -33,3 +44,5 @@ $order = $TaxonomyModel->findOneBy(array(
 
 $so->saveOrder($order);
 $ss->saveBird($bird);
+
+*/

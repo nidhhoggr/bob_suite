@@ -1,6 +1,8 @@
 <?php
 class SynchOrder {
 
+  public $saveRelationsToggled = false;
+
   public function __construct() {
 
       $this->dpo = new DrupalBirdOrder();
@@ -23,9 +25,17 @@ class SynchOrder {
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
     echo "deleting " . $order['name'] . ": " . $drupalinfo['nid'] . "\r\n";
     $this->dpo->deleteBirdOrder($drupalinfo['nid']);
+    $this->dpo->deleteBirdOrderUrlAlias($drupalinfo);
+
     mysql_select_db(DBNAME);
     $TaxonomyModel->nullifyDrupalInfo($id);
     mysql_select_db(DBNAME_DRUPAL);
+  }
+
+  public function detailOrder($order) {
+
+      var_dump($order);
+      
   }
 
   function saveOrder($order) {
@@ -39,15 +49,20 @@ class SynchOrder {
 
     $drupalinfo = $Utility->dbGetArray($drupalinfo);
  
+    $childSpecies = $this->getChildSpecies($order);
+
     $orderinfo = array(
         'nid'=>$drupalinfo['nid'],
-        'body'=>null,
+        'body'=>$childSpecies,
         'title'=>$name,
         'taxonomy'=>array(
             'name'=>$name,
             'description'=>$about,
         )
     );
+
+    if($this->saveRelationsToggled)
+        $orderinfo['taxonomy']['relations'] = $this->childids;
 
     if(empty($drupalinfo['nid'])) {
 
@@ -72,5 +87,39 @@ class SynchOrder {
     $TaxonomyModel->drupalinfo = $Utility->dbPutArray(compact('nid','tid')); 
     $TaxonomyModel->save();
     mysql_select_db(DBNAME_DRUPAL);
+  }
+
+  private function getChildSpecies($order) {
+
+      global $BirdModel, $Utility;
+      
+      $links = null;
+
+      mysql_select_db(DBNAME);
+
+      $BirdModel->findAllByTaxonomyIdsInclusive(array($order['id']));
+
+      $this->childids = array();
+
+      while($bird = $BirdModel->fetchNextObject()) { 
+
+          $urlname = $Utility->dehumanizeString($bird->name);
+
+          $route = bird_drupal_url . "bird-species/".$urlname;
+     
+          $link = '<a href="'.$route.'">'.$bird->name.'</a>';
+ 
+          $links .= '<li>'.$link.'</li>';
+
+
+          if($this->saveRelationsToggled) { 
+              $di = $Utility->dbGetArray($bird->drupalinfo);
+              $this->childids[] = $di['tid'];
+          }
+      }
+
+      mysql_select_db(DBNAME_DRUPAL);
+
+      return '<div class="child-species"><h3>Child Species</h3><ul>'.$links.'</ul></div>';
   }
 }

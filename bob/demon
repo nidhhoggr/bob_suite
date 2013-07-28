@@ -16,7 +16,6 @@ if(isset($args['a'])) {
     flushDrupal();
     synchOrders();
     synchSpecies();
-    synchSpecies();
     flushAndCreateUrls();
 } else if(isset($args['f'])) {
     flushDrupal();
@@ -34,7 +33,6 @@ if(isset($args['a'])) {
 
 function flushDrupal() {
         echo "\n\nflushing drupal\n\n";
-        system('php ./drupalAPI/flush.php');
         system('php ./drupalAPI/synch_order.php -adelete');
         system('php ./drupalAPI/synch_species.php -adelete');
         system("find . -type f -name 'sync_*' -exec rm {} \;");
@@ -61,17 +59,33 @@ function flushAndCreateUrls() {
 }
 
 function help() {
-        echo "\n\nflushing drupal\n\n";
-        echo "\tphp ./drupalAPI/flush.php\n";
+
+        echo "Demon Commands\n";
+        echo "\n\nflushing commands\n\n";
+        echo "\tphp ./demon -f\n";
+        echo "\n\nsynching orders\n\n";
+        echo "\tphp ./demon -o\n";
+        echo "\n\nsynching species\n\n";
+        echo "\tphp ./demon -s\n";
+        echo "\n\ncreating species\n\n";
+        echo "\tphp ./demon -c\n";
+        echo "\n\n\nDirect Commands\n";
+        echo "\n\nflushing commands\n\n";
         echo "\tphp ./drupalAPI/synch_order.php -adelete\n";
         echo "\tphp ./drupalAPI/synch_species.php -adelete\n";
         echo "\tfind . -type f -name 'sync_*' -exec rm {} \;\n";
         echo "\n\nsynching orders\n\n";
         echo "\tphp ./drupalAPI/synch_order.php -asave\n";
+        echo "\n\nsynching orders with relations\n\n";
+        echo "\tphp ./drupalAPI/synch_order.php -asave -r\n";
+        echo "\n\ncreating a particular order\n\n";
+        echo "\tphp ./drupalAPI/synch_order.php -asave -o318\n";
         echo "\n\nsynching species\n\n";
         echo "\tphp ./drupalAPI/synch_species.php -asave\n";
         echo "\n\ncreating species\n\n";
         echo "\tphp ./drupalAPI/synch_species.php -acreate\n";
+        echo "\n\ncreating a particular species\n\n";
+        echo "\tphp ./drupalAPI/synch_species.php -asave -b318\n";
         echo "\n\nflushing and creating urls\n\n";
         echo "\tphp ./drupalAPI/url_alias.php -a\n";
 } 
