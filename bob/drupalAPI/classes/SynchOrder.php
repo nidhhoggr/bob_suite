@@ -105,12 +105,13 @@ class SynchOrder {
 
           $urlname = $Utility->dehumanizeString($bird->name);
 
-          $route = bird_drupal_url . "bird-species/".$urlname;
-     
-          $link = '<a href="'.$route.'">'.$bird->name.'</a>';
+          $route = "../bird-species/".$urlname;
+    
+          $img = '<img src="../sites/default/files/imagecache/image_70X70/category_pictures/sync_' . $urlname . '.jpg" alt="'.$bird->name.'" title="'.$bird->name.'" />';
+ 
+          $link = '<a href="'.$route.'">'.$img.'</a>';
  
           $links .= '<li>'.$link.'</li>';
-
 
           if($this->saveRelationsToggled) { 
               $di = $Utility->dbGetArray($bird->drupalinfo);
@@ -120,6 +121,6 @@ class SynchOrder {
 
       mysql_select_db(DBNAME_DRUPAL);
 
-      return '<div class="child-species"><h3>Child Species</h3><ul>'.$links.'</ul></div>';
+      return '<div class="child-species"><h3>Child Species</h3><ul id="birdcarousel" class="jcarousel-skin-tango">'.$links.'</ul></div>';
   }
 }

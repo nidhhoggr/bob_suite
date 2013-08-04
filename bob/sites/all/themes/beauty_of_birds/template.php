@@ -22,9 +22,11 @@ function phptemplate_body_class($left, $right) {
 
 // Javascript Includes
 
+drupal_add_js(drupal_get_path('theme', 'beauty_of_birds') . '/js/jcarousel/lib/jquery.jcarousel.min.js', 'theme');
+drupal_add_css(drupal_get_path('theme', 'beauty_of_birds') . '/js/jcarousel/skins/tango/skin.css', 'theme');
+
 drupal_add_js(drupal_get_path('theme', 'beauty_of_birds') . '/js/suckerfish.js', 'theme');
 drupal_add_css(drupal_get_path('theme', 'beauty_of_birds') . '/css/admin.css', 'theme');
-
 // Quick fix for the validation error: 'ID "edit-submit" already defined'
 $elementCountForHack = 0;
 function phptemplate_submit($element) {
