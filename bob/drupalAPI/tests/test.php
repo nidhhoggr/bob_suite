@@ -19,6 +19,24 @@ foreach($tids as $tid) {
   //print_r(taxonomy_get_parents($tid));
 }
 
+$result = db_query("SELECT * FROM bob_node where status = 0");
+
+$contentFound = false;
+
+while($row = mysqli_fetch_object($result)) {
+
+    $nodeinfo = node_load($row->nid);
+
+    $content .= "'".$nodeinfo->title."' viewable at " . $GLOBALS['base_url'] . '/' .  $nodeinfo->path . "\r\n";
+
+    if(!$contentFound) $contentFound = true; 
+}
+
+if($contentFound) {
+
+    $content = "new unpublished content: \r\n\r\n".$content;
+    mail('joseph@supraliminalsolutions.com','new unpublished content',$content);
+}
 /*
 
 //well use the ferral pigeon

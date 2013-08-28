@@ -1785,7 +1785,7 @@ li.statistics_counter{
 
 
 .view-species-term-page .views-field-description {
-    width: 470px;
+    width: 100%;
 }
 
 .view-species-page .jcarousel-skin-default .jcarousel-clip-horizontal {
@@ -1838,4 +1838,9 @@ li.statistics_counter{
     display: block;
     height: 10px;
     width: 100%; 
+}
+
+#block-quicktabs-bird_species_page h2,
+#block-quicktabs-bird_orders_page h2 {
+    display: none;
 }

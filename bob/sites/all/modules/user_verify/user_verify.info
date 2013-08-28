@@ -1,0 +1,12 @@
+name = User verification
+package = User administration
+description = Extended user verification options for registration spam protection
+core = 6.x
+php = 5
+
+; Information added by drupal.org packaging script on 2013-07-02
+version = "6.x-1.0+1-dev"
+core = "6.x"
+project = "user_verify"
+datestamp = "1372783928"
+
