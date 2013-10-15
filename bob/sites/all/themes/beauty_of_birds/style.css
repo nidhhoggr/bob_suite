@@ -399,10 +399,16 @@ form#user-login-form .item-list ul li {
   background:#FFFFFF;
 }
 
-.links {
-  clear: both;
+.video-user-right .links {
   font-size: 1.0em;
   font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  float: right;
+}
+
+.video-user-right .links div {
+    display: inline; 
 }
 
 .more-link {
@@ -847,29 +853,12 @@ div.right-to-main .form-submit{
 	text-align:center;
 }
 /*******************Charan********************/
-.imagesize-bird{
+.imagesize-bird {
+    text-align: center;
 }
-.imagesize-bird-middle{
-     	        width: 100%;
-		background:#26335E;
-		margin-left: -5px;
-		text-align: center;
-}
-/*.imagesize-bird-middle img{
-	 height: 450px;
-    width: 940px;
-	}*/
-.imagesize-bird-top{
-	background:url(images/images/photo-frame-top.png) no-repeat;
-	width: 100%;
-	height: 10px;
-	margin-left: -5px;
-}
-.imagesize-bird-bottom{
-	background:url(images/images/photo-frame.png) no-repeat;
-	width: 100%;
-    height: 10px;
-    margin-left: -5px;
+.imagesize-bird img{
+    margin: 0px auto;
+    display: block
 }
 .image-title-change{
 	display:none;
@@ -877,7 +866,8 @@ div.right-to-main .form-submit{
 .imagesize-bird-title{
     text-transform: capitalize;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 5px; 
 }
 .imagesize-user{
 	margin-top:10px;
@@ -942,55 +932,29 @@ div.right-to-main .form-submit{
 	float:left;
 	width:730px;*/
 }
-.imagesize-user-middle-content .imagesize-user-photo{
-	background:url(images/images/favorites.png) top no-repeat;
-    margin-left: 22px;
-    padding-top: 37px;
+
+.latest-video {
+    height: 200px;
 }
-.imagesize-user-middle-content .imagesize-user-photo a{
-   color: #FFFFFF;
-   font-weight: normal;
-}
-.video-user-middle-content .ratephoto{
-	background:url(images/images/favorites.png) top no-repeat;
-    margin-left: 60px;
-    padding-top: 37px;
-    position: relative;
-    top: 66px;
-}
-.video-user-middle-content .ratephoto a{
-   color: #FFFFFF;
-   font-weight: normal;
-}
-.video-bird{
-	float:left;
-	}
-.latest-video{
-	width:480px;
-	height:366px;
-    float: left;
-    margin-left: 5px;
-}
-.gmap{
-	width:480px;
-	height:366px;
-	float: right;
-    margin-right: 5px;
-}
-#gmap-auto1map-gmap0{
-    height: 333px !important;
-    margin-right: 9px;
-    margin-top: 6px;
-    padding: 10px 0 10px 4px;
+  .latest-video td {
+      width: 25%;
+  }
+
+  .latest-video .image-feild {
+      text-align: center;
+  }
+
+.gmap #gmap-auto1map-gmap0{
+    width: 330px !important;
+    height: 280px !important;
+    float: right;
+    margin-top: 40px;
     text-align: center;
-    width: 460px !important;
 }
 #block-views-latest_image_category-block_1, #block-views-latest_image_users-block_1{
-    background: none repeat scroll 0 0 #C0CFF8;
     height: 280px;
     margin-left: 6px;
     margin-top: 19px;
-    width: 467px;
 }
 .latest-video .species{
     color: #000000;
@@ -1001,7 +965,7 @@ div.right-to-main .form-submit{
     top: 12px;
 	}
 #block-views-latest_image_category-block_1 table tr td, #block-views-latest_image_users-block_1 table tr td{
-	background:#C0CFF8;
+	background:#EEE;
 	padding:0px !important;
 	border:1px outset #909BBA;
 }
@@ -1030,7 +994,6 @@ tbody{
     width:95%;
     height:300px;
     background:url(images/images/bg11.png) top no-repeat;
-    float: left;
     margin-left: 15px;
     margin-top: 50px;
     padding-bottom: 10px;
@@ -1119,15 +1082,6 @@ tbody{
     font-weight: bold;
     top: 12px;
 }
-.video-bird-middle{
-	background-image: url(images/images/video-frame1.png);
-    background-repeat: no-repeat;
-    height: 420px;
-    line-height: 100%;
-    padding-left: 25px;
-    padding-top: 25px;
-    width: 690px;
-}
 .video-bird-middle object{
 	width:640px;
 	height:380px;
@@ -1169,55 +1123,52 @@ tbody{
     text-transform: capitalize;
 }
 .video-user-left{
-	  width: 370px;
+	  width: 50%;
+          float: left;
 }
-.video-user-email .ratephoto{
-	background:url(images/images/letter.png) left no-repeat;
-    height: 27px;
-   padding-top: 12px;
-    /* position: relative;
-    top: 22px;*/
-    margin-left:10px;
+
+.video-user-right {
+    width: 50%;
+    float: right; 
 }
-.video-user-email .ratephoto a{
-    margin-left: -14px;
+.cleaner {
+    clear: both; 
+}
+
+.video-user-left .icons span {
+    height: 70px; 
+    display: block;
+    float: left;
+    padding: 15px;
+}
+
+.video-user-left .icons span a {
+    display: block;
     position: relative;
-    top: 22px;
-    width: 25px;
+    bottom: -50px; 
+    color: #fff; 
+    font-size: 10px;
 }
-.video-user-photo .ratephoto{
-	font-weight:bold;
-	position: relative;
-    top: 20px;
-    margin-left: 10px;
-	}
-.video-user-email a, .video-user-commented a{
-    color: #FFFFFF;
-    font-weight: normal;
-    left: 2px;
-    margin-left: -6px;
-    position: relative;
-    top: 24px;
+
+.video-user-left .author_info span {
+
+    display: inline;
+
 }
-.video-user-right{
-margin-top:30px;
-	}
+
+.add-to-fav {
+    background:url(images/Website_icons/PNG_50x50/favs.png) top no-repeat;
+}
+
+.email-user {
+    background:url(images/Website_icons/PNG_50x50/contact2.png) top no-repeat;
+}
 .video-user-photo .fivestar-combo-stars, .video-user-photo .fivestar-static-form-item{
 	margin-top:20px;
 	padding-left:6px;
 }
-.video-user-email .ratephoto1{
-	background:url(images/images/pen.png) left no-repeat;
-    height: 27px;
-    padding-top: 15px;
-   /* position: relative;
-    top: 22px;*/
-    margin-left:10px;
-}
-.video-user-right table, .video-user-right tr, .video-user-right td{
-	border:none;
-	margin-top: 67px;
-	padding-left: 30px;
+.report-mistake {
+    background:url(images/Website_icons/PNG_50x50/exclamation.png) top  no-repeat;
 }
 #block-views-latest_image_users-block_1 .views-field-name .field-content, #block-views-latest_image_users-block_1 .user-name {
     background:url(images/images/author-icon.png) left no-repeat;
@@ -1843,4 +1794,50 @@ li.statistics_counter{
 #block-quicktabs-bird_species_page h2,
 #block-quicktabs-bird_orders_page h2 {
     display: none;
+}
+
+.roundedBox {position:relative; padding:20px; margin:10px 0;}
+
+    .corner {position:absolute; width:20px; height:20px;}
+
+        .topLeft {top:0; left:0; background-position: 0px 0px;}
+        .topRight {top:0; right:0; background-position:-20px 0px;}
+        .bottomLeft {bottom:0; left:0; background-position: 0px -20px;}
+        .bottomRight {bottom:0; right:0; background-position:-20px -20px;}
+
+
+#type1 {
+    background-color:#2F3855;
+    color: white;
+}
+    #type1 .corner {
+        background-image:url(images/2F3855-roundcornersprite.png); 
+        background-color: #fff; 
+    }
+
+
+.rate-info {
+    color: #fff;
+}
+
+#ui-datepicker-div {
+
+    background-color: #fff;
+    border: 1px solid #2F3746;
+}
+
+#ui-datepicker-div .ui-datepicker-links div {
+    display: inline;
+}
+
+.node-tax-title a {
+    color: #eee; 
+}
+
+#block-block-10 h2 { 
+    display: none;
+}
+
+#block-block-10 .content {
+    text-align: center;
 }

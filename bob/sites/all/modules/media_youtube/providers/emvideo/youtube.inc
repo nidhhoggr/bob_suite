@@ -1,4 +1,5 @@
 <?php
+// $Id: youtube.inc,v 1.1.2.23 2011/02/04 17:38:09 aaron Exp $
 
 /**
  * @file
@@ -183,14 +184,6 @@ function emvideo_youtube_thumbnail($field, $item, $formatter, $node, $width, $he
   $tn = "http://img.youtube.com/vi/{$item['value']}/0.jpg";
 
   return $tn;
-}
-
-/**
- * hook emvideo_PROVIDER_raw_url
- * returns the url to the raw flash.
- */
-function emvideo_youtube_raw_url($video_code) {
-  return media_youtube_raw_url($video_code);
 }
 
 /**

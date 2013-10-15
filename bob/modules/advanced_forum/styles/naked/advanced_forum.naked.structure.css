@@ -360,6 +360,10 @@ th.forum-last-post {
   padding-top: 2px;
 }
 
+.post-title, .forum-post-title {
+    display: none;
+}
+
 .forum-post-panel-main .post-title,
 .forum-post-panel-main .forum-post-content {
   margin-left: 0;

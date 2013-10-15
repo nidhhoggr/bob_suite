@@ -1,4 +1,5 @@
 <?php
+// $Id: media_youtube.variables.inc,v 1.1.2.12 2011/02/04 17:17:25 aaron Exp $
 
 /**
  * @file Contains the variables and defaults used by Media: YouTube.
@@ -145,7 +146,6 @@ function media_youtube_variable_default($name = NULL) {
 
       // Player display options.
       'show_related_videos' => 0,
-      'autoplay' => 0,
       'show_colors' => FALSE,
       'show_border' => FALSE,
       'colors_color1' => MEDIA_YOUTUBE_COLOR1_DEFAULT,
@@ -187,7 +187,7 @@ function media_youtube_variable_default($name = NULL) {
 
       // HTML5 Iframe variables.
       'iframe_title' => 'YouTube video player',
-      'html5_player' => TRUE,
+      'html5_player' => FALSE,
 
       // We accidentally destroyed all thumbnails in a bad update.
       // If that's been run improperly, then this will stay FALSE, and

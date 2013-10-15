@@ -1,4 +1,5 @@
 <?php
+// $Id: media_youtube.install,v 1.1.2.21 2011/02/04 17:17:25 aaron Exp $
 
 /**
  * @file
@@ -97,6 +98,7 @@ function media_youtube_update_6009() {
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
+        'not null' => FALSE,
       ),
       'status' => array(
         'description' => "The availability status of this media.",
@@ -128,6 +130,7 @@ function media_youtube_update_6009() {
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
+        'not null' => FALSE,
       ),
       'nid' => array(
         'description' => 'The {node} nid.',
@@ -230,18 +233,6 @@ function media_youtube_update_6014() {
   return array();
 }
 
-/**
- * Fix up schema definitions.
- */
-function media_youtube_update_6015() {
-  $ret = array();
-  $spec = array('type' => 'varchar', 'length' => 255, 'not null' => TRUE);
-  db_change_field($ret, 'media_youtube_metadata', 'value', 'value', $spec);
-  db_change_field($ret, 'media_youtube_node_data', 'value', 'value', $spec);
-  return $ret;
-}
-
-
 function _media_youtube_fetch_metadata_batch_set($batch_function, $title = '', $query_string = '') {
   $ret = array();
 
@@ -331,6 +322,7 @@ function media_youtube_schema() {
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
+        'not null' => FALSE,
       ),
       'status' => array(
         'description' => "The availability status of this media.",
@@ -362,6 +354,7 @@ function media_youtube_schema() {
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
+        'not null' => FALSE,
       ),
       'vid' => array(
         'description' => 'The {node} vid.',
@@ -510,11 +503,6 @@ function _media_youtube_update_fetch_metadata($field, &$context) {
   $result = db_query_range("SELECT * FROM {{$context['sandbox']['table']}} WHERE vid > %d ORDER BY vid ASC", $context['sandbox']['current_vid'], 0, $limit);
 
   while ($row = db_fetch_array($result)) {
-    // Set delta to zero if it's not set.
-    if (!isset($row['delta'])) {
-      $row['delta'] = 0;
-    }
-
     // Fetch the duration from the provider.
     $item = array(
       'vid' => $row['vid'],
@@ -524,7 +512,6 @@ function _media_youtube_update_fetch_metadata($field, &$context) {
       'data' => unserialize($row[$context['sandbox']['col_data']]),
       'version' => $row[$context['sandbox']['col_version']],
     );
-    $item['data'] = is_array($item['data']) ? $item['data'] : array();
     if ($item['provider'] == 'youtube') {
       if (!db_result(db_query("SELECT value FROM {media_youtube_metadata} WHERE value = '%s'", $item['value']))) {
         $item['status'] = media_youtube_check_status($item['value']);

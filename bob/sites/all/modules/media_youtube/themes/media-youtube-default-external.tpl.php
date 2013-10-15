@@ -1,4 +1,5 @@
 <?php
+// $Id: media-youtube-default-external.tpl.php,v 1.1.2.1 2010/11/12 14:37:18 aaron Exp $
 
 /**
  * @file media_youtube/themes/media-youtube-default-external.tpl.php

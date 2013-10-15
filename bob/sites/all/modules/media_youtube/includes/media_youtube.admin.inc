@@ -1,4 +1,5 @@
 <?php
+// $Id: media_youtube.admin.inc,v 1.1.2.11 2011/02/04 16:06:40 aaron Exp $
 
 /**
  * @file
@@ -121,7 +122,7 @@ function media_youtube_admin_form() {
     '#type' => 'checkbox',
     '#title' => t('Use the HTML5 player instead of the Flash-based'),
     '#default_value' => media_youtube_variable_get('html5_player'),
-    '#description' => t("If checked, the HTML5 capable player will be used instead of the older flash-based. This is achieved as an iframe, also allowing for mobile display of the video."),
+    '#description' => t("If checked, the HTML5 capable player will be used instead of the regular flash-based. This is achieved as an iframe."),
   );
 
   $form['player']['jwflv'] = array(
@@ -137,12 +138,12 @@ function media_youtube_admin_form() {
     '#default_value' => media_youtube_variable_get('use_jw_flv'),
   );
   if (!$flv_path) {
-    $form['player']['jwflv']['#description'] = t('You must first install the !flvplayer, preferably in your %libraries folder. Alternatively, you can install the !jwflv module, or manually specify the location at the !admin.', array('!jwflv' => l(t('FLV Media Player'), 'http://drupal.org/project/flvmediaplayer', array('attributes' => array('target' => '_blank'))), '!admin' => l(t('Embedded Media Field administration page'), 'admin/content/emfield'), '%libraries' => 'sites/all/libraries', '!flvplayer' => l(t('JW FLV Media Player'), 'http://www.longtailvideo.com/players/jw-flv-player/')));
+    $form['player']['jwflv']['#description'] = t('You must first install the !flvplayer, preferably in your /sites/all/plugins folder.', array('!flvplayer' => l(t('JW FLV Media Player'), 'http://www.longtailvideo.com/players/jw-flv-player/')));
   }
   if ($flv_path && !_media_youtube_check_flv_player_setup()) {
     $form['player']['jwflv']['#description'] = t('You must have the yt.swf file installed in the same folder as your !flvplayer.', array('!flvplayer' => l(t('JW FLV Media Player'), 'http://www.longtailvideo.com/players/jw-flv-player/')));
   }
-  $form['player']['jwflv']['#description'] = isset($form['player']['jwflv']['#description']) ? $form['player']['jwflv']['#description'] : t('!flvplayer is properly configured on your server, so may be used to play YouTube videos if desired.', array('!flvplayer' => l(t('JW FLV Media Player'), 'http://www.longtailvideo.com/players/jw-flv-player/', array('attributes' => array('target' => '_blank')))));
+  $form['player']['jwflv']['#description'] = $form['jwflv']['#description'] ? $form['jwflv']['#description'] : t('!flvplayer is properly configured on your server, so may be used to play YouTube videos if desired.', array('!flvplayer' => l(t('JW FLV Media Player'), 'http://www.longtailvideo.com/players/jw-flv-player/', array('attributes' => array('target' => '_blank')))));
 
 
 

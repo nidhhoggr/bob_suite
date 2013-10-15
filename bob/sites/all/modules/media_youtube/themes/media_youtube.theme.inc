@@ -1,4 +1,5 @@
 <?php
+// $Id: media_youtube.theme.inc,v 1.1.2.8 2011/02/04 17:29:53 aaron Exp $
 
 /**
  * @file
@@ -33,34 +34,15 @@ function template_preprocess_media_youtube_html5(&$variables) {
   // Merge in our default variables.
   $variables = array_merge($variables, $variables['variables']);
 
-  $variables['fullscreen_value'] = isset($variables['fullscreen_value']) ? $variables['fullscreen_value'] : (media_youtube_variable_get('full_screen') ? 'true' : 'false');
-
+  $video_id = $variables['video_id'];
+  $variables['url'] = isset($variables['url']) ? $variables['url'] : "http://www.youtube.com/v/$video_id";
+  $variables['url'] = check_plain($variables['url']);
   $variables['width'] = check_plain($variables['width']);
   $variables['height'] = check_plain($variables['height']);
   $variables['fullscreen_value'] = check_plain($variables['fullscreen_value']);
   $variables['iframe_title'] = isset($variables['iframe_title']) ? check_plain($variables['iframe_title']) : t('@title', array('@title' => media_youtube_variable_get('iframe_title')));
   $variables['classes'] = isset($variables['classes']) ? $variables['classes'] : array('media-youtube-html5');
   $variables['class'] = check_plain(implode(' ', $variables['classes']));
-
-  // Set the 'related videos' youtube option.
-  $variables['related'] = isset($variables['related']) ? $variables['related'] : media_youtube_variable_get('show_related_videos');
-
-  // Set the Autoplay option.
-  $variables['autoplay'] = isset($variables['autoplay']) ? $variables['autoplay'] : media_youtube_variable_get('autoplay');
-  $variables['autoplay'] = $variables['autoplay'] ? '1' : '0';
-
-  $variables['url'] = "http://www.youtube.com/embed/{$variables['video_id']}";
-  $variables['query_defaults'] = array(
-    'autoplay' => $variables['autoplay'],
-    'rel' => $variables['related'],
-    'hd' => '1',
-  );
-
-  // Allow us to override the query array if needed.
-  $variables['query'] = isset($variables['query']) ? $variables['query'] : array();
-  $variables['query'] = array_merge($variables['query_defaults'], $variables['query']);
-
-  $variables['url'] = url($variables['url'], array('query' => $variables['query']));
 }
 
 function template_preprocess_media_youtube_default_external(&$variables) {
@@ -136,7 +118,7 @@ function template_preprocess_media_youtube_flash(&$variables) {
 
     // Now just grab the thumnbail path, if needed (for Longtail).
     $tn_options['return_url'] = TRUE;
-    $variables['thumbnail_path'] = isset($variables['thumbnail_path']) ? $variables['thumbnail_path'] : theme('emvideo_video_thumbnail', NULL, $variables['item'], 'emvideo_thumbnail', $variables['node'], TRUE, $tn_options);
+    $variables['thumbnail_path'] = isset($variables['thumbnail_path']) ? $variables['thumbnail_path'] : theme('emvideo_video_thumbnail', NULL, array('value' => $video_id, 'provider' => 'youtube'), 'emvideo_thumbnail', $variables['node'], TRUE, $tn_options);
 
     // Set the Full Screen option; if TRUE, then allow it.
     $fullscreen = isset($variables['fullscreen']) ? $variables['fullscreen'] : media_youtube_variable_get('full_screen');
@@ -182,12 +164,12 @@ function template_preprocess_media_youtube_flash(&$variables) {
     // Create a URL from our options.
     if ($variables['item']['data']['playlist']) {
       $video_id = substr($video_id, 9);
-      $url = "http://www.youtube.com/p/$video_id?$related$autoplay_value$colors$border$high_quality$display_info$enablejsapi$fs";
+      $url = check_plain("http://www.youtube.com/p/$video_id&$related$autoplay_value$colors$border$high_quality$display_info$enablejsapi$fs");
       // FLV Player doesn't support playlists, so we need to fall back.
       $variables['use_flv'] = FALSE;
     }
     else {
-      $url = "http://www.youtube.com/v/$video_id?$related$autoplay_value$colors$border$high_quality$display_info$enablejsapi$fs";
+      $url = check_plain("http://www.youtube.com/v/$video_id&$related$autoplay_value$colors$border$high_quality$display_info$enablejsapi$fs");
     }
 
     // Find the path to the JW FLV Media Player.
@@ -216,8 +198,6 @@ function template_preprocess_media_youtube_flash(&$variables) {
 
       // The JW FLV Player uses its own autoplay flashvar.
       $flashvars['autostart'] = $autoplay ? 'true' : 'false';
-
-      drupal_alter('media_youtube_longtail_flashvars', $flashvars, $variables);
 
       // The URL will now be the JW FLV Player.
       $url = $base_path . $flv_path;
@@ -270,7 +250,7 @@ function template_preprocess_media_youtube_flash(&$variables) {
       // for accessibility compliance.
       // See http://www.w3.org/TR/WCAG10-HTML-TECHS/#text-equivs-multimedia.
       unset($tn_options['return_url']);
-      $noembed = theme('emvideo_video_thumbnail', NULL, $variables['item'], 'emvideo_thumbnail', $variables['node'], TRUE, $tn_options);
+      $noembed = theme('emvideo_video_thumbnail', NULL, array('value' => $video_id, 'provider' => 'youtube'), 'emvideo_thumbnail', $variables['node'], TRUE, $tn_options);
       $flv_path = url($flv_path, array('absolute' => $variables['absolute']));
       $flashvars = check_plain(drupal_query_string_encode($flashvars));
       // Use object tags rather than embed.

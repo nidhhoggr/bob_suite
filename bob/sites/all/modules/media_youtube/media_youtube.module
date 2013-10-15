@@ -1,4 +1,5 @@
 <?php
+// $Id: media_youtube.module,v 1.1.2.28 2011/02/04 18:48:05 aaron Exp $
 
 /**
  *  @file
@@ -517,6 +518,9 @@ function media_youtube_token_list($type = 'media_youtube_status') {
  * this is a wrapper for emvideo_request_xml that includes youtube's api key
  */
 function media_youtube_request_metadata($video_id, $cached = TRUE) {
+  $args['dev_id'] = trim(media_youtube_variable_get('api_key'));
+  $args['method'] = $method;
+
   $request = emfield_request_xml('youtube', MEDIA_YOUTUBE_REST_ENDPOINT .'/'. $video_id, array('video' => $video_id, 'v' => '2'), $cached);
   return $request;
 }
@@ -583,14 +587,4 @@ function media_youtube_emfield_data($video_id) {
   }
 
   return $data;
-}
-
-/**
- * Return the URL to the raw flash.
- */
-function media_youtube_raw_url($video_id) {
-  $data = media_youtube_emfield_data($video_id);
-  if (isset($data['flash']) && isset($data['flash']['url'])) {
-    return $data['flash']['url'];
-  }
 }

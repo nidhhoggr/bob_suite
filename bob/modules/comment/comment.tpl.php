@@ -32,7 +32,7 @@
     <span class="new"><?php print $new ?></span>
   <?php endif; ?>
 
-  <h3><?php print $title ?></h3>
+  <?php print $title ?>
 
   <div class="submitted">
     <?php print $submitted ?>

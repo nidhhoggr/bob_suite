@@ -9,7 +9,6 @@ $instance = sfContext::createInstance($configuration);
 if(!$instance->getUser()->isAuthenticated()) {
     header("Location: " . bird_manager_url);
 }
-
 /*
 
 $pCache = new CachePEAR('BobTemplate');

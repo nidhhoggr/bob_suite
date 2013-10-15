@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
   <head>
-    <title><?php print $head_title ?></title>
+    <title><?php print $head_title  . ' ' . $theme_key?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <?php print $head ?>
     <?php print $styles ?>
@@ -183,7 +183,6 @@
           				<?php print $help ?>
          	 			<?php print $messages ?>
          	 			<?php print $content; ?>
-         	 			<?php print $feed_icons; ?>
         			  		 <?php if (arg(0)=="user") { ?>
  				<?php if ($userdetailslist) { ?>
 						 <div id="user-account">
@@ -410,7 +409,49 @@
    <?php } ?>
 
 
-        		</div></div></div>
+    <?php if($node->type=="image" || $node->type == "video" || $node->type == "audio") { ?>
+
+          <?php
+
+              switch($node->type) {
+                  case 'image':
+                      $plural = 'Images';
+                  break;
+                  case 'video':
+                      $plural = 'Videos';
+                  break;
+                  case 'audio':
+                      $plural = 'Audio';
+                  break;
+              }
+
+          ?>
+
+          <div class="commentedb"><span class="species">Comments</span>
+              <?php  print $commentedb ?>
+              <div class="commentedb1">
+                  <span class="ratephoto">
+                  <a href="<?php global $base_url; print $base_url; ?>/<?php print $node->links['comment_add']['href']; ?>">Add new comment</a> 
+              </div>
+              <div class="commentedb2">
+                <div id="fb-root"></div>
+                <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+                <fb:comments href="<?php print url($_GET['q'], array('absolute' => TRUE)) ?>" num_posts="1"></fb:comments>
+              </div>
+          </div>
+    <!--      <div class="latestvideouser"><span class="species">Recent material by </span>-->
+              <?php //print $latestvideouser ?>
+    <!--      </div>-->
+
+
+          <div class="latest-video"><span class="species">More <?php echo $plural ?> From This Species</span>
+              <?php print $latestvideo ?>
+          </div>
+   <?php } ?>
+
+
+
+                        </div></div></div>
 
 
         		<div id="main-content-inner-bottom"><?php print $contentbottom ?></div>
@@ -429,24 +470,6 @@
 	  </div>
     <?php } ?>
     </div>
-    <?php if($node->type=="image" || $node->type == "video") { ?>
-	  <div class="latest-video"><span class="species">More material of this species</span>
-        <?php print $latestvideo ?>
-	  </div>
-	  <div class="gmap">
-        <?php print $gmap ?>
-	  </div>
-
-	  <div class="commentedb"><span class="species">Comments</span>
-	     <?php  print $commentedb ?>
-	  	          <div class="commentedb1"><span class="ratephoto"><a href="<?php global $base_url; print $base_url; ?>/<?php print $node->links['comment_add']['href']; ?>">Add new comment</a> </div>
-					<div class="commentedb2"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="<?php print url($_GET['q'], array('absolute' => TRUE)) ?>" num_posts="1"></fb:comments></div>
-	  </div>
-<!--	  <div class="latestvideouser"><span class="species">Recent material by </span>-->
-        <?php //print $latestvideouser ?>
-<!--	  </div>-->
-   <?php } ?>
-
 <!-- Bottom-upper User Regions -->
     <?php if ($bottomleft || $bottomright) { ?>
       <div id="bottom-left" class="clear-block">
