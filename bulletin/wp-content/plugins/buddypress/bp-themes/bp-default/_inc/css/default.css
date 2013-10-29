@@ -158,7 +158,8 @@ textarea {
 	height: auto;
 	position: relative;
 	z-index: 1000;
-        background: url(http://www.avianweb.com/images2/banners/wildbird.jpg) no-repeat center center;
+        background: url(../images/BirdForumLogo.jpg) no-repeat center center;
+        min-height: 120px;
 }
 #header #search-bar {
 	text-align: right;
@@ -181,6 +182,7 @@ textarea {
 	padding: 1px 4px;
 	margin-left: 4px;
 }
+
 #header h1 {
 	float: left;
 	margin-bottom: 0;
@@ -520,11 +522,16 @@ a:focus {
 	clear: both;
 	visibility: hidden;
 }
+
+#navigation #search-form {
+    width: 30%;
+    float: right;
+}
+
 #nav {
-	margin: 40px 20px 0 0;
+	margin: 4px 20px 0 0;
 	list-style: none;
 	padding: 0;
-	float: right;
 }
 #nav li a {
 	background: url( ../images/60pc_black.png );
@@ -698,6 +705,10 @@ div#pag-bottom {
 /*--------------------------------------------------------------
 5.2 - Comments
 --------------------------------------------------------------*/
+p.form-allowed-tags {
+    display: none;
+}
+
 .navigation,
 .paged-navigation,
 .comment-navigation {

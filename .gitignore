@@ -12,3 +12,5 @@ birdfindermanager/config/databases.yml
 birdfinder/config/constants.php
 bob/sites/default/files/imagecache/*
 birdfindermanager/web/backend.php
+bob/tmp
+bob/sites/default/files/xmlsitemap
