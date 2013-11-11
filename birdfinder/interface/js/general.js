@@ -98,6 +98,7 @@ var updateBirdListCount = function() {
 
         if(count > 0) { 
             $('li[aria-controls=selectedBirds]').addClass('ui-state-error');
+            $('li[aria-controls=selectedBirds]').focus();
         }
         else {
             $('li[aria-controls=selectedBirds]').removeClass('ui-state-error');
