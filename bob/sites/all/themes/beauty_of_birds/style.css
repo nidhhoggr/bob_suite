@@ -41,7 +41,6 @@ a:hover {
   width : 980px;
   text-align: left;
   background: none repeat scroll 0 0 #FFFFFF;
-
 }
 #page-wrapper-top{
 	 padding: 5px;
@@ -1840,4 +1839,21 @@ li.statistics_counter{
 
 #block-block-10 .content {
     text-align: center;
+}
+
+.featured_stuff em {
+    color: red;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.featured_stuff em a, .featured_stuff em a:active, .featured_stuff em a:visited {
+    color: red;
+}
+
+.featured_stuff hr#special_divide {
+    border: 2px solid #2F3746;
+    background-color: #2F3746;
+    margin: 12px 0 12px 0;
 }
