@@ -14,3 +14,4 @@ bob/sites/default/files/imagecache/*
 birdfindermanager/web/backend.php
 bob/tmp
 bob/sites/default/files/xmlsitemap
+bulletin/wp-config.php
